@@ -3,71 +3,356 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>IZZY Financial & Business Services</title>
-  <meta name="description" content="Servicios financieros y de negocios: seguros de auto, vida, salud, comerciales, taxes y más." />
+  <meta name="description" content="IZZY Financial & Business Services — Seguros de vida, salud, Medicare, crédito y oportunidad de negocio para agentes. Sirviendo California y Florida. Llama o WhatsApp: (818) 266-7038." />
+  <title>IZZY Financial & Business Services | Seguros · Crédito · Oportunidad de Agente</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
 
-  <header class="header">
-    <nav class="nav">
-      <div class="logo">IZZY</div>
-      <a href="tel:8182667038" class="nav-phone">(818) 266-7038</a>
-    </nav>
+  <!-- ===== HEADER ===== -->
+  <header class="header" id="header">
+    <div class="container header__inner">
+      <a href="#inicio" class="logo" id="logo-link">
+        <span class="logo__mark">IZ</span>
+        <span class="logo__text">IZZY Financial<br><em>& Business Services</em></span>
+      </a>
+      <nav class="nav" id="main-nav" aria-label="Navegación principal">
+        <ul class="nav__list">
+          <li><a href="#servicios" class="nav__link" id="nav-servicios">Servicios</a></li>
+          <li><a href="#agentes" class="nav__link" id="nav-agentes">Agentes</a></li>
+          <li><a href="#metodo" class="nav__link" id="nav-metodo">Método</a></li>
+          <li><a href="#contacto" class="nav__link nav__link--cta" id="nav-contacto">Contáctanos</a></li>
+        </ul>
+      </nav>
+      <button class="nav-toggle" id="nav-toggle" aria-label="Abrir menú" aria-expanded="false" aria-controls="main-nav">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
   </header>
 
-  <main>
-    <section class="hero">
-      <div class="hero-content">
-        <p class="eyebrow">Financial & Business Services</p>
-        <h1>Protegemos tu familia, tu negocio y tu futuro</h1>
-        <p class="hero-text">
-          En IZZY Financial & Business Services te ayudamos con soluciones de seguros,
-          servicios financieros y apoyo para pequeños negocios.
+  <!-- ===== HERO ===== -->
+  <section class="hero" id="inicio">
+    <div class="hero__bg-shapes" aria-hidden="true">
+      <div class="shape shape--1"></div>
+      <div class="shape shape--2"></div>
+      <div class="shape shape--3"></div>
+    </div>
+    <div class="container hero__content">
+      <div class="hero__badge reveal" id="hero-badge">📍 California &amp; Florida</div>
+      <h1 class="hero__title reveal" id="hero-title">
+        Tu Futuro Financiero,<br>
+        <span class="gradient-text">Bien Protegido.</span>
+      </h1>
+      <p class="hero__subtitle reveal" id="hero-subtitle">
+        Seguros de vida, salud y Medicare · Reparación de crédito · Cuentas bancarias · Oportunidad de agente independiente
+      </p>
+      <div class="hero__ctas reveal" id="hero-ctas">
+        <a href="https://wa.me/18182667038?text=Hola%2C%20quiero%20informaci%C3%B3n%20sobre%20sus%20servicios"
+           class="btn btn--primary" id="cta-whatsapp-hero" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+          WhatsApp Ahora
+        </a>
+        <a href="tel:8182667038" class="btn btn--secondary" id="cta-call-hero">
+          <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20" aria-hidden="true"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+          Llamar: (818) 266-7038
+        </a>
+      </div>
+      <div class="hero__stats reveal" id="hero-stats">
+        <div class="stat">
+          <strong class="stat__num">6+</strong>
+          <span class="stat__label">Servicios</span>
+        </div>
+        <div class="stat__divider" aria-hidden="true"></div>
+        <div class="stat">
+          <strong class="stat__num">2</strong>
+          <span class="stat__label">Estados</span>
+        </div>
+        <div class="stat__divider" aria-hidden="true"></div>
+        <div class="stat">
+          <strong class="stat__num">100%</strong>
+          <span class="stat__label">Independiente</span>
+        </div>
+      </div>
+    </div>
+    <div class="hero__scroll-hint" aria-hidden="true">
+      <div class="scroll-arrow"></div>
+    </div>
+  </section>
+
+  <!-- ===== SERVICIOS ===== -->
+  <section class="section" id="servicios">
+    <div class="container">
+      <div class="section__header reveal">
+        <span class="section__eyebrow">Lo que hacemos</span>
+        <h2 class="section__title">Servicios que <span class="gradient-text">transforman vidas</span></h2>
+        <p class="section__desc">Cada servicio está diseñado para proteger tu patrimonio y abrirte puertas financieras.</p>
+      </div>
+      <div class="services-grid" id="services-grid">
+
+        <article class="service-card reveal" id="card-vida">
+          <div class="service-card__icon" aria-hidden="true">🛡️</div>
+          <h3 class="service-card__title">Seguro de Vida</h3>
+          <p class="service-card__desc">Protege a tu familia con pólizas de vida completas — término, vida entera e IUL. Construye un legado sólido y tranquilidad duradera.</p>
+          <a href="https://wa.me/18182667038?text=Quiero%20informaci%C3%B3n%20sobre%20Seguro%20de%20Vida"
+             class="service-card__link" id="link-vida" target="_blank" rel="noopener">
+            Consulta gratis →
+          </a>
+        </article>
+
+        <article class="service-card reveal" id="card-salud">
+          <div class="service-card__icon" aria-hidden="true">❤️</div>
+          <h3 class="service-card__title">Seguro de Salud</h3>
+          <p class="service-card__desc">Planes del Mercado, ACA, cobertura suplementaria y planes para familias. Te guiamos para encontrar la opción perfecta a tu presupuesto.</p>
+          <a href="https://wa.me/18182667038?text=Quiero%20informaci%C3%B3n%20sobre%20Seguro%20de%20Salud"
+             class="service-card__link" id="link-salud" target="_blank" rel="noopener">
+            Consulta gratis →
+          </a>
+        </article>
+
+        <article class="service-card reveal" id="card-medicare">
+          <div class="service-card__icon" aria-hidden="true">🏥</div>
+          <h3 class="service-card__title">Medicare</h3>
+          <p class="service-card__desc">Asesoría especializada en Medicare Advantage, suplementos y Parte D. Maximiza tus beneficios sin costos ocultos.</p>
+          <a href="https://wa.me/18182667038?text=Quiero%20informaci%C3%B3n%20sobre%20Medicare"
+             class="service-card__link" id="link-medicare" target="_blank" rel="noopener">
+            Consulta gratis →
+          </a>
+        </article>
+
+        <article class="service-card reveal" id="card-credito">
+          <div class="service-card__icon" aria-hidden="true">📊</div>
+          <h3 class="service-card__title">Reparación de Crédito</h3>
+          <p class="service-card__desc">Disputamos ítems negativos, optimizamos tu score y te abrimos el camino a hipotecas, autos y préstamos en mejores condiciones.</p>
+          <a href="https://wa.me/18182667038?text=Quiero%20informaci%C3%B3n%20sobre%20Reparaci%C3%B3n%20de%20Cr%C3%A9dito"
+             class="service-card__link" id="link-credito" target="_blank" rel="noopener">
+            Consulta gratis →
+          </a>
+        </article>
+
+        <article class="service-card reveal" id="card-banco">
+          <div class="service-card__icon" aria-hidden="true">🏦</div>
+          <h3 class="service-card__title">Cuentas Bancarias</h3>
+          <p class="service-card__desc">Te ayudamos a abrir cuentas corrientes y de ahorro aunque tengas ChexSystems negativo. Tu primer paso hacia la inclusión financiera.</p>
+          <a href="https://wa.me/18182667038?text=Quiero%20informaci%C3%B3n%20sobre%20Cuentas%20Bancarias"
+             class="service-card__link" id="link-banco" target="_blank" rel="noopener">
+            Consulta gratis →
+          </a>
+        </article>
+
+        <article class="service-card reveal" id="card-negocio">
+          <div class="service-card__icon" aria-hidden="true">💼</div>
+          <h3 class="service-card__title">Consultoría de Negocio</h3>
+          <p class="service-card__desc">Estrategia financiera para emprendedores y pequeñas empresas. Desde estructura legal hasta acceso a capital y cobertura comercial.</p>
+          <a href="https://wa.me/18182667038?text=Quiero%20informaci%C3%B3n%20sobre%20Consultor%C3%ADa%20de%20Negocio"
+             class="service-card__link" id="link-negocio" target="_blank" rel="noopener">
+            Consulta gratis →
+          </a>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== AGENTES ===== -->
+  <section class="section section--dark" id="agentes">
+    <div class="container">
+      <div class="section__header reveal">
+        <span class="section__eyebrow section__eyebrow--gold">Únete al equipo</span>
+        <h2 class="section__title" style="color:#fff">Oportunidad para <span class="gradient-text">Agentes &amp; Productores</span></h2>
+        <p class="section__desc" style="color:rgba(255,255,255,.7)">¿Buscas ingresos residuales, flexibilidad total y crecer con una agencia que te respalda? Esta es tu oportunidad.</p>
+      </div>
+      <div class="agent-grid" id="agent-grid">
+        <div class="agent-benefit reveal" id="benefit-residual">
+          <div class="agent-benefit__icon" aria-hidden="true">💰</div>
+          <h3 class="agent-benefit__title">Ingresos Residuales</h3>
+          <p class="agent-benefit__desc">Gana comisiones recurrentes por cada póliza activa. Tu cartera trabaja para ti incluso cuando descansas.</p>
+        </div>
+        <div class="agent-benefit reveal" id="benefit-flex">
+          <div class="agent-benefit__icon" aria-hidden="true">⏰</div>
+          <h3 class="agent-benefit__title">100% Flexible</h3>
+          <p class="agent-benefit__desc">Trabaja a tiempo parcial o completo, desde casa o en campo. Tú decides tu horario y tu mercado.</p>
+        </div>
+        <div class="agent-benefit reveal" id="benefit-train">
+          <div class="agent-benefit__icon" aria-hidden="true">🎓</div>
+          <h3 class="agent-benefit__title">Entrenamiento Completo</h3>
+          <p class="agent-benefit__desc">Capacitación en productos, ventas y cumplimiento. Te llevamos de cero hasta tu primera venta.</p>
+        </div>
+        <div class="agent-benefit reveal" id="benefit-multi">
+          <div class="agent-benefit__icon" aria-hidden="true">🌐</div>
+          <h3 class="agent-benefit__title">Múltiples Portadores</h3>
+          <p class="agent-benefit__desc">Accede a decenas de aseguradoras. Ofrece siempre la mejor opción sin atarte a una sola compañía.</p>
+        </div>
+        <div class="agent-benefit reveal" id="benefit-soporte">
+          <div class="agent-benefit__icon" aria-hidden="true">🤝</div>
+          <h3 class="agent-benefit__title">Soporte Continuo</h3>
+          <p class="agent-benefit__desc">Mentoring individual, herramientas de marketing y acceso al equipo de liderazgo para crecer más rápido.</p>
+        </div>
+        <div class="agent-benefit reveal" id="benefit-licencia">
+          <div class="agent-benefit__icon" aria-hidden="true">📋</div>
+          <h3 class="agent-benefit__title">Te Ayudamos a Licenciarte</h3>
+          <p class="agent-benefit__desc">Si aún no tienes licencia de seguro, te guiamos en el proceso para obtenerla en California o Florida.</p>
+        </div>
+      </div>
+      <div class="agent-cta reveal" id="agent-cta">
+        <a href="https://wa.me/18182667038?text=Quiero%20informaci%C3%B3n%20sobre%20la%20oportunidad%20de%20agente"
+           class="btn btn--gold" id="cta-agent-wa" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+          Quiero ser Agente
+        </a>
+        <a href="tel:8182667038" class="btn btn--outline-white" id="cta-agent-call">
+          Llamar: (818) 266-7038
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== MÉTODO ===== -->
+  <section class="section" id="metodo">
+    <div class="container">
+      <div class="section__header reveal">
+        <span class="section__eyebrow">Cómo trabajamos</span>
+        <h2 class="section__title">Nuestro <span class="gradient-text">Método</span></h2>
+        <p class="section__desc">Un proceso claro, transparente y diseñado para que tomes la mejor decisión financiera.</p>
+      </div>
+      <ol class="steps-list" id="steps-list" aria-label="Pasos del proceso">
+        <li class="step reveal" id="step-1">
+          <div class="step__num" aria-hidden="true">01</div>
+          <div class="step__body">
+            <h3 class="step__title">Consulta Inicial Gratuita</h3>
+            <p class="step__desc">Analizamos tu situación actual — ingresos, familia, crédito — sin presiones ni compromisos.</p>
+          </div>
+        </li>
+        <li class="step reveal" id="step-2">
+          <div class="step__num" aria-hidden="true">02</div>
+          <div class="step__body">
+            <h3 class="step__title">Diagnóstico Personalizado</h3>
+            <p class="step__desc">Identificamos los productos y servicios que realmente necesitas según tu perfil y objetivos.</p>
+          </div>
+        </li>
+        <li class="step reveal" id="step-3">
+          <div class="step__num" aria-hidden="true">03</div>
+          <div class="step__body">
+            <h3 class="step__title">Presentación de Opciones</h3>
+            <p class="step__desc">Te mostramos múltiples alternativas con precios, cobertura y beneficios detallados. Sin letra pequeña.</p>
+          </div>
+        </li>
+        <li class="step reveal" id="step-4">
+          <div class="step__num" aria-hidden="true">04</div>
+          <div class="step__body">
+            <h3 class="step__title">Proceso de Inscripción</h3>
+            <p class="step__desc">Manejamos todo el papeleo contigo. Rápido, seguro y sin complicaciones burocráticas.</p>
+          </div>
+        </li>
+        <li class="step reveal" id="step-5">
+          <div class="step__num" aria-hidden="true">05</div>
+          <div class="step__body">
+            <h3 class="step__title">Seguimiento Activo</h3>
+            <p class="step__desc">No desaparecemos después de la venta. Te acompañamos en renovaciones, cambios y reclamaciones.</p>
+          </div>
+        </li>
+        <li class="step reveal" id="step-6">
+          <div class="step__num" aria-hidden="true">06</div>
+          <div class="step__body">
+            <h3 class="step__title">Crecimiento Continuo</h3>
+            <p class="step__desc">Revisamos tu plan cada año para ajustarlo a tu nueva realidad financiera y familiar.</p>
+          </div>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- ===== POR QUÉ IZZY ===== -->
+  <section class="section section--accent" id="por-que-izzy">
+    <div class="container">
+      <div class="section__header reveal">
+        <span class="section__eyebrow">Nuestra diferencia</span>
+        <h2 class="section__title">¿Por qué <span class="gradient-text">IZZY</span>?</h2>
+      </div>
+      <div class="why-grid" id="why-grid">
+        <div class="why-item reveal" id="why-bilingue">
+          <div class="why-item__icon" aria-hidden="true">🗣️</div>
+          <h3 class="why-item__title">100% Bilingüe</h3>
+          <p>Atención completa en español e inglés. Explicamos los detalles sin barreras de idioma.</p>
+        </div>
+        <div class="why-item reveal" id="why-independiente">
+          <div class="why-item__icon" aria-hidden="true">⚖️</div>
+          <h3 class="why-item__title">Agente Independiente</h3>
+          <p>No estamos atados a una sola compañía. Buscamos la mejor opción del mercado para ti.</p>
+        </div>
+        <div class="why-item reveal" id="why-sin-costo">
+          <div class="why-item__icon" aria-hidden="true">💸</div>
+          <h3 class="why-item__title">Sin Costo para Ti</h3>
+          <p>Nuestra asesoría es gratuita. Nuestras comisiones las paga la aseguradora, no tú.</p>
+        </div>
+        <div class="why-item reveal" id="why-comunidad">
+          <div class="why-item__icon" aria-hidden="true">❤️</div>
+          <h3 class="why-item__title">Enfocados en la Comunidad</h3>
+          <p>Servimos principalmente a familias latinas y comunidades inmigrantes con empatía y respeto.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CTA FINAL ===== -->
+  <section class="section cta-section" id="contacto">
+    <div class="container">
+      <div class="cta-box reveal" id="cta-box">
+        <h2 class="cta-box__title">¿Listo para empezar?</h2>
+        <p class="cta-box__desc">Una conversación de 15 minutos puede cambiar el rumbo financiero de tu familia. Sin costo, sin compromiso.</p>
+        <div class="cta-box__btns">
+          <a href="https://wa.me/18182667038?text=Hola%2C%20quiero%20una%20consulta%20gratuita"
+             class="btn btn--primary btn--lg" id="cta-whatsapp-final" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" fill="currentColor" width="22" height="22" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+            WhatsApp: (818) 266-7038
+          </a>
+          <a href="tel:8182667038" class="btn btn--secondary btn--lg" id="cta-call-final">
+            <svg viewBox="0 0 24 24" fill="currentColor" width="22" height="22" aria-hidden="true"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+            Llamar Ahora
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer" id="footer">
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <a href="#inicio" class="logo logo--footer" id="footer-logo">
+          <span class="logo__mark">IZ</span>
+          <span class="logo__text">IZZY Financial<br><em>& Business Services</em></span>
+        </a>
+        <p class="footer__tagline">Protegiendo familias, construyendo futuros.</p>
+      </div>
+      <div class="footer__contact">
+        <h4 class="footer__heading">Contacto</h4>
+        <ul class="footer__list">
+          <li><a href="tel:8182667038" id="footer-tel">📞 (818) 266-7038</a></li>
+          <li><a href="https://wa.me/18182667038" target="_blank" rel="noopener" id="footer-wa">💬 WhatsApp</a></li>
+          <li><span>📍 California &amp; Florida</span></li>
+        </ul>
+      </div>
+      <div class="footer__links">
+        <h4 class="footer__heading">Servicios</h4>
+        <ul class="footer__list">
+          <li><a href="#servicios" id="footer-life">Seguro de Vida</a></li>
+          <li><a href="#servicios" id="footer-health">Seguro de Salud</a></li>
+          <li><a href="#servicios" id="footer-medicare">Medicare</a></li>
+          <li><a href="#servicios" id="footer-credit">Reparación de Crédito</a></li>
+          <li><a href="#agentes" id="footer-agents">Oportunidad de Agente</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer__legal">
+      <div class="container">
+        <p class="footer__disclaimer">
+          IZZY Financial &amp; Business Services es una agencia independiente. Los productos de seguros están sujetos a aprobación de la aseguradora, disponibilidad por estado y elegibilidad del solicitante. No se garantizan ingresos específicos para agentes. Los servicios de reparación de crédito no garantizan resultados particulares. © 2026 IZZY Financial &amp; Business Services. Todos los derechos reservados.
         </p>
-
-        <div class="hero-buttons">
-          <a href="tel:8182667038" class="btn primary">Llamar ahora</a>
-          <a href="https://wa.me/18182667038" class="btn secondary">Enviar WhatsApp</a>
-        </div>
       </div>
-    </section>
-
-    <section class="services">
-      <h2>Nuestros servicios</h2>
-
-      <div class="cards">
-        <div class="card">
-          <h3>Seguro de Auto</h3>
-          <p>Opciones para proteger tu vehículo y cumplir con los requisitos del estado.</p>
-        </div>
-
-        <div class="card">
-          <h3>Life & Health</h3>
-          <p>Protección para tu familia, salud y planificación financiera.</p>
-        </div>
-
-        <div class="card">
-          <h3>Commercial Insurance</h3>
-          <p>Soluciones para negocios, emprendedores y contratistas.</p>
-        </div>
-
-        <div class="card">
-          <h3>Taxes & Business Services</h3>
-          <p>Apoyo para servicios de taxes, documentación y crecimiento de negocio.</p>
-        </div>
-      </div>
-    </section>
-
-    <section class="contact">
-      <h2>Agenda una consulta</h2>
-      <p>Estamos listos para orientarte paso a paso.</p>
-      <a href="https://wa.me/18182667038" class="btn primary">Contactar por WhatsApp</a>
-    </section>
-  </main>
-
-  <footer class="footer">
-    <p>© 2026 IZZY Financial & Business Services. All rights reserved.</p>
+    </div>
   </footer>
 
   <script src="script.js"></script>
