@@ -291,7 +291,37 @@ button { font: inherit; border: none; background: none; cursor: pointer; }
   flex-wrap: wrap;
   gap: 1rem;
   justify-content: center;
-  margin-bottom: 3.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.trust-strip {
+  display: inline-flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: .65rem;
+  max-width: 760px;
+  margin: 0 auto 3rem;
+  padding: .75rem 1rem;
+  background: rgba(255,255,255,.07);
+  border: 1px solid rgba(255,255,255,.12);
+  border-radius: 999px;
+  color: rgba(255,255,255,.72);
+  font-size: .82rem;
+  font-weight: 600;
+  line-height: 1.4;
+}
+.trust-strip span {
+  display: inline-flex;
+  align-items: center;
+  gap: .65rem;
+}
+.trust-strip span:not(:last-child)::after {
+  content: '';
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background: rgba(232,192,90,.8);
 }
 
 .hero__stats {
@@ -807,6 +837,18 @@ button { font: inherit; border: none; background: none; cursor: pointer; }
     align-items: stretch;
   }
   .btn { justify-content: center; }
+  .trust-strip {
+    display: flex;
+    border-radius: var(--radius-md);
+    margin-bottom: 2.5rem;
+  }
+  .trust-strip span {
+    width: calc(50% - .5rem);
+    justify-content: center;
+  }
+  .trust-strip span:not(:last-child)::after {
+    display: none;
+  }
 }
 
 /* ---- Stagger delays for cards ---- */
@@ -816,6 +858,8 @@ button { font: inherit; border: none; background: none; cursor: pointer; }
 .services-grid .service-card:nth-child(4) { transition-delay: .20s; }
 .services-grid .service-card:nth-child(5) { transition-delay: .25s; }
 .services-grid .service-card:nth-child(6) { transition-delay: .30s; }
+.services-grid .service-card:nth-child(7) { transition-delay: .35s; }
+.services-grid .service-card:nth-child(8) { transition-delay: .40s; }
 
 .agent-grid .agent-benefit:nth-child(1) { transition-delay: .05s; }
 .agent-grid .agent-benefit:nth-child(2) { transition-delay: .10s; }
