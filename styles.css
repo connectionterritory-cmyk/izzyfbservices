@@ -141,19 +141,23 @@ button { font: inherit; border: none; background: none; cursor: pointer; }
   text-decoration: none;
 }
 .logo__mark {
-  width: 44px;
-  height: 44px;
-  background: var(--grad-gold);
-  border-radius: 10px;
+  width: 48px;
+  height: 48px;
+  background: var(--c-white);
+  border: 1px solid rgba(232,192,90,.35);
+  border-radius: 14px;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-family: var(--font-display);
-  font-weight: 900;
-  font-size: 1.1rem;
-  color: var(--c-navy);
   flex-shrink: 0;
-  box-shadow: var(--shadow-gold);
+  overflow: hidden;
+  box-shadow: 0 8px 28px rgba(0,0,0,.2);
+}
+.logo__mark img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  padding: 3px;
 }
 .logo__text {
   font-size: .8rem;
