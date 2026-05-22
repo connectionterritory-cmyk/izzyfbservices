@@ -17,6 +17,111 @@
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
+  <svg class="icon-sprite" aria-hidden="true" focusable="false">
+    <symbol id="icon-shield-family" viewBox="0 0 24 24">
+      <path d="M12 3.2 19 6v5.4c0 4.4-2.8 7.6-7 9.4-4.2-1.8-7-5-7-9.4V6l7-2.8Z" />
+      <path d="M9.2 13.7c.7-1 1.6-1.5 2.8-1.5s2.1.5 2.8 1.5" />
+      <path d="M12 9.8a1.7 1.7 0 1 0 0-3.4 1.7 1.7 0 0 0 0 3.4Z" />
+    </symbol>
+    <symbol id="icon-medical-cross" viewBox="0 0 24 24">
+      <path d="M9.2 4.8h5.6v4.4h4.4v5.6h-4.4v4.4H9.2v-4.4H4.8V9.2h4.4V4.8Z" />
+    </symbol>
+    <symbol id="icon-medical-shield" viewBox="0 0 24 24">
+      <path d="M12 3.2 19 6v5.4c0 4.4-2.8 7.6-7 9.4-4.2-1.8-7-5-7-9.4V6l7-2.8Z" />
+      <path d="M8.1 12h2.1l1-2.4 1.8 4.8 1.1-2.4h1.8" />
+    </symbol>
+    <symbol id="icon-auto" viewBox="0 0 24 24">
+      <path d="M5.2 14.2h13.6l-1.2-4.1a2.4 2.4 0 0 0-2.3-1.7H8.7a2.4 2.4 0 0 0-2.3 1.7l-1.2 4.1Z" />
+      <path d="M4.5 14.2v3.4h2.1l.6-1h9.6l.6 1h2.1v-3.4" />
+      <path d="M7.2 14.5h.1M16.7 14.5h.1" />
+    </symbol>
+    <symbol id="icon-document" viewBox="0 0 24 24">
+      <path d="M7 3.8h7.2L18 7.6v12.6H7V3.8Z" />
+      <path d="M14.2 3.8v3.8H18" />
+      <path d="M9.7 11.2h5.1M9.7 14h5.1M9.7 16.8h3.2" />
+    </symbol>
+    <symbol id="icon-building" viewBox="0 0 24 24">
+      <path d="M5.5 20.2V5.8h8v14.4" />
+      <path d="M13.5 9.5h5v10.7" />
+      <path d="M8 8.2h2.6M8 11.1h2.6M8 14h2.6M15.5 12.2h1.2M15.5 15h1.2" />
+    </symbol>
+    <symbol id="icon-license" viewBox="0 0 24 24">
+      <path d="M4.5 6.8h15v10.4h-15V6.8Z" />
+      <path d="M7 10h4.2M13.6 10h3.5M13.6 12.7h3.5M7 14.5h5" />
+      <path d="M8.9 12.6a1.4 1.4 0 1 0 0-2.8 1.4 1.4 0 0 0 0 2.8Z" />
+    </symbol>
+    <symbol id="icon-briefcase" viewBox="0 0 24 24">
+      <path d="M5 8.2h14v10H5v-10Z" />
+      <path d="M9.2 8.2V6.5c0-.8.6-1.4 1.4-1.4h2.8c.8 0 1.4.6 1.4 1.4v1.7" />
+      <path d="M5 12.4h14M11 12.4v1.1h2v-1.1" />
+    </symbol>
+    <symbol id="icon-growth" viewBox="0 0 24 24">
+      <path d="M5 18.5h14" />
+      <path d="M6.5 15.5 10 12l2.6 2.4 5-6" />
+      <path d="M15.4 8.5h2.2v2.2" />
+    </symbol>
+    <symbol id="icon-layers" viewBox="0 0 24 24">
+      <path d="m12 4.5 7 3.8-7 3.8-7-3.8 7-3.8Z" />
+      <path d="m5 12 7 3.8 7-3.8" />
+      <path d="m5 15.7 7 3.8 7-3.8" />
+    </symbol>
+    <symbol id="icon-training" viewBox="0 0 24 24">
+      <path d="M6 6.5h8.8c1 0 1.8.8 1.8 1.8v11.2H7.8A1.8 1.8 0 0 1 6 17.7V6.5Z" />
+      <path d="M9 9.5h4.6M9 12.4h4.6" />
+      <path d="M16.6 8.8H18c.8 0 1.4.6 1.4 1.4v9.3h-2.8" />
+    </symbol>
+    <symbol id="icon-dashboard" viewBox="0 0 24 24">
+      <path d="M4.8 5.2h14.4v13.6H4.8V5.2Z" />
+      <path d="M4.8 9h14.4M8.1 12h3.3M8.1 15.2h2.2M13.8 12h2.1M13.8 15.2h2.1" />
+    </symbol>
+    <symbol id="icon-network" viewBox="0 0 24 24">
+      <path d="M7.2 10.5a2.2 2.2 0 1 0 0-4.4 2.2 2.2 0 0 0 0 4.4ZM16.8 10.5a2.2 2.2 0 1 0 0-4.4 2.2 2.2 0 0 0 0 4.4ZM12 18a2.2 2.2 0 1 0 0-4.4A2.2 2.2 0 0 0 12 18Z" />
+      <path d="m8.9 10.1 1.9 3.8M15.1 10.1l-1.9 3.8" />
+    </symbol>
+    <symbol id="icon-chat" viewBox="0 0 24 24">
+      <path d="M5 6.2h14v9.2H9.2L5 18.5V6.2Z" />
+      <path d="M8.2 9.8h7.6M8.2 12.5h4.7" />
+    </symbol>
+    <symbol id="icon-megaphone" viewBox="0 0 24 24">
+      <path d="M5 13.5h3.2l7.8 3.2V7.3l-7.8 3.2H5v3Z" />
+      <path d="M8.2 13.5 9 18h2.2l-.9-3.6" />
+      <path d="M18.2 10.3c.6.5.9 1.1.9 1.7s-.3 1.2-.9 1.7" />
+    </symbol>
+    <symbol id="icon-refresh" viewBox="0 0 24 24">
+      <path d="M18.4 9.5A6.6 6.6 0 0 0 6.2 8" />
+      <path d="M18.7 5.8v3.7h-3.7" />
+      <path d="M5.6 14.5A6.6 6.6 0 0 0 17.8 16" />
+      <path d="M5.3 18.2v-3.7H9" />
+    </symbol>
+    <symbol id="icon-operations" viewBox="0 0 24 24">
+      <path d="M6.2 7.2h11.6M6.2 12h11.6M6.2 16.8h11.6" />
+      <path d="M4.3 7.2h.1M4.3 12h.1M4.3 16.8h.1" />
+    </symbol>
+    <symbol id="icon-language" viewBox="0 0 24 24">
+      <path d="M4.8 5.5h8.4v8.4H4.8V5.5ZM10.8 10.8l4.4 7.7M13 14.8h5.8" />
+      <path d="M7.2 8.3h3.6M9 8.3v3.1M7.4 11.6c1.3-.7 2.2-1.8 2.8-3.3" />
+    </symbol>
+    <symbol id="icon-scale" viewBox="0 0 24 24">
+      <path d="M12 4.5v15M7.2 7h9.6" />
+      <path d="m7.2 7-3 5.2h6L7.2 7ZM16.8 7l-3 5.2h6L16.8 7Z" />
+      <path d="M9.2 19.5h5.6" />
+    </symbol>
+    <symbol id="icon-heart-community" viewBox="0 0 24 24">
+      <path d="M12 19s-6.2-3.8-7.4-8.1C3.8 8 5.5 5.8 8.1 5.8c1.5 0 2.8.8 3.9 2.1 1.1-1.3 2.4-2.1 3.9-2.1 2.6 0 4.3 2.2 3.5 5.1C18.2 15.2 12 19 12 19Z" />
+      <path d="M8.4 11.8h7.2" />
+    </symbol>
+    <symbol id="icon-phone" viewBox="0 0 24 24">
+      <path d="M8.2 5.2 10 8.9 8.6 10.3c.9 2 2.4 3.5 4.4 4.4l1.4-1.4 3.7 1.8v3.2c0 .6-.5 1.1-1.1 1.1A12.4 12.4 0 0 1 4 6.3c0-.6.5-1.1 1.1-1.1h3.1Z" />
+    </symbol>
+    <symbol id="icon-location" viewBox="0 0 24 24">
+      <path d="M12 20s6-5.2 6-10a6 6 0 1 0-12 0c0 4.8 6 10 6 10Z" />
+      <path d="M12 11.8a2 2 0 1 0 0-4 2 2 0 0 0 0 4Z" />
+    </symbol>
+    <symbol id="icon-calendar" viewBox="0 0 24 24">
+      <path d="M5.2 6.8h13.6v12H5.2v-12Z" />
+      <path d="M5.2 10.2h13.6M8.4 4.5v4M15.6 4.5v4" />
+    </symbol>
+  </svg>
 
   <!-- ===== HEADER ===== -->
   <header class="header" id="header">
@@ -143,7 +248,7 @@
       <div class="services-grid" id="services-grid">
 
         <article class="service-card reveal" id="card-auto">
-          <div class="service-card__icon" aria-hidden="true">🚗</div>
+          <div class="service-card__icon" aria-hidden="true"><svg class="site-icon"><use href="#icon-auto"></use></svg></div>
           <h3 class="service-card__title">Seguro de Auto</h3>
           <p class="service-card__desc">Cobertura de responsabilidad, colisión y comprensiva para autos personales y comerciales. Comparamos opciones disponibles para ayudarte a encontrar una cobertura competitiva.</p>
           <a href="https://wa.me/18182667038?text=Quiero%20informaci%C3%B3n%20sobre%20Seguro%20de%20Auto"
@@ -153,7 +258,7 @@
         </article>
 
         <article class="service-card reveal" id="card-vida">
-          <div class="service-card__icon" aria-hidden="true">🛡️</div>
+          <div class="service-card__icon" aria-hidden="true"><svg class="site-icon"><use href="#icon-shield-family"></use></svg></div>
           <h3 class="service-card__title">Seguro de Vida</h3>
           <p class="service-card__desc">Pólizas de vida completas — término, vida entera e IUL. Protege a tu familia y construye un legado financiero sólido.</p>
           <a href="https://wa.me/18182667038?text=Quiero%20informaci%C3%B3n%20sobre%20Seguro%20de%20Vida"
@@ -163,7 +268,7 @@
         </article>
 
         <article class="service-card reveal" id="card-salud">
-          <div class="service-card__icon" aria-hidden="true">❤️</div>
+          <div class="service-card__icon" aria-hidden="true"><svg class="site-icon"><use href="#icon-medical-cross"></use></svg></div>
           <h3 class="service-card__title">Seguro de Salud</h3>
           <p class="service-card__desc">Planes del Mercado, ACA y cobertura suplementaria para individuos y familias. Te guiamos para encontrar la opción a tu presupuesto.</p>
           <a href="https://wa.me/18182667038?text=Quiero%20informaci%C3%B3n%20sobre%20Seguro%20de%20Salud"
@@ -173,7 +278,7 @@
         </article>
 
         <article class="service-card reveal" id="card-medicare">
-          <div class="service-card__icon" aria-hidden="true">🏥</div>
+          <div class="service-card__icon" aria-hidden="true"><svg class="site-icon"><use href="#icon-medical-shield"></use></svg></div>
           <h3 class="service-card__title">Medicare / Health Plans</h3>
           <p class="service-card__desc">Asesoría en Medicare Advantage, Medigap y Parte D. Si calificas, te ayudamos a revisar beneficios, costos y elegibilidad con explicación clara.</p>
           <a href="https://wa.me/18182667038?text=Quiero%20informaci%C3%B3n%20sobre%20Medicare"
@@ -183,7 +288,7 @@
         </article>
 
         <article class="service-card reveal" id="card-comercial">
-          <div class="service-card__icon" aria-hidden="true">🏢</div>
+          <div class="service-card__icon" aria-hidden="true"><svg class="site-icon"><use href="#icon-building"></use></svg></div>
           <h3 class="service-card__title">Seguro Comercial</h3>
           <p class="service-card__desc">Pólizas de responsabilidad general, propiedad comercial y más para proteger tu negocio ante imprevistos y reclamaciones.</p>
           <a href="https://wa.me/18182667038?text=Quiero%20informaci%C3%B3n%20sobre%20Seguro%20Comercial"
@@ -193,7 +298,7 @@
         </article>
 
         <article class="service-card reveal" id="card-taxes">
-          <div class="service-card__icon" aria-hidden="true">📄</div>
+          <div class="service-card__icon" aria-hidden="true"><svg class="site-icon"><use href="#icon-document"></use></svg></div>
           <h3 class="service-card__title">Taxes, ITIN &amp; Registro de Negocios</h3>
           <p class="service-card__desc">Preparación de impuestos personales y comerciales, ITIN, registro de negocios y servicios de nómina para emprendedores.</p>
           <a href="https://wa.me/18182667038?text=Quiero%20informaci%C3%B3n%20sobre%20Taxes%20y%20Business%20Services"
@@ -203,7 +308,7 @@
         </article>
 
         <article class="service-card reveal" id="card-dmv">
-          <div class="service-card__icon" aria-hidden="true">🪪</div>
+          <div class="service-card__icon" aria-hidden="true"><svg class="site-icon"><use href="#icon-license"></use></svg></div>
           <h3 class="service-card__title">DMV / Document Support</h3>
           <p class="service-card__desc">Asistencia con trámites del DMV, registros vehiculares y apoyo con documentos. Te acompañamos paso a paso sin barreras de idioma.</p>
           <a href="https://wa.me/18182667038?text=Quiero%20informaci%C3%B3n%20sobre%20DMV%20y%20Document%20Support"
@@ -213,7 +318,7 @@
         </article>
 
         <article class="service-card reveal" id="card-negocio">
-          <div class="service-card__icon" aria-hidden="true">💼</div>
+          <div class="service-card__icon" aria-hidden="true"><svg class="site-icon"><use href="#icon-briefcase"></use></svg></div>
           <h3 class="service-card__title">Apoyo para Pequeños Negocios</h3>
           <p class="service-card__desc">Orientación financiera, estructura de negocio, acceso a recursos y acompañamiento para emprendedores que quieren crecer con bases sólidas.</p>
           <a href="https://wa.me/18182667038?text=Quiero%20informaci%C3%B3n%20sobre%20Apoyo%20para%20Peque%C3%B1os%20Negocios"
@@ -279,32 +384,32 @@
       </div>
       <div class="agent-grid" id="agent-grid">
         <div class="agent-benefit reveal" id="benefit-residual">
-          <div class="agent-benefit__icon" aria-hidden="true">01</div>
+          <div class="agent-benefit__icon" aria-hidden="true"><svg class="site-icon"><use href="#icon-growth"></use></svg></div>
           <h3 class="agent-benefit__title">Construye una cartera</h3>
           <p class="agent-benefit__desc">Aprende a servir clientes con seguimiento, renovaciones, referidos y relaciones sostenibles.</p>
         </div>
         <div class="agent-benefit reveal" id="benefit-flex">
-          <div class="agent-benefit__icon" aria-hidden="true">02</div>
+          <div class="agent-benefit__icon" aria-hidden="true"><svg class="site-icon"><use href="#icon-layers"></use></svg></div>
           <h3 class="agent-benefit__title">Desarrolla varias líneas</h3>
           <p class="agent-benefit__desc">Conecta seguros, taxes, ITIN, negocios y servicios empresariales según la necesidad real del cliente.</p>
         </div>
         <div class="agent-benefit reveal" id="benefit-train">
-          <div class="agent-benefit__icon" aria-hidden="true">03</div>
+          <div class="agent-benefit__icon" aria-hidden="true"><svg class="site-icon"><use href="#icon-training"></use></svg></div>
           <h3 class="agent-benefit__title">Entrenamiento y scripts</h3>
           <p class="agent-benefit__desc">Producto, ventas, cumplimiento, mensajes de WhatsApp y conversaciones consultivas.</p>
         </div>
         <div class="agent-benefit reveal" id="benefit-multi">
-          <div class="agent-benefit__icon" aria-hidden="true">04</div>
+          <div class="agent-benefit__icon" aria-hidden="true"><svg class="site-icon"><use href="#icon-dashboard"></use></svg></div>
           <h3 class="agent-benefit__title">Sistema de seguimiento</h3>
           <p class="agent-benefit__desc">CRM, etiquetas, recordatorios y campañas para no depender de memoria ni mensajes sueltos.</p>
         </div>
         <div class="agent-benefit reveal" id="benefit-soporte">
-          <div class="agent-benefit__icon" aria-hidden="true">05</div>
+          <div class="agent-benefit__icon" aria-hidden="true"><svg class="site-icon"><use href="#icon-network"></use></svg></div>
           <h3 class="agent-benefit__title">Crecimiento acompañado</h3>
           <p class="agent-benefit__desc">Mentoría, revisión de oportunidades y enfoque en hábitos comerciales consistentes.</p>
         </div>
         <div class="agent-benefit reveal" id="benefit-licencia">
-          <div class="agent-benefit__icon" aria-hidden="true">06</div>
+          <div class="agent-benefit__icon" aria-hidden="true"><svg class="site-icon"><use href="#icon-building"></use></svg></div>
           <h3 class="agent-benefit__title">Modelo duplicable</h3>
           <p class="agent-benefit__desc">Una ruta para pasar de productor a líder, equipo y eventualmente oficina multiservices.</p>
         </div>
@@ -333,32 +438,32 @@
       </div>
       <div class="system-grid" id="system-grid">
         <article class="system-item reveal">
-          <span class="system-item__icon">CRM</span>
+          <span class="system-item__icon" aria-hidden="true"><svg class="site-icon"><use href="#icon-dashboard"></use></svg></span>
           <h3>Pipeline de leads</h3>
           <p>Clientes, agentes y prospectos de oficina organizados por etapa, interés y próxima acción.</p>
         </article>
         <article class="system-item reveal">
-          <span class="system-item__icon">WA</span>
+          <span class="system-item__icon" aria-hidden="true"><svg class="site-icon"><use href="#icon-chat"></use></svg></span>
           <h3>WhatsApp follow-up</h3>
           <p>Mensajes por intención: consulta, agente u oficina, con seguimiento claro y humano.</p>
         </article>
         <article class="system-item reveal">
-          <span class="system-item__icon">MKT</span>
+          <span class="system-item__icon" aria-hidden="true"><svg class="site-icon"><use href="#icon-megaphone"></use></svg></span>
           <h3>Campañas locales</h3>
           <p>Temporadas de taxes, Medicare, salud, vida, auto y negocios con mensajes segmentados.</p>
         </article>
         <article class="system-item reveal">
-          <span class="system-item__icon">REF</span>
+          <span class="system-item__icon" aria-hidden="true"><svg class="site-icon"><use href="#icon-refresh"></use></svg></span>
           <h3>Referidos y renovaciones</h3>
           <p>Proceso para pedir reseñas, referidos, revisiones anuales y oportunidades cruzadas.</p>
         </article>
         <article class="system-item reveal">
-          <span class="system-item__icon">EDU</span>
+          <span class="system-item__icon" aria-hidden="true"><svg class="site-icon"><use href="#icon-training"></use></svg></span>
           <h3>Entrenamiento</h3>
           <p>Guías, scripts, sesiones y hábitos comerciales para agentes y equipos en crecimiento.</p>
         </article>
         <article class="system-item reveal">
-          <span class="system-item__icon">OPS</span>
+          <span class="system-item__icon" aria-hidden="true"><svg class="site-icon"><use href="#icon-operations"></use></svg></span>
           <h3>Procesos duplicables</h3>
           <p>Plantillas, checklist y estructura para futuras oficinas multiservices IZZY.</p>
         </article>
@@ -376,22 +481,22 @@
       </div>
       <div class="why-grid" id="why-grid">
         <div class="why-item reveal" id="why-bilingue">
-          <div class="why-item__icon" aria-hidden="true">🗣️</div>
+          <div class="why-item__icon" aria-hidden="true"><svg class="site-icon"><use href="#icon-language"></use></svg></div>
           <h3 class="why-item__title">100% Bilingüe</h3>
           <p>Atención completa en español e inglés. Explicamos los detalles sin barreras de idioma.</p>
         </div>
         <div class="why-item reveal" id="why-independiente">
-          <div class="why-item__icon" aria-hidden="true">⚖️</div>
+          <div class="why-item__icon" aria-hidden="true"><svg class="site-icon"><use href="#icon-scale"></use></svg></div>
           <h3 class="why-item__title">Agente Independiente</h3>
           <p>No estamos atados a una sola compañía. Buscamos la mejor opción del mercado para ti.</p>
         </div>
         <div class="why-item reveal" id="why-sin-costo">
-          <div class="why-item__icon" aria-hidden="true">📊</div>
+          <div class="why-item__icon" aria-hidden="true"><svg class="site-icon"><use href="#icon-dashboard"></use></svg></div>
           <h3 class="why-item__title">Mentalidad de Sistema</h3>
           <p>No improvisamos seguimiento. Organizamos leads, citas, renovaciones y oportunidades.</p>
         </div>
         <div class="why-item reveal" id="why-comunidad">
-          <div class="why-item__icon" aria-hidden="true">❤️</div>
+          <div class="why-item__icon" aria-hidden="true"><svg class="site-icon"><use href="#icon-heart-community"></use></svg></div>
           <h3 class="why-item__title">Enfocados en la Comunidad</h3>
           <p>Servimos principalmente a familias latinas y comunidades inmigrantes con empatía y respeto.</p>
         </div>
@@ -450,10 +555,10 @@
       <div class="footer__contact">
         <h4 class="footer__heading">Contacto</h4>
         <ul class="footer__list">
-          <li><a href="tel:8182667038" id="footer-tel">📞 (818) 266-7038</a></li>
-          <li><a href="https://wa.me/18182667038" target="_blank" rel="noopener" id="footer-wa">💬 WhatsApp</a></li>
-          <li><span>📍 California &amp; Florida</span></li>
-          <li><span>🕘 Lun-Sáb · Atención por cita</span></li>
+          <li><a href="tel:8182667038" id="footer-tel"><svg class="footer__icon" aria-hidden="true"><use href="#icon-phone"></use></svg>(818) 266-7038</a></li>
+          <li><a href="https://wa.me/18182667038" target="_blank" rel="noopener" id="footer-wa"><svg class="footer__icon" aria-hidden="true"><use href="#icon-chat"></use></svg>WhatsApp</a></li>
+          <li><span><svg class="footer__icon" aria-hidden="true"><use href="#icon-location"></use></svg>California &amp; Florida</span></li>
+          <li><span><svg class="footer__icon" aria-hidden="true"><use href="#icon-calendar"></use></svg>Lun-Sáb · Atención por cita</span></li>
         </ul>
       </div>
       <div class="footer__links">
