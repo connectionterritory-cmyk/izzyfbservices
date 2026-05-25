@@ -5,6 +5,7 @@
 
 (function () {
   'use strict';
+  const LEADS_WEBHOOK_URL = 'https://script.google.com/macros/s/AKfycbxSbryrhzhA58y5RoyY6bXXnagUE8WVFF5z0UDWDgMs7GXGrtQNvNXos-WoXzGJoKeNfQ/exec';
 
   /* ---- Sticky Header ---- */
   const header = document.getElementById('header');
@@ -84,6 +85,45 @@
     });
   });
 
+  /* ---- Hero intent switch ---- */
+  const intentButtons = document.querySelectorAll('.intent-switch__btn');
+  const heroPrimaryCta = document.getElementById('cta-whatsapp-hero');
+
+  if (intentButtons.length && heroPrimaryCta) {
+    const intentConfig = {
+      cliente: {
+        label: 'Empezar consulta',
+        href: 'https://wa.me/18182667038?text=Hola%2C%20quiero%20una%20consulta%20sobre%20los%20servicios%20de%20IZZY'
+      },
+      agente: {
+        label: 'Aplicar como agente',
+        href: 'https://wa.me/18182667038?text=Hola%2C%20quiero%20informaci%C3%B3n%20sobre%20la%20oportunidad%20para%20agentes'
+      },
+      oficina: {
+        label: 'Abrir mi oficina IZZY',
+        href: 'https://wa.me/18182667038?text=Hola%2C%20quiero%20conocer%20el%20modelo%20para%20abrir%20una%20oficina%20IZZY'
+      }
+    };
+
+    intentButtons.forEach((button) => {
+      button.addEventListener('click', () => {
+        const { intent } = button.dataset;
+        const config = intentConfig[intent];
+        if (!config) return;
+
+        intentButtons.forEach((btn) => {
+          btn.classList.remove('is-active');
+          btn.setAttribute('aria-selected', 'false');
+        });
+
+        button.classList.add('is-active');
+        button.setAttribute('aria-selected', 'true');
+        heroPrimaryCta.href = config.href;
+        heroPrimaryCta.lastChild.textContent = ` ${config.label}`;
+      });
+    });
+  }
+
   /* ---- Active Nav Link Highlighting ---- */
   const sections = document.querySelectorAll('section[id]');
   const navLinks  = document.querySelectorAll('.nav__link[href^="#"]');
@@ -117,5 +157,61 @@
       link.style.transform = '';
     }, { passive: true });
   });
+
+  /* ---- Lead form to WhatsApp ---- */
+  const leadForm = document.getElementById('lead-form');
+  const leadStatus = document.getElementById('lead-form-status');
+  if (leadForm) {
+    leadForm.addEventListener('submit', async (e) => {
+      e.preventDefault();
+      const name = document.getElementById('lead-name')?.value.trim();
+      const phone = document.getElementById('lead-phone')?.value.trim();
+      const intent = document.getElementById('lead-intent')?.value;
+      const state = document.getElementById('lead-state')?.value;
+
+      if (!name || !phone || !intent || !state) return;
+
+      const payload = {
+        createdAt: new Date().toISOString(),
+        source: 'Landing IZZY',
+        name,
+        phone,
+        intent,
+        state
+      };
+
+      const setStatus = (msg) => {
+        if (leadStatus) leadStatus.textContent = msg;
+      };
+
+      let savedToSheet = false;
+      if (LEADS_WEBHOOK_URL) {
+        setStatus('Guardando lead...');
+        try {
+          const response = await fetch(LEADS_WEBHOOK_URL, {
+            method: 'POST',
+            headers: { 'Content-Type': 'text/plain;charset=utf-8' },
+            body: JSON.stringify(payload)
+          });
+          savedToSheet = response.ok;
+        } catch (error) {
+          savedToSheet = false;
+        }
+      }
+
+      const text = [
+        'Hola, quiero una consulta.',
+        `Nombre: ${payload.name}`,
+        `Teléfono: ${payload.phone}`,
+        `Intención: ${payload.intent}`,
+        `Estado: ${payload.state}`
+      ].join('\n');
+
+      const whatsappUrl = `https://wa.me/18182667038?text=${encodeURIComponent(text)}`;
+      window.open(whatsappUrl, '_blank', 'noopener');
+      setStatus(savedToSheet ? 'Lead guardado en Google Sheets y enviado por WhatsApp.' : 'Enviado por WhatsApp. Para guardar en Sheets, conecta el webhook.');
+      leadForm.reset();
+    });
+  }
 
 })();

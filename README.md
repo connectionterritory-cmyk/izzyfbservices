@@ -60,6 +60,16 @@ Landing page profesional, bilingüe y responsiva para IZZY Financial & Business 
 Busca `18182667038` en `index.html` y reemplaza con el número nuevo (formato internacional sin `+`).  
 Busca `8182667038` para los links `tel:`.
 
+### Conectar leads a Google Sheets
+1. Crea una hoja de cálculo en Google Sheets.
+2. Ve a `Extensiones > Apps Script`.
+3. Pega el contenido de [google-apps-script.gs](/Users/connectionworldwidemoisescaicedo/Desktop/izzy%20Financial%20Business%20Services/google-apps-script.gs).
+4. `Deploy > New deployment > Web app`.
+5. Ejecutar como: `Me`; Acceso: `Anyone`.
+6. Copia la URL del Web App.
+7. En [script.js](/Users/connectionworldwidemoisescaicedo/Desktop/izzy%20Financial%20Business%20Services/script.js), pega esa URL en `LEADS_WEBHOOK_URL`.
+8. Publica cambios en GitHub Pages.
+
 ### Cambiar textos
 Edita directamente en `index.html` — los textos están en español y son fáciles de localizar.
 

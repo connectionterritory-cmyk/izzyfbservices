@@ -15,7 +15,7 @@
   <meta property="og:url" content="https://connectionterritory-cmyk.github.io/izzyfbservices/" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Space+Grotesk:wght@600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
@@ -129,17 +129,17 @@
   <header class="header" id="header">
     <div class="container header__inner">
       <a href="#inicio" class="logo" id="logo-link">
-        <span class="logo__mark">
-          <img src="assets/izzy-eagle-logo.png" alt="" width="44" height="44" />
+        <span class="logo__mark logo__mark--header">
+          <img src="assets/izzy-eagle-logo.png" alt="Logo de IZZY" width="48" height="48" />
         </span>
         <span class="logo__text">IZZY Financial<br><em>& Business Services</em></span>
       </a>
       <nav class="nav" id="main-nav" aria-label="Navegación principal">
         <ul class="nav__list">
-          <li><a href="#servicios" class="nav__link" id="nav-servicios">Servicios</a></li>
-          <li><a href="#modelo" class="nav__link" id="nav-modelo">Modelo</a></li>
+          <li><a href="#servicios" class="nav__link" id="nav-servicios">Seguros</a></li>
+          <li><a href="#servicios" class="nav__link" id="nav-modelo">Taxes &amp; ITIN</a></li>
           <li><a href="#agentes" class="nav__link" id="nav-agentes">Agentes</a></li>
-          <li><a href="#sistema" class="nav__link" id="nav-sistema">Sistema</a></li>
+          <li><a href="#modelo" class="nav__link" id="nav-sistema">Oficinas</a></li>
           <li><a href="#contacto" class="nav__link nav__link--cta" id="nav-contacto">Contáctanos</a></li>
         </ul>
       </nav>
@@ -157,28 +157,33 @@
       <div class="shape shape--3"></div>
     </div>
     <div class="container hero__content">
-      <div class="hero__badge reveal" id="hero-badge">Plataforma hispana de crecimiento</div>
+      <div class="hero__badge reveal" id="hero-badge">Launchpad financiero para la comunidad hispana</div>
       <h1 class="hero__title reveal" id="hero-title">
-        Protección, servicios y oportunidad<br>
-        <span class="gradient-text">para la comunidad hispana.</span>
+        Todo lo que necesitas para<br>
+        <span class="gradient-text">proteger, organizar y crecer.</span>
       </h1>
       <p class="hero__subtitle reveal" id="hero-subtitle">
-        En IZZY ayudamos a familias, emprendedores y agentes a crecer con seguros, taxes, ITIN, registro de negocios y un modelo multiservices moderno.
+        Seguros, taxes, ITIN, negocio y crecimiento profesional con una sola plataforma y seguimiento real.
       </p>
+      <div class="intent-switch reveal" id="intent-switch" role="tablist" aria-label="Elige tu intención">
+        <button class="intent-switch__btn is-active" data-intent="cliente" role="tab" aria-selected="true">Soy cliente</button>
+        <button class="intent-switch__btn" data-intent="agente" role="tab" aria-selected="false">Soy agente</button>
+        <button class="intent-switch__btn" data-intent="oficina" role="tab" aria-selected="false">Quiero oficina</button>
+      </div>
       <div class="hero__ctas reveal" id="hero-ctas">
         <a href="https://wa.me/18182667038?text=Hola%2C%20quiero%20una%20consulta%20sobre%20los%20servicios%20de%20IZZY"
            class="btn btn--primary" id="cta-whatsapp-hero" target="_blank" rel="noopener">
           <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
-          Quiero una consulta
+          Empezar consulta
         </a>
         <a href="https://wa.me/18182667038?text=Hola%2C%20quiero%20informaci%C3%B3n%20sobre%20la%20oportunidad%20para%20agentes"
            class="btn btn--secondary" id="cta-agent-hero" target="_blank" rel="noopener">
           <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20" aria-hidden="true"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
-          Quiero ser agente
+          Ver todos los servicios
         </a>
         <a href="https://wa.me/18182667038?text=Hola%2C%20quiero%20conocer%20el%20modelo%20para%20abrir%20una%20oficina%20IZZY"
            class="btn btn--outline-white" id="cta-office-hero" target="_blank" rel="noopener">
-          Abrir mi oficina IZZY
+          Hablar con un asesor
         </a>
       </div>
       <div class="trust-strip reveal" id="trust-strip" aria-label="Señales de confianza">
@@ -207,6 +212,18 @@
     </div>
     <div class="hero__scroll-hint" aria-hidden="true">
       <div class="scroll-arrow"></div>
+    </div>
+  </section>
+
+  <!-- ===== CATEGORÍAS PRINCIPALES ===== -->
+  <section class="section section--category" id="categorias">
+    <div class="container">
+      <div class="category-strip reveal">
+        <a href="#servicios" class="category-chip">Seguros personales y comerciales</a>
+        <a href="#servicios" class="category-chip">Taxes, ITIN y documentos</a>
+        <a href="#agentes" class="category-chip">Ruta para agentes</a>
+        <a href="#modelo" class="category-chip">Modelo de oficina multiservices</a>
+      </div>
     </div>
   </section>
 
@@ -249,12 +266,17 @@
         <h2 class="section__title">Servicios que ayudan a <span class="gradient-text">proteger, organizar y crecer</span></h2>
         <p class="section__desc">Reunimos protección, trámites y soporte empresarial para servir mejor a cada familia, cliente y emprendedor.</p>
       </div>
+      <div class="services-topbar reveal">
+        <span class="services-pill">Atención bilingüe</span>
+        <span class="services-pill">California &amp; Florida</span>
+        <span class="services-pill">Consulta inicial sin costo</span>
+      </div>
       <div class="services-grid" id="services-grid">
 
         <article class="service-card reveal" id="card-auto">
           <div class="service-card__icon" aria-hidden="true"><svg class="site-icon"><use href="#icon-auto"></use></svg></div>
           <h3 class="service-card__title">Seguro de Auto</h3>
-          <p class="service-card__desc">Cobertura de responsabilidad, colisión y comprensiva para autos personales y comerciales. Comparamos opciones disponibles para ayudarte a encontrar una cobertura competitiva.</p>
+          <p class="service-card__desc">Cobertura personal y comercial con comparación de opciones para elegir con claridad.</p>
           <a href="https://wa.me/18182667038?text=Quiero%20informaci%C3%B3n%20sobre%20Seguro%20de%20Auto"
              class="service-card__link" id="link-auto" target="_blank" rel="noopener">
             Consulta gratis →
@@ -264,7 +286,7 @@
         <article class="service-card reveal" id="card-vida">
           <div class="service-card__icon" aria-hidden="true"><svg class="site-icon"><use href="#icon-shield-family"></use></svg></div>
           <h3 class="service-card__title">Seguro de Vida</h3>
-          <p class="service-card__desc">Pólizas de vida completas — término, vida entera e IUL. Protege a tu familia y construye un legado financiero sólido.</p>
+          <p class="service-card__desc">Opciones de término, vida entera e IUL para proteger a tu familia y tu legado.</p>
           <a href="https://wa.me/18182667038?text=Quiero%20informaci%C3%B3n%20sobre%20Seguro%20de%20Vida"
              class="service-card__link" id="link-vida" target="_blank" rel="noopener">
             Consulta gratis →
@@ -274,7 +296,7 @@
         <article class="service-card reveal" id="card-salud">
           <div class="service-card__icon" aria-hidden="true"><svg class="site-icon"><use href="#icon-medical-cross"></use></svg></div>
           <h3 class="service-card__title">Seguro de Salud</h3>
-          <p class="service-card__desc">Planes del Mercado, ACA y cobertura suplementaria para individuos y familias. Te guiamos para encontrar la opción a tu presupuesto.</p>
+          <p class="service-card__desc">Planes ACA y suplementarios con acompañamiento para encontrar el mejor ajuste.</p>
           <a href="https://wa.me/18182667038?text=Quiero%20informaci%C3%B3n%20sobre%20Seguro%20de%20Salud"
              class="service-card__link" id="link-salud" target="_blank" rel="noopener">
             Consulta gratis →
@@ -284,7 +306,7 @@
         <article class="service-card reveal" id="card-medicare">
           <div class="service-card__icon" aria-hidden="true"><svg class="site-icon"><use href="#icon-medical-shield"></use></svg></div>
           <h3 class="service-card__title">Medicare / Health Plans</h3>
-          <p class="service-card__desc">Asesoría en Medicare Advantage, Medigap y Parte D. Si calificas, te ayudamos a revisar beneficios, costos y elegibilidad con explicación clara.</p>
+          <p class="service-card__desc">Asesoría en Advantage, Medigap y Parte D con explicación simple de costos y beneficios.</p>
           <a href="https://wa.me/18182667038?text=Quiero%20informaci%C3%B3n%20sobre%20Medicare"
              class="service-card__link" id="link-medicare" target="_blank" rel="noopener">
             Consulta gratis →
@@ -294,7 +316,7 @@
         <article class="service-card reveal" id="card-comercial">
           <div class="service-card__icon" aria-hidden="true"><svg class="site-icon"><use href="#icon-building"></use></svg></div>
           <h3 class="service-card__title">Seguro Comercial</h3>
-          <p class="service-card__desc">Pólizas de responsabilidad general, propiedad comercial y más para proteger tu negocio ante imprevistos y reclamaciones.</p>
+          <p class="service-card__desc">Responsabilidad general, propiedad comercial y coberturas clave para operar con tranquilidad.</p>
           <a href="https://wa.me/18182667038?text=Quiero%20informaci%C3%B3n%20sobre%20Seguro%20Comercial"
              class="service-card__link" id="link-comercial" target="_blank" rel="noopener">
             Consulta gratis →
@@ -304,7 +326,7 @@
         <article class="service-card reveal" id="card-taxes">
           <div class="service-card__icon" aria-hidden="true"><svg class="site-icon"><use href="#icon-document"></use></svg></div>
           <h3 class="service-card__title">Taxes, ITIN &amp; Registro de Negocios</h3>
-          <p class="service-card__desc">Preparación de impuestos personales y comerciales, ITIN, registro de negocios y servicios de nómina para emprendedores.</p>
+          <p class="service-card__desc">Impuestos personales/comerciales, ITIN, registro y nómina en una sola ruta de servicio.</p>
           <a href="https://wa.me/18182667038?text=Quiero%20informaci%C3%B3n%20sobre%20Taxes%20y%20Business%20Services"
              class="service-card__link" id="link-taxes" target="_blank" rel="noopener">
             Consulta gratis →
@@ -314,7 +336,7 @@
         <article class="service-card reveal" id="card-dmv">
           <div class="service-card__icon" aria-hidden="true"><svg class="site-icon"><use href="#icon-license"></use></svg></div>
           <h3 class="service-card__title">DMV / Document Support</h3>
-          <p class="service-card__desc">Asistencia con trámites del DMV, registros vehiculares y apoyo con documentos. Te acompañamos paso a paso sin barreras de idioma.</p>
+          <p class="service-card__desc">Apoyo en trámites DMV y documentos con guía paso a paso, sin barrera de idioma.</p>
           <a href="https://wa.me/18182667038?text=Quiero%20informaci%C3%B3n%20sobre%20DMV%20y%20Document%20Support"
              class="service-card__link" id="link-dmv" target="_blank" rel="noopener">
             Consulta gratis →
@@ -324,7 +346,7 @@
         <article class="service-card reveal" id="card-negocio">
           <div class="service-card__icon" aria-hidden="true"><svg class="site-icon"><use href="#icon-briefcase"></use></svg></div>
           <h3 class="service-card__title">Apoyo para Pequeños Negocios</h3>
-          <p class="service-card__desc">Orientación financiera, estructura de negocio, acceso a recursos y acompañamiento para emprendedores que quieren crecer con bases sólidas.</p>
+          <p class="service-card__desc">Estructura, orientación financiera y soporte práctico para emprender con base sólida.</p>
           <a href="https://wa.me/18182667038?text=Quiero%20informaci%C3%B3n%20sobre%20Apoyo%20para%20Peque%C3%B1os%20Negocios"
              class="service-card__link" id="link-negocio" target="_blank" rel="noopener">
             Consulta gratis →
@@ -508,6 +530,37 @@
     </div>
   </section>
 
+  <!-- ===== PRUEBA SOCIAL ===== -->
+  <section class="section section--accent" id="resultados">
+    <div class="container">
+      <div class="section__header reveal">
+        <span class="section__eyebrow">Base de confianza</span>
+        <h2 class="section__title">Estamos en fase de <span class="gradient-text">lanzamiento</span></h2>
+        <p class="section__desc">Todavía no publicamos métricas numéricas. Preferimos transparencia total mientras construimos resultados medibles.</p>
+      </div>
+      <div class="proof-metrics reveal">
+        <article class="proof-metric"><strong>Atención bilingüe</strong><span>Español e inglés</span></article>
+        <article class="proof-metric"><strong>Cobertura activa</strong><span>California y Florida</span></article>
+        <article class="proof-metric"><strong>Consulta inicial</strong><span>Orientación clara por WhatsApp o llamada</span></article>
+        <article class="proof-metric"><strong>Seguimiento</strong><span>Proceso paso a paso por intención</span></article>
+      </div>
+      <div class="testimonial-grid">
+        <article class="testimonial-card reveal">
+          <p>Persona que busca resolver seguro + taxes en un solo lugar, con explicación simple y acompañamiento en español.</p>
+          <span>Caso tipo · Cliente</span>
+        </article>
+        <article class="testimonial-card reveal">
+          <p>Agente que empieza con una línea y evoluciona a una operación con seguimiento, cartera y servicios complementarios.</p>
+          <span>Caso tipo · Agente</span>
+        </article>
+        <article class="testimonial-card reveal">
+          <p>Emprendedor que quiere abrir oficina multiservices con estructura comercial, procesos y soporte operativo.</p>
+          <span>Caso tipo · Oficina</span>
+        </article>
+      </div>
+    </div>
+  </section>
+
   <!-- ===== CTA FINAL ===== -->
   <section class="section cta-section" id="contacto">
     <div class="container">
@@ -531,7 +584,7 @@
             <strong>Modelo multiservices duplicable</strong>
           </a>
         </div>
-        <div class="cta-box__btns">
+      <div class="cta-box__btns">
           <a href="https://wa.me/18182667038?text=Hola%2C%20quiero%20una%20consulta%20gratuita"
              class="btn btn--primary btn--lg" id="cta-whatsapp-final" target="_blank" rel="noopener">
             <svg viewBox="0 0 24 24" fill="currentColor" width="22" height="22" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
@@ -542,6 +595,37 @@
             Llamar Ahora
           </a>
         </div>
+        <form class="lead-form" id="lead-form" aria-label="Formulario de contacto inicial">
+          <h3 class="lead-form__title">Cuéntanos qué necesitas</h3>
+          <div class="lead-form__grid">
+            <label class="lead-form__field">
+              <span>Nombre</span>
+              <input type="text" id="lead-name" name="name" placeholder="Tu nombre" required />
+            </label>
+            <label class="lead-form__field">
+              <span>Teléfono</span>
+              <input type="tel" id="lead-phone" name="phone" placeholder="(000) 000-0000" required />
+            </label>
+            <label class="lead-form__field">
+              <span>Intención</span>
+              <select id="lead-intent" name="intent" required>
+                <option value="Cliente">Soy cliente</option>
+                <option value="Agente">Soy agente</option>
+                <option value="Oficina">Quiero oficina</option>
+              </select>
+            </label>
+            <label class="lead-form__field">
+              <span>Estado</span>
+              <select id="lead-state" name="state" required>
+                <option value="California">California</option>
+                <option value="Florida">Florida</option>
+                <option value="Otro">Otro</option>
+              </select>
+            </label>
+          </div>
+          <button type="submit" class="btn btn--primary lead-form__submit">Enviar por WhatsApp</button>
+          <p class="lead-form__status" id="lead-form-status" role="status" aria-live="polite"></p>
+        </form>
       </div>
     </div>
   </section>
@@ -551,12 +635,32 @@
     <div class="container footer__inner">
       <div class="footer__brand">
         <a href="#inicio" class="logo logo--footer" id="footer-logo">
-          <span class="logo__mark">
-            <img src="assets/izzy-eagle-logo.png" alt="" width="44" height="44" />
+          <span class="logo__mark logo__mark--footer">
+            <img src="assets/izzy-eagle-logo.png" alt="Logo de IZZY" width="42" height="42" />
           </span>
           <span class="logo__text">IZZY Financial<br><em>& Business Services</em></span>
         </a>
         <p class="footer__tagline">Protegiendo familias, construyendo futuros.</p>
+      </div>
+      <div class="footer__products">
+        <h4 class="footer__heading">Plataforma</h4>
+        <ul class="footer__list">
+          <li><a href="#servicios" id="footer-services">Servicios</a></li>
+          <li><a href="#agentes" id="footer-agents">Ruta para agentes</a></li>
+          <li><a href="#modelo" id="footer-office">Modelo para oficinas</a></li>
+          <li><a href="#sistema" id="footer-system">Sistema IZZY</a></li>
+        </ul>
+      </div>
+      <div class="footer__links">
+        <h4 class="footer__heading">Servicios clave</h4>
+        <ul class="footer__list">
+          <li><a href="#servicios" id="footer-auto">Seguro de Auto</a></li>
+          <li><a href="#servicios" id="footer-life">Seguro de Vida</a></li>
+          <li><a href="#servicios" id="footer-health">Seguro de Salud</a></li>
+          <li><a href="#servicios" id="footer-medicare">Medicare / Health Plans</a></li>
+          <li><a href="#servicios" id="footer-comercial">Seguro Comercial</a></li>
+          <li><a href="#servicios" id="footer-taxes">Taxes, ITIN &amp; Registro</a></li>
+        </ul>
       </div>
       <div class="footer__contact">
         <h4 class="footer__heading">Contacto</h4>
@@ -565,21 +669,6 @@
           <li><a href="https://wa.me/18182667038" target="_blank" rel="noopener" id="footer-wa"><svg class="footer__icon" aria-hidden="true"><use href="#icon-chat"></use></svg>WhatsApp</a></li>
           <li><span><svg class="footer__icon" aria-hidden="true"><use href="#icon-location"></use></svg>California &amp; Florida</span></li>
           <li><span><svg class="footer__icon" aria-hidden="true"><use href="#icon-calendar"></use></svg>Lun-Sáb · Atención por cita</span></li>
-        </ul>
-      </div>
-      <div class="footer__links">
-        <h4 class="footer__heading">Servicios</h4>
-        <ul class="footer__list">
-          <li><a href="#servicios" id="footer-auto">Seguro de Auto</a></li>
-          <li><a href="#modelo" id="footer-model">Modelo Multiservices</a></li>
-          <li><a href="#sistema" id="footer-system">Sistema IZZY</a></li>
-          <li><a href="#servicios" id="footer-life">Seguro de Vida</a></li>
-          <li><a href="#servicios" id="footer-health">Seguro de Salud</a></li>
-          <li><a href="#servicios" id="footer-medicare">Medicare / Health Plans</a></li>
-          <li><a href="#servicios" id="footer-comercial">Seguro Comercial</a></li>
-          <li><a href="#servicios" id="footer-taxes">Taxes, ITIN &amp; Registro de Negocios</a></li>
-          <li><a href="#servicios" id="footer-dmv">DMV / Document Support</a></li>
-          <li><a href="#agentes" id="footer-agents">Oportunidad de Agente</a></li>
         </ul>
       </div>
     </div>
@@ -593,5 +682,8 @@
   </footer>
 
   <script src="script.js"></script>
+  <a href="https://wa.me/18182667038?text=Hola%2C%20quiero%20una%20consulta%20gratuita" class="mobile-sticky-cta" target="_blank" rel="noopener" aria-label="Abrir WhatsApp">
+    WhatsApp
+  </a>
 </body>
 </html>
