@@ -21,6 +21,14 @@
       visualEyebrow: 'Atención real, imagen profesional',
       visualTitle: 'Una experiencia <span class="gradient-text">moderna y confiable</span>',
       visualDesc: 'Combinamos asesoría humana, estructura operativa y acompañamiento bilingüe para familias, agentes y emprendedores.',
+      visualCards: {
+        titles: ['Asesoría clara', 'Crecimiento estructurado', 'Resultados con seguimiento'],
+        descs: [
+          'Orientación paso a paso en seguros, taxes e ITIN.',
+          'Modelo serio para agentes y oficinas multiservices.',
+          'Procesos, CRM y acompañamiento continuo para avanzar.'
+        ]
+      },
       categories: ['Seguros personales y comerciales', 'Taxes, ITIN y documentos', 'Ruta para agentes', 'Modelo de oficina multiservices'],
       caminos: {
         eyebrow: 'Elige tu camino',
@@ -164,6 +172,14 @@
       visualEyebrow: 'Real service, professional image',
       visualTitle: 'A <span class="gradient-text">modern and trusted</span> experience',
       visualDesc: 'We combine human guidance, operational structure, and bilingual support for families, agents, and entrepreneurs.',
+      visualCards: {
+        titles: ['Clear guidance', 'Structured growth', 'Results with follow-up'],
+        descs: [
+          'Step-by-step guidance for insurance, taxes, and ITIN.',
+          'A serious model for agents and multi-services offices.',
+          'Processes, CRM, and ongoing support to move forward.'
+        ]
+      },
       categories: ['Personal and commercial insurance', 'Taxes, ITIN, and documents', 'Agent pathway', 'Multi-services office model'],
       caminos: {
         eyebrow: 'Choose your path',
@@ -349,6 +365,8 @@
     setText('#visual-story .section__eyebrow', L.visualEyebrow);
     setText('#visual-story .section__title', L.visualTitle, true);
     setText('#visual-story .section__desc', L.visualDesc);
+    setListText('#visual-story .visual-card__overlay h3', L.visualCards.titles);
+    setListText('#visual-story .visual-card__overlay p', L.visualCards.descs);
     setListText('#categorias .category-chip', L.categories);
 
     setText('#caminos .section__eyebrow', L.caminos.eyebrow);
@@ -612,7 +630,7 @@
       let isValid = field.checkValidity();
       if (fieldConfig.id === 'lead-phone') {
         const normalized = (field.value || '').replace(/\D/g, '');
-        isValid = normalized.length >= 10;
+        isValid = normalized.length >= 10 && normalized.length <= 15;
       }
 
       field.setAttribute('aria-invalid', isValid ? 'false' : 'true');
@@ -630,8 +648,10 @@
       field.setAttribute('aria-invalid', 'false');
     });
 
+    let isSubmitting = false;
     leadForm.addEventListener('submit', async (e) => {
       e.preventDefault();
+      if (isSubmitting) return;
 
       const allValid = formFields.every(validateField);
       if (!allValid) {
@@ -641,8 +661,12 @@
 
       const name = document.getElementById('lead-name')?.value.trim();
       const phone = document.getElementById('lead-phone')?.value.trim();
-      const intent = document.getElementById('lead-intent')?.value;
-      const state = document.getElementById('lead-state')?.value;
+      const intentSelect = document.getElementById('lead-intent');
+      const stateSelect = document.getElementById('lead-state');
+      const intent = intentSelect?.value;
+      const state = stateSelect?.value;
+      const intentLabel = intentSelect?.options[intentSelect.selectedIndex]?.text || intent;
+      const stateLabel = stateSelect?.options[stateSelect.selectedIndex]?.text || state;
 
       if (!name || !phone || !intent || !state) return;
 
@@ -651,9 +675,15 @@
         source: 'Landing IZZY',
         name,
         phone,
-        intent,
-        state
+        intent: intentLabel,
+        state: stateLabel
       };
+
+      const submitBtn = leadForm.querySelector('.lead-form__submit');
+      isSubmitting = true;
+      if (submitBtn) submitBtn.disabled = true;
+
+      const waPopup = window.open('', '_blank', 'noopener');
 
       let savedToSheet = false;
       if (LEADS_WEBHOOK_URL) {
@@ -679,7 +709,12 @@
         `${i18nWa.fields.state}: ${payload.state}`
       ].join('\n');
 
-      window.open(waLink(text), '_blank', 'noopener');
+      const waUrl = waLink(text);
+      if (waPopup) {
+        waPopup.location.href = waUrl;
+      } else {
+        window.location.href = waUrl;
+      }
       setStatus(savedToSheet ? t[currentLang].validation.ok : t[currentLang].validation.fail, savedToSheet ? 'is-success' : 'is-error');
 
       leadForm.reset();
@@ -689,6 +724,8 @@
         if (field) field.setAttribute('aria-invalid', 'false');
         if (errorEl) errorEl.textContent = '';
       });
+      isSubmitting = false;
+      if (submitBtn) submitBtn.disabled = false;
     });
   }
 
