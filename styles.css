@@ -144,6 +144,7 @@ button { font: inherit; border: none; background: none; cursor: pointer; }
   align-items: center;
   gap: .7rem;
   text-decoration: none;
+  transition: gap var(--transition);
 }
 .logo__mark {
   position: relative;
@@ -158,6 +159,7 @@ button { font: inherit; border: none; background: none; cursor: pointer; }
   flex-shrink: 0;
   overflow: hidden;
   box-shadow: 0 6px 16px rgba(0,0,0,.24);
+  transition: width var(--transition), height var(--transition), border-radius var(--transition), box-shadow var(--transition), background var(--transition), border-color var(--transition);
 }
 .logo__mark::before {
   content: '';
@@ -195,11 +197,32 @@ button { font: inherit; border: none; background: none; cursor: pointer; }
   letter-spacing: .01em;
   text-transform: none;
   white-space: nowrap;
+  transition: font-size var(--transition), letter-spacing var(--transition), opacity var(--transition);
 }
 .logo__text em {
   font-style: normal;
   color: rgba(255,255,255,.72);
   font-weight: 500;
+  transition: opacity var(--transition);
+}
+
+.header.scrolled .logo {
+  gap: .58rem;
+}
+.header.scrolled .logo__mark {
+  width: 42px;
+  height: 42px;
+  border-radius: 12px;
+  border-color: rgba(255,255,255,.12);
+  background: rgba(255,255,255,.03);
+  box-shadow: 0 4px 12px rgba(0,0,0,.22);
+}
+.header.scrolled .logo__text {
+  font-size: .93rem;
+  letter-spacing: 0;
+}
+.header.scrolled .logo__text em {
+  opacity: .65;
 }
 
 /* Nav */
@@ -1264,6 +1287,9 @@ button { font: inherit; border: none; background: none; cursor: pointer; }
     max-width: 165px;
     white-space: normal;
     line-height: 1.2;
+  }
+  .header.scrolled .logo__text {
+    font-size: .76rem;
   }
 
   /* Mobile nav */
