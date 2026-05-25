@@ -162,8 +162,53 @@
   const leadForm = document.getElementById('lead-form');
   const leadStatus = document.getElementById('lead-form-status');
   if (leadForm) {
+    const formFields = [
+      { id: 'lead-name', message: 'Ingresa tu nombre.' },
+      { id: 'lead-phone', message: 'Ingresa un teléfono válido (mínimo 10 dígitos).' },
+      { id: 'lead-intent', message: 'Selecciona tu intención.' },
+      { id: 'lead-state', message: 'Selecciona tu estado.' }
+    ];
+
+    const setStatus = (msg, type = '') => {
+      if (!leadStatus) return;
+      leadStatus.textContent = msg;
+      leadStatus.classList.remove('is-error', 'is-success');
+      if (type) leadStatus.classList.add(type);
+    };
+
+    const validateField = (fieldConfig) => {
+      const field = document.getElementById(fieldConfig.id);
+      const errorEl = document.getElementById(`${fieldConfig.id}-error`);
+      if (!field) return true;
+
+      let isValid = field.checkValidity();
+      if (fieldConfig.id === 'lead-phone') {
+        const normalized = (field.value || '').replace(/\D/g, '');
+        isValid = normalized.length >= 10;
+      }
+
+      field.setAttribute('aria-invalid', isValid ? 'false' : 'true');
+      if (errorEl) errorEl.textContent = isValid ? '' : fieldConfig.message;
+      return isValid;
+    };
+
+    formFields.forEach((fieldConfig) => {
+      const field = document.getElementById(fieldConfig.id);
+      if (!field) return;
+      field.addEventListener('input', () => validateField(fieldConfig));
+      field.addEventListener('change', () => validateField(fieldConfig));
+      field.setAttribute('aria-invalid', 'false');
+    });
+
     leadForm.addEventListener('submit', async (e) => {
       e.preventDefault();
+
+      const allValid = formFields.every(validateField);
+      if (!allValid) {
+        setStatus('Revisa los campos marcados antes de enviar.', 'is-error');
+        return;
+      }
+
       const name = document.getElementById('lead-name')?.value.trim();
       const phone = document.getElementById('lead-phone')?.value.trim();
       const intent = document.getElementById('lead-intent')?.value;
@@ -180,13 +225,9 @@
         state
       };
 
-      const setStatus = (msg) => {
-        if (leadStatus) leadStatus.textContent = msg;
-      };
-
       let savedToSheet = false;
       if (LEADS_WEBHOOK_URL) {
-        setStatus('Guardando lead...');
+        setStatus('Guardando lead...', '');
         try {
           const response = await fetch(LEADS_WEBHOOK_URL, {
             method: 'POST',
@@ -209,8 +250,19 @@
 
       const whatsappUrl = `https://wa.me/18182667038?text=${encodeURIComponent(text)}`;
       window.open(whatsappUrl, '_blank', 'noopener');
-      setStatus(savedToSheet ? 'Lead guardado en Google Sheets y enviado por WhatsApp.' : 'Enviado por WhatsApp. Para guardar en Sheets, conecta el webhook.');
+      setStatus(
+        savedToSheet
+          ? 'Listo: lead guardado en Google Sheets y enviado por WhatsApp.'
+          : 'Enviado por WhatsApp. No se pudo confirmar guardado en Sheets.',
+        savedToSheet ? 'is-success' : 'is-error'
+      );
       leadForm.reset();
+      formFields.forEach(({ id }) => {
+        const field = document.getElementById(id);
+        const errorEl = document.getElementById(`${id}-error`);
+        if (field) field.setAttribute('aria-invalid', 'false');
+        if (errorEl) errorEl.textContent = '';
+      });
     });
   }
 

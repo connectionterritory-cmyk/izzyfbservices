@@ -1561,9 +1561,13 @@ button { font: inherit; border: none; background: none; cursor: pointer; }
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 1.35rem;
   flex-shrink: 0;
-  line-height: 1;
+  color: rgba(255,255,255,.92);
+}
+.hero-card__svc-emoji .site-icon {
+  width: 21px;
+  height: 21px;
+  stroke-width: 1.85;
 }
 
 .hero-card__svc-info { display: flex; flex-direction: column; min-width: 0; }
@@ -1618,6 +1622,9 @@ button { font: inherit; border: none; background: none; cursor: pointer; }
 /* Floating location badges */
 .hero-float {
   position: absolute;
+  display: inline-flex;
+  align-items: center;
+  gap: .38rem;
   background: rgba(255,255,255,.12);
   border: 1px solid rgba(255,255,255,.22);
   border-radius: 999px;
@@ -1630,11 +1637,16 @@ button { font: inherit; border: none; background: none; cursor: pointer; }
   white-space: nowrap;
   z-index: 2;
 }
+.hero-float .site-icon {
+  width: 14px;
+  height: 14px;
+  stroke-width: 2;
+}
 .hero-float--ca { top: -1.25rem; right: -.75rem; }
 .hero-float--fl { bottom: -1.25rem; left: -.75rem; }
 
 /* ============================================================
-   SERVICE CARDS — emoji icons + color coding
+   SERVICE CARDS — icon color coding
    ============================================================ */
 
 /* Color variables per service (nth-child order) */
@@ -1647,7 +1659,6 @@ button { font: inherit; border: none; background: none; cursor: pointer; }
 .services-grid .service-card:nth-child(7) { --svc-color: #b45309; --svc-bg: #fffbeb; }
 .services-grid .service-card:nth-child(8) { --svc-color: #15803d; --svc-bg: #f0fdf4; }
 
-/* Emoji icon container — bigger and colorful */
 .service-card__icon {
   width: 68px;
   height: 68px;
@@ -1657,15 +1668,19 @@ button { font: inherit; border: none; background: none; cursor: pointer; }
   justify-content: center;
   border-radius: 20px;
   background: var(--svc-bg, rgba(10,25,47,.045));
-  border: 2px solid color-mix(in srgb, var(--svc-color, #0a192f) 18%, transparent);
-  font-size: 2rem;
-  line-height: 1;
+  border: 1.5px solid color-mix(in srgb, var(--svc-color, #0a192f) 22%, transparent);
   color: var(--svc-color, var(--c-navy));
-  transition: transform var(--transition), box-shadow var(--transition);
+  transition: transform var(--transition), box-shadow var(--transition), border-color var(--transition);
+}
+.service-card__icon .site-icon {
+  width: 30px;
+  height: 30px;
+  stroke-width: 1.95;
 }
 .service-card:hover .service-card__icon {
-  transform: scale(1.08);
-  box-shadow: 0 8px 24px color-mix(in srgb, var(--svc-color, #0a192f) 25%, transparent);
+  transform: translateY(-1px) scale(1.04);
+  border-color: color-mix(in srgb, var(--svc-color, #0a192f) 40%, transparent);
+  box-shadow: 0 8px 20px color-mix(in srgb, var(--svc-color, #0a192f) 20%, transparent);
 }
 
 /* Use card accent color for the top line */
@@ -1677,14 +1692,25 @@ button { font: inherit; border: none; background: none; cursor: pointer; }
 .service-card__link:hover { color: var(--svc-color, var(--c-gold)); filter: brightness(1.15); }
 
 /* ============================================================
-   PATH CARDS — visual emoji icon at top
+   PATH CARDS — visual icon at top
    ============================================================ */
 .path-card__visual {
-  font-size: 3rem;
-  line-height: 1;
+  width: 60px;
+  height: 60px;
   margin-bottom: 1rem;
-  display: block;
-  filter: drop-shadow(0 4px 12px rgba(0,0,0,.08));
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 16px;
+  background: rgba(10,25,47,.045);
+  border: 1.5px solid rgba(10,25,47,.11);
+  color: var(--c-navy);
+  transition: transform var(--transition), border-color var(--transition), box-shadow var(--transition);
+}
+.path-card__visual .site-icon {
+  width: 29px;
+  height: 29px;
+  stroke-width: 1.95;
 }
 
 .path-card {
@@ -1694,9 +1720,16 @@ button { font: inherit; border: none; background: none; cursor: pointer; }
 .path-card:nth-child(1) { border-top-color: #2563eb; }
 .path-card:nth-child(2) { border-top-color: #7c3aed; }
 .path-card:nth-child(3) { border-top-color: #ea580c; }
+.path-card:nth-child(1) .path-card__visual { color: #2563eb; border-color: rgba(37,99,235,.24); background: rgba(37,99,235,.08); }
+.path-card:nth-child(2) .path-card__visual { color: #7c3aed; border-color: rgba(124,58,237,.24); background: rgba(124,58,237,.08); }
+.path-card:nth-child(3) .path-card__visual { color: #ea580c; border-color: rgba(234,88,12,.24); background: rgba(234,88,12,.08); }
+.path-card:hover .path-card__visual {
+  transform: translateY(-1px);
+  box-shadow: 0 8px 18px rgba(10,25,47,.12);
+}
 
 /* ============================================================
-   AGENT BENEFITS — bigger emoji icons
+   AGENT BENEFITS — icon cards
    ============================================================ */
 .agent-benefit__icon {
   width: 56px;
@@ -1705,18 +1738,25 @@ button { font: inherit; border: none; background: none; cursor: pointer; }
   display: flex;
   align-items: center;
   justify-content: center;
-  background: rgba(10,25,47,.05);
-  border: 1.5px solid rgba(10,25,47,.1);
-  font-size: 1.75rem;
-  line-height: 1;
+  background: rgba(10,25,47,.045);
+  border: 1.5px solid rgba(10,25,47,.11);
   color: var(--c-navy);
   margin-bottom: 1rem;
-  transition: transform var(--transition);
+  transition: transform var(--transition), border-color var(--transition), box-shadow var(--transition);
 }
-.agent-benefit:hover .agent-benefit__icon { transform: scale(1.08); }
+.agent-benefit__icon .site-icon {
+  width: 26px;
+  height: 26px;
+  stroke-width: 1.95;
+}
+.agent-benefit:hover .agent-benefit__icon {
+  transform: translateY(-1px) scale(1.04);
+  border-color: rgba(10,25,47,.22);
+  box-shadow: 0 8px 18px rgba(10,25,47,.12);
+}
 
 /* ============================================================
-   WHY IZZY — bigger emoji icons
+   WHY IZZY — icon cards
    ============================================================ */
 .why-item__icon {
   width: 64px;
@@ -1727,19 +1767,23 @@ button { font: inherit; border: none; background: none; cursor: pointer; }
   justify-content: center;
   border-radius: 20px;
   background: rgba(10,25,47,.05);
-  border: 2px solid rgba(10,25,47,.09);
-  font-size: 2rem;
-  line-height: 1;
+  border: 1.5px solid rgba(10,25,47,.12);
   color: var(--c-navy);
-  transition: transform var(--transition), box-shadow var(--transition);
+  transition: transform var(--transition), box-shadow var(--transition), border-color var(--transition);
+}
+.why-item__icon .site-icon {
+  width: 29px;
+  height: 29px;
+  stroke-width: 1.95;
 }
 .why-item:hover .why-item__icon {
-  transform: scale(1.1);
-  box-shadow: 0 8px 24px rgba(79,107,255,.2);
+  transform: translateY(-1px) scale(1.04);
+  border-color: rgba(79,107,255,.35);
+  box-shadow: 0 8px 20px rgba(79,107,255,.18);
 }
 
 /* ============================================================
-   SYSTEM ITEMS — bigger icons
+   SYSTEM ITEMS — icons
    ============================================================ */
 .system-item__icon {
   display: inline-flex;
@@ -1748,12 +1792,122 @@ button { font: inherit; border: none; background: none; cursor: pointer; }
   width: 52px;
   height: 52px;
   border-radius: 16px;
-  background: rgba(255,255,255,.12);
-  border: 1px solid rgba(255,255,255,.15);
-  font-size: 1.6rem;
-  line-height: 1;
+  background: rgba(10,25,47,.06);
+  border: 1.5px solid rgba(10,25,47,.13);
   margin-bottom: 1rem;
-  color: var(--c-white);
+  color: var(--c-navy);
+  transition: transform var(--transition), border-color var(--transition), box-shadow var(--transition);
+}
+.system-item__icon .site-icon {
+  width: 24px;
+  height: 24px;
+  stroke-width: 1.9;
+}
+.system-item:hover .system-item__icon {
+  transform: translateY(-1px);
+  border-color: rgba(79,107,255,.35);
+  box-shadow: 0 8px 18px rgba(10,25,47,.12);
+}
+
+/* ============================================================
+   ICON STYLE OVERRIDE — OUTLINE SOBRIO (REFERENCIA IMG 2)
+   ============================================================ */
+.services-grid .service-card {
+  --svc-color: var(--c-navy);
+  --svc-bg: transparent;
+}
+
+.service-card__icon,
+.path-card__visual,
+.agent-benefit__icon,
+.why-item__icon,
+.system-item__icon {
+  background: transparent;
+  color: #1652c0;
+  border: none;
+  box-shadow: none;
+}
+
+.service-card__icon .site-icon,
+.path-card__visual .site-icon,
+.agent-benefit__icon .site-icon,
+.why-item__icon .site-icon,
+.system-item__icon .site-icon {
+  stroke-width: 1.8;
+}
+
+.service-card__icon {
+  width: 42px;
+  height: 42px;
+  border-radius: 0;
+}
+
+.service-card__icon .site-icon {
+  width: 34px;
+  height: 34px;
+}
+
+.path-card__visual {
+  width: 42px;
+  height: 42px;
+  border-radius: 0;
+}
+
+.path-card__visual .site-icon {
+  width: 34px;
+  height: 34px;
+}
+
+.agent-benefit__icon,
+.system-item__icon {
+  width: 42px;
+  height: 42px;
+  border-radius: 0;
+}
+
+.agent-benefit__icon .site-icon,
+.system-item__icon .site-icon {
+  width: 34px;
+  height: 34px;
+}
+
+.why-item__icon {
+  width: 42px;
+  height: 42px;
+  border-radius: 0;
+}
+
+.why-item__icon .site-icon {
+  width: 34px;
+  height: 34px;
+}
+
+.service-card:hover .service-card__icon,
+.path-card:hover .path-card__visual,
+.agent-benefit:hover .agent-benefit__icon,
+.why-item:hover .why-item__icon,
+.system-item:hover .system-item__icon {
+  transform: translateY(-1px);
+  color: #0f3f9f;
+  border-color: transparent;
+  box-shadow: none;
+}
+
+.path-card:nth-child(1) .path-card__visual,
+.path-card:nth-child(2) .path-card__visual,
+.path-card:nth-child(3) .path-card__visual {
+  background: transparent;
+  color: #1652c0;
+  border-color: transparent;
+}
+
+.service-card__link {
+  color: #1652c0;
+}
+
+.service-card__link:hover {
+  color: #0f3f9f;
+  filter: none;
 }
 
 /* ============================================================
