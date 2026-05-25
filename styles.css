@@ -9,30 +9,30 @@
 :root {
   --color-bg:      #FFFFFF;
   --color-bg-soft: #F8F9FA;
-  --color-primary: #0A192F;
-  --color-accent:  #10B981;
+  --color-primary: #060f2f;
+  --color-accent:  #4f6bff;
   --color-text:    #334155;
 
   --c-navy:       var(--color-primary);
-  --c-navy-mid:   #10233f;
-  --c-navy-light: #173456;
+  --c-navy-mid:   #0c1f52;
+  --c-navy-light: #173e9a;
   --c-gold:       var(--color-accent);
-  --c-gold-light: #34D399;
-  --c-gold-dark:  #059669;
+  --c-gold-light: #8ea2ff;
+  --c-gold-dark:  #3d57f4;
   --c-white:      var(--color-bg);
   --c-off-white:  var(--color-bg-soft);
   --c-text:       var(--color-text);
-  --c-text-muted: var(--color-text);
+  --c-text-muted: #5c6f8d;
   --c-border:     #e2e8f0;
 
-  --grad-gold:    linear-gradient(135deg, #10B981 0%, #10B981 100%);
-  --grad-navy:    linear-gradient(135deg, #0A192F 0%, #0A192F 100%);
-  --grad-hero:    linear-gradient(135deg, #0A192F 0%, #0A192F 100%);
+  --grad-gold:    linear-gradient(135deg, #5a72ff 0%, #3d57f4 100%);
+  --grad-navy:    linear-gradient(135deg, #050d2d 0%, #081a52 60%, #0d2ea3 100%);
+  --grad-hero:    radial-gradient(1200px 600px at 52% 45%, #1b45ea 0%, #0a2278 45%, #050d2d 100%);
 
   --shadow-sm:    0 2px 8px rgba(10,25,47,.06);
   --shadow-md:    0 8px 32px rgba(10,25,47,.10);
   --shadow-lg:    0 20px 60px rgba(10,25,47,.14);
-  --shadow-gold:  0 8px 28px rgba(16,185,129,.18);
+  --shadow-gold:  0 8px 28px rgba(79,107,255,.35);
 
   --radius-sm:    8px;
   --radius-md:    16px;
@@ -213,9 +213,9 @@ button { font: inherit; border: none; background: none; cursor: pointer; }
   box-shadow: var(--shadow-gold);
 }
 .nav__link--cta:hover {
-  box-shadow: 0 8px 32px rgba(16,185,129,.28);
+  box-shadow: 0 8px 32px rgba(79,107,255,.45);
   transform: translateY(-1px);
-  background: #059669 !important;
+  background: #3d57f4 !important;
   color: var(--c-white) !important;
 }
 
@@ -263,19 +263,19 @@ button { font: inherit; border: none; background: none; cursor: pointer; }
 .shape--1 {
   width: 600px; height: 600px;
   top: -150px; right: -200px;
-  background: #334155;
+  background: #234bcf;
   opacity: .08;
 }
 .shape--2 {
   width: 400px; height: 400px;
   bottom: -100px; left: -100px;
-  background: #334155;
+  background: #234bcf;
   opacity: .06;
 }
 .shape--3 {
   width: 300px; height: 300px;
   top: 40%; left: 30%;
-  background: #334155;
+  background: #234bcf;
   opacity: .05;
 }
 
@@ -418,7 +418,7 @@ button { font: inherit; border: none; background: none; cursor: pointer; }
 }
 .category-chip:hover {
   transform: translateY(-3px);
-  border-color: rgba(16,185,129,.45);
+  border-color: rgba(79,107,255,.5);
   box-shadow: var(--shadow-md);
 }
 .stat {
@@ -492,8 +492,8 @@ button { font: inherit; border: none; background: none; cursor: pointer; }
 }
 .btn--primary:hover {
   transform: translateY(-2px);
-  background: #059669;
-  box-shadow: 0 12px 34px rgba(16,185,129,.24);
+  background: #3d57f4;
+  box-shadow: 0 12px 34px rgba(79,107,255,.4);
 }
 
 .btn--secondary {
@@ -516,8 +516,8 @@ button { font: inherit; border: none; background: none; cursor: pointer; }
 }
 .btn--gold:hover {
   transform: translateY(-2px);
-  background: #059669;
-  box-shadow: 0 12px 34px rgba(16,185,129,.24);
+  background: #3d57f4;
+  box-shadow: 0 12px 34px rgba(79,107,255,.4);
 }
 
 .btn--outline-white {
@@ -539,7 +539,7 @@ button { font: inherit; border: none; background: none; cursor: pointer; }
 .btn--dark-text:hover {
   color: var(--c-navy);
   background: var(--c-off-white);
-  border-color: rgba(16,185,129,.35);
+  border-color: rgba(79,107,255,.45);
 }
 
 /* ============================================================
@@ -627,7 +627,7 @@ button { font: inherit; border: none; background: none; cursor: pointer; }
 .path-card:hover {
   transform: translateY(-5px);
   box-shadow: var(--shadow-lg);
-  border-color: rgba(16,185,129,.28);
+  border-color: rgba(79,107,255,.45);
 }
 .path-card__label {
   width: fit-content;
@@ -1097,7 +1097,7 @@ button { font: inherit; border: none; background: none; cursor: pointer; }
 .cta-segment:hover {
   transform: translateY(-3px);
   background: rgba(255,255,255,.1);
-  border-color: rgba(16,185,129,.35);
+  border-color: rgba(79,107,255,.45);
 }
 .cta-segment span {
   color: var(--c-gold-light);
@@ -1217,7 +1217,7 @@ button { font: inherit; border: none; background: none; cursor: pointer; }
   width: 16px;
   height: 16px;
   flex: 0 0 auto;
-  color: rgba(16,185,129,.9);
+  color: rgba(142,162,255,.95);
   fill: none;
   stroke: currentColor;
   stroke-width: 1.8;
@@ -1356,7 +1356,7 @@ button { font: inherit; border: none; background: none; cursor: pointer; }
     align-items: center;
     justify-content: center;
     border-radius: 999px;
-    background: #059669;
+    background: #3d57f4;
     color: #fff;
     font-weight: 800;
     letter-spacing: .02em;
