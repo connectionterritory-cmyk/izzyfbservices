@@ -261,6 +261,30 @@ button { font: inherit; border: none; background: none; cursor: pointer; }
   color: var(--c-white) !important;
 }
 
+.lang-switch {
+  display: inline-flex;
+  align-items: center;
+  gap: .35rem;
+  background: rgba(255,255,255,.1);
+  border: 1px solid rgba(255,255,255,.2);
+  border-radius: 999px;
+  padding: .22rem;
+}
+.lang-switch__btn {
+  min-width: 40px;
+  height: 30px;
+  border-radius: 999px;
+  color: rgba(255,255,255,.78);
+  font-size: .76rem;
+  font-weight: 800;
+  letter-spacing: .06em;
+  transition: background var(--transition), color var(--transition);
+}
+.lang-switch__btn.is-active {
+  background: rgba(255,255,255,.22);
+  color: #fff;
+}
+
 /* Hamburger */
 .nav-toggle {
   display: none;
@@ -1408,6 +1432,10 @@ button { font: inherit; border: none; background: none; cursor: pointer; }
     text-align: center;
   }
   .nav-toggle { display: flex; }
+  .lang-switch {
+    margin-left: auto;
+    margin-right: .45rem;
+  }
 
   /* Footer */
   .footer__inner {
