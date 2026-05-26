@@ -84,7 +84,7 @@ En `styles.css` las primeras líneas tienen las variables:
 
 ## Notas de cumplimiento
 
-- No se prometen ingresos garantizados
+- No se prometen resultados específicos
 - No se afirma ser aseguradora oficial
 - Disclaimer legal visible en el footer
 - Todos los servicios sujetos a licencia y elegibilidad

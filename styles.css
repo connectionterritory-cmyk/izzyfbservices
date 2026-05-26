@@ -10,22 +10,22 @@
   --color-bg:      #FFFFFF;
   --color-bg-soft: #F8F9FA;
   --color-primary: #060f2f;
-  --color-accent:  #4f6bff;
+  --color-accent:  #94a3b8;
   --color-text:    #334155;
 
   --c-navy:       var(--color-primary);
   --c-navy-mid:   #0c1f52;
   --c-navy-light: #173e9a;
   --c-gold:       var(--color-accent);
-  --c-gold-light: #8ea2ff;
-  --c-gold-dark:  #3d57f4;
+  --c-gold-light: #cbd5e1;
+  --c-gold-dark:  #64748b;
   --c-white:      var(--color-bg);
   --c-off-white:  var(--color-bg-soft);
   --c-text:       var(--color-text);
   --c-text-muted: #5c6f8d;
   --c-border:     #e2e8f0;
 
-  --grad-gold:    linear-gradient(135deg, #5a72ff 0%, #3d57f4 100%);
+  --grad-gold:    linear-gradient(135deg, #cbd5e1 0%, #94a3b8 100%);
   --grad-navy:    linear-gradient(135deg, #050d2d 0%, #081a52 60%, #0d2ea3 100%);
   --grad-hero:    radial-gradient(1200px 600px at 52% 45%, #1b45ea 0%, #0a2278 45%, #050d2d 100%);
 
@@ -96,7 +96,7 @@ button { font: inherit; border: none; background: none; cursor: pointer; }
 }
 
 .gradient-text {
-  background: linear-gradient(135deg, #3d57f4 0%, #7c3aed 100%);
+  background: linear-gradient(135deg, #64748b 0%, #94a3b8 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -104,7 +104,7 @@ button { font: inherit; border: none; background: none; cursor: pointer; }
 
 .section--dark .gradient-text,
 .cta-section .gradient-text {
-  background: linear-gradient(135deg, #a5b4ff 0%, #d8b4fe 100%);
+  background: linear-gradient(135deg, #e2e8f0 0%, #f8fafc 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;

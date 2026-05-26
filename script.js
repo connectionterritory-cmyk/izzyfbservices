@@ -10,13 +10,13 @@
 
   const t = {
     es: {
-      navServicios: 'Seguros', navModelo: 'Taxes & ITIN', navAgentes: 'Agentes', navSistema: 'Oficinas', navContacto: 'Contáctanos',
+      navServicios: 'Orientación', navModelo: 'Taxes & ITIN', navAgentes: 'Agentes', navSistema: 'Oficinas', navContacto: 'Contáctanos',
       heroBadge: 'Launchpad financiero para la comunidad hispana',
       heroTitle: 'Todo lo que necesitas para<br><span class="gradient-text">proteger, organizar y crecer.</span>',
-      heroSubtitle: 'Seguros, taxes, ITIN, negocio y crecimiento profesional con una sola plataforma y seguimiento real.',
+      heroSubtitle: 'Te ayudamos a entender tus opciones, organizar documentos y recibir orientación inicial en áreas como protección familiar, taxes, ITIN, registro de negocios y servicios administrativos.',
       intentAria: 'Elige tu intención', intentCliente: 'Soy cliente', intentAgente: 'Soy agente', intentOficina: 'Quiero oficina',
       ctaSecondary: 'Ver todos los servicios', ctaTertiary: 'Hablar con un asesor',
-      trust: ['Atención bilingüe', 'California & Florida', 'Consulta sin costo', 'Seguros + Taxes + Negocios', 'Modelo para agentes'],
+      trust: ['Atención bilingüe', 'California & Florida', 'Consulta sin costo', 'Apoyo administrativo', 'Modelo para agentes'],
       stats: ['Servicios', 'Estados', 'Sistema'],
       visualEyebrow: 'Atención real, imagen profesional',
       visualTitle: 'Una experiencia <span class="gradient-text">moderna y confiable</span>',
@@ -24,12 +24,12 @@
       visualCards: {
         titles: ['Asesoría clara', 'Crecimiento estructurado', 'Resultados con seguimiento'],
         descs: [
-          'Orientación paso a paso en seguros, taxes e ITIN.',
+          'Orientación inicial y servicios para familias y emprendedores.',
           'Modelo serio para agentes y oficinas multiservices.',
           'Procesos, CRM y acompañamiento continuo para avanzar.'
         ]
       },
-      categories: ['Seguros personales y comerciales', 'Taxes, ITIN y documentos', 'Ruta para agentes', 'Modelo de oficina multiservices'],
+      categories: ['Protección familiar', 'Taxes, ITIN y documentos', 'Apoyo administrativo', 'Modelo de oficina multiservices'],
       caminos: {
         eyebrow: 'Elige tu camino',
         title: 'Una plataforma para <span class="gradient-text">clientes, agentes y emprendedores</span>',
@@ -37,7 +37,7 @@
         labels: ['Soy Cliente', 'Soy Agente', 'Quiero Emprender'],
         cardTitles: ['Protege y organiza tu vida financiera.', 'Construye una carrera con estructura.', 'Desarrolla una oficina multiservices.'],
         cardDescs: [
-          'Seguros, taxes, ITIN y apoyo con trámites para familias que buscan confianza, claridad y acompañamiento bilingüe.',
+          'Apoyo inicial para personas que desean entender opciones de protección familiar, organización financiera, documentos y servicios de apoyo.',
           'Entrenamiento, seguimiento, referidos y expansión multiservices para agentes que quieren crecer con un sistema serio.',
           'Un modelo duplicable con CRM, marketing, procesos y múltiples líneas de servicio para crear presencia local.'
         ],
@@ -49,7 +49,7 @@
         desc: 'Reunimos protección, trámites y soporte empresarial para servir mejor a cada familia, cliente y emprendedor.',
         pills: ['Atención bilingüe', 'California & Florida', 'Consulta inicial sin costo'],
         link: 'Consulta gratis →',
-        titles: ['Seguro de Auto', 'Seguro de Vida', 'Seguro de Salud', 'Medicare / Health Plans', 'Seguro Comercial', 'Taxes, ITIN & Registro de Negocios', 'DMV / Document Support', 'Apoyo para Pequeños Negocios'],
+        titles: ['Protección familiar', 'Orientación financiera inicial', 'Taxes', 'ITIN', 'Registro de negocios', 'Apoyo administrativo', 'Document Support', 'Servicios para pequeños negocios'],
         descs: [
           'Cobertura personal y comercial con comparación de opciones para elegir con claridad.',
           'Opciones de término, vida entera e IUL para proteger a tu familia y tu legado.',
@@ -63,7 +63,7 @@
       },
       modelo: {
         eyebrow: 'Modelo multiservices',
-        title: 'De agente de seguros a dueño de una <span class="gradient-text">oficina multiservices.</span>',
+        title: 'Un modelo de servicios para apoyar a la comunidad.',
         desc: 'El objetivo no es vender un producto aislado. Es construir una cartera, generar seguimiento, abrir nuevas líneas de servicio y desarrollar una operación local con procesos.'
       },
       agentes: {
@@ -73,7 +73,7 @@
         benefitTitles: ['Construye una cartera', 'Desarrolla varias líneas', 'Entrenamiento y scripts', 'Sistema de seguimiento', 'Crecimiento acompañado', 'Modelo duplicable'],
         benefitDescs: [
           'Aprende a servir clientes con seguimiento, renovaciones, referidos y relaciones sostenibles.',
-          'Conecta seguros, taxes, ITIN, negocios y servicios empresariales según la necesidad real del cliente.',
+          'Conecta servicios administrativos y de apoyo según la necesidad real de la comunidad.',
           'Producto, ventas, cumplimiento, mensajes de WhatsApp y conversaciones consultivas.',
           'CRM, etiquetas, recordatorios y campañas para no depender de memoria ni mensajes sueltos.',
           'Mentoría, revisión de oportunidades y enfoque en hábitos comerciales consistentes.',
@@ -89,7 +89,7 @@
         itemDescs: [
           'Clientes, agentes y prospectos de oficina organizados por etapa, interés y próxima acción.',
           'Mensajes por intención: consulta, agente u oficina, con seguimiento claro y humano.',
-          'Temporadas de taxes, Medicare, salud, vida, auto y negocios con mensajes segmentados.',
+          'Temporadas de taxes y negocios con mensajes de orientación segmentados.',
           'Proceso para pedir reseñas, referidos, revisiones anuales y oportunidades cruzadas.',
           'Guías, scripts, sesiones y hábitos comerciales para agentes y equipos en crecimiento.',
           'Plantillas, checklist y estructura para futuras oficinas multiservices IZZY.'
@@ -114,7 +114,7 @@
         metricsStrong: ['Atención bilingüe', 'Cobertura activa', 'Consulta inicial', 'Seguimiento'],
         metricsDesc: ['Español e inglés', 'California y Florida', 'Orientación clara por WhatsApp o llamada', 'Proceso paso a paso por intención'],
         testimonialText: [
-          'Persona que busca resolver seguro + taxes en un solo lugar, con explicación simple y acompañamiento en español.',
+          'Persona que busca resolver sus trámites y taxes en un solo lugar, con explicación simple y acompañamiento en español.',
           'Agente que empieza con una línea y evoluciona a una operación con seguimiento, cartera y servicios complementarios.',
           'Emprendedor que quiere abrir oficina multiservices con estructura comercial, procesos y soporte operativo.'
         ],
@@ -124,7 +124,7 @@
         title: 'Empieza por el camino correcto.',
         desc: 'Ya sea que necesites servicios, quieras crecer como agente o estés explorando una oficina multiservices, IZZY te recibe con una conversación clara.',
         cards: ['Necesito servicios', 'Quiero crecer como agente', 'Quiero abrir una oficina'],
-        cardSubs: ['Seguros, taxes, ITIN o negocios', 'Entrenamiento, cartera y seguimiento', 'Modelo multiservices duplicable']
+        cardSubs: ['Servicios para familias y emprendedores', 'Entrenamiento, cartera y seguimiento', 'Modelo multiservices duplicable']
       },
       footer: {
         tagline: 'Protegiendo familias, construyendo futuros.',
@@ -132,9 +132,9 @@
         serviciosClave: 'Servicios clave',
         contacto: 'Contacto',
         links1: ['Servicios', 'Ruta para agentes', 'Modelo para oficinas', 'Sistema IZZY'],
-        links2: ['Seguro de Auto', 'Seguro de Vida', 'Seguro de Salud', 'Medicare / Health Plans', 'Seguro Comercial', 'Taxes, ITIN & Registro'],
+        links2: ['Protección familiar', 'Orientación financiera inicial', 'Taxes', 'ITIN', 'Registro de negocios', 'Apoyo administrativo'],
         contactMeta: ['California & Florida', 'Lun-Sáb · Atención por cita'],
-        disclaimer: 'IZZY Financial & Business Services es una agencia independiente. Los productos de seguros (auto, vida, salud, Medicare y comercial) están sujetos a aprobación de la aseguradora, disponibilidad por estado y elegibilidad del solicitante. Los servicios de taxes, DMV y negocios son de orientación general y no constituyen asesoría legal ni contable certificada. No se garantizan ingresos específicos para agentes independientes. © 2026 IZZY Financial & Business Services. Todos los derechos reservados.'
+        disclaimer: 'IZZY Financial & Business Services ofrece orientación general y servicios administrativos. Algunos servicios pueden requerir licencia, autorización, appointment, revisión profesional independiente o cumplimiento de requisitos estatales y federales. La disponibilidad de servicios puede variar según el estado, proveedor, elegibilidad y regulación aplicable. No se garantizan aprobaciones, tarifas, coberturas, ahorros, ingresos ni resultados. IZZY Financial & Business Services no está afiliado, respaldado ni aprobado por ninguna entidad gubernamental, programa federal, departamento estatal, carrier o compañía de seguros, salvo que se indique expresamente por escrito. © 2026 IZZY Financial & Business Services. Todos los derechos reservados.'
       },
       contactFormTitle: 'Cuéntanos qué necesitas', formName: 'Nombre', formPhone: 'Teléfono', formIntent: 'Intención', formState: 'Estado',
       formNamePlaceholder: 'Tu nombre', formSubmit: 'Enviar por WhatsApp', callNow: 'Llamar Ahora',
@@ -152,22 +152,22 @@
       },
       wa: {
         hero: {
-          cliente: { label: 'Empezar consulta', text: 'Hola, quiero una consulta sobre los servicios de IZZY' },
-          agente: { label: 'Aplicar como agente', text: 'Hola, quiero información sobre la oportunidad para agentes' },
-          oficina: { label: 'Abrir mi oficina IZZY', text: 'Hola, quiero conocer el modelo para abrir una oficina IZZY' }
+          cliente: { label: 'Empezar consulta', text: 'Hola, quiero orientación inicial sobre servicios para familias o emprendedores.' },
+          agente: { label: 'Aplicar como agente', text: 'Hola, quiero más información sobre IZZY Financial & Business Services.' },
+          oficina: { label: 'Abrir mi oficina IZZY', text: 'Hola, quiero conocer el modelo multiservices de IZZY.' }
         },
         formIntro: 'Hola, quiero una consulta.',
         fields: { name: 'Nombre', phone: 'Teléfono', intent: 'Intención', state: 'Estado' }
       }
     },
     en: {
-      navServicios: 'Insurance', navModelo: 'Taxes & ITIN', navAgentes: 'Agents', navSistema: 'Offices', navContacto: 'Contact Us',
+      navServicios: 'Guidance', navModelo: 'Taxes & ITIN', navAgentes: 'Agents', navSistema: 'Offices', navContacto: 'Contact Us',
       heroBadge: 'Financial launchpad for the Hispanic community',
       heroTitle: 'Everything you need to<br><span class="gradient-text">protect, organize, and grow.</span>',
-      heroSubtitle: 'Insurance, taxes, ITIN, business services, and professional growth in one platform with real follow-up.',
+      heroSubtitle: 'We help you understand your options, organize documents, and receive initial guidance in areas like family protection, taxes, ITIN, business registration, and administrative services.',
       intentAria: 'Choose your path', intentCliente: 'I am a client', intentAgente: 'I am an agent', intentOficina: 'I want an office',
       ctaSecondary: 'View all services', ctaTertiary: 'Talk to an advisor',
-      trust: ['Bilingual service', 'California & Florida', 'Free consultation', 'Insurance + Taxes + Business', 'Agent growth model'],
+      trust: ['Bilingual service', 'California & Florida', 'Free consultation', 'Administrative Support', 'Agent growth model'],
       stats: ['Services', 'States', 'System'],
       visualEyebrow: 'Real service, professional image',
       visualTitle: 'A <span class="gradient-text">modern and trusted</span> experience',
@@ -175,12 +175,12 @@
       visualCards: {
         titles: ['Clear guidance', 'Structured growth', 'Results with follow-up'],
         descs: [
-          'Step-by-step guidance for insurance, taxes, and ITIN.',
+          'Step-by-step guidance for family and business services.',
           'A serious model for agents and multi-services offices.',
           'Processes, CRM, and ongoing support to move forward.'
         ]
       },
-      categories: ['Personal and commercial insurance', 'Taxes, ITIN, and documents', 'Agent pathway', 'Multi-services office model'],
+      categories: ['Family Protection', 'Taxes, ITIN, and documents', 'Learning pathway', 'Multi-services office model'],
       caminos: {
         eyebrow: 'Choose your path',
         title: 'One platform for <span class="gradient-text">clients, agents, and entrepreneurs</span>',
@@ -188,7 +188,7 @@
         labels: ['I am a Client', 'I am an Agent', 'I want to Build'],
         cardTitles: ['Protect and organize your financial life.', 'Build a career with structure.', 'Develop a multi-services office.'],
         cardDescs: [
-          'Insurance, taxes, ITIN, and support with paperwork for families seeking trust, clarity, and bilingual guidance.',
+          'Initial support for people who want to understand options for family protection, financial organization, documents, and support services.',
           'Training, follow-up, referrals, and multi-service expansion for agents who want to grow with a serious system.',
           'A scalable model with CRM, marketing, processes, and multiple service lines to build local presence.'
         ],
@@ -200,7 +200,7 @@
         desc: 'We bring together protection, paperwork, and business support to serve every family, client, and entrepreneur better.',
         pills: ['Bilingual service', 'California & Florida', 'Free initial consultation'],
         link: 'Free consultation →',
-        titles: ['Auto Insurance', 'Life Insurance', 'Health Insurance', 'Medicare / Health Plans', 'Commercial Insurance', 'Taxes, ITIN & Business Registration', 'DMV / Document Support', 'Small Business Support'],
+        titles: ['Family Protection', 'Initial Financial Guidance', 'Taxes', 'ITIN', 'Business Registration', 'Administrative Support', 'Document Support', 'Small Business Support'],
         descs: [
           'Personal and commercial coverage with option comparisons so you can choose with clarity.',
           'Term, whole life, and IUL options to protect your family and legacy.',
@@ -214,7 +214,7 @@
       },
       modelo: {
         eyebrow: 'Multi-services model',
-        title: 'From insurance agent to owner of a <span class="gradient-text">multi-services office.</span>',
+        title: 'A service model to support the community.',
         desc: 'The goal is not to sell a single product. It is to build a portfolio, create follow-up, open new service lines, and develop a local operation with processes.'
       },
       agentes: {
@@ -224,7 +224,7 @@
         benefitTitles: ['Build a portfolio', 'Develop multiple lines', 'Training and scripts', 'Follow-up system', 'Guided growth', 'Scalable model'],
         benefitDescs: [
           'Learn to serve clients with follow-up, renewals, referrals, and sustainable relationships.',
-          'Connect insurance, taxes, ITIN, business services, and business support based on real client needs.',
+          'Connect administrative and support services based on real community needs.',
           'Product, sales, compliance, WhatsApp messaging, and consultative conversations.',
           'CRM, tags, reminders, and campaigns so you do not depend on memory or scattered messages.',
           'Mentorship, opportunity review, and focus on consistent commercial habits.',
@@ -240,7 +240,7 @@
         itemDescs: [
           'Clients, agents, and office prospects organized by stage, interest, and next action.',
           'Intent-based messaging: consultation, agent, or office, with clear and human follow-up.',
-          'Tax season, Medicare, health, life, auto, and business campaigns with segmented messaging.',
+          'Tax season and business campaigns with segmented guidance messaging.',
           'A process to request reviews, referrals, annual check-ins, and cross-selling opportunities.',
           'Guides, scripts, sessions, and sales habits for agents and growing teams.',
           'Templates, checklists, and structure for future IZZY multi-services offices.'
@@ -265,7 +265,7 @@
         metricsStrong: ['Bilingual service', 'Active coverage', 'Initial consultation', 'Follow-up'],
         metricsDesc: ['Spanish and English', 'California and Florida', 'Clear guidance via WhatsApp or phone', 'Step-by-step process by intent'],
         testimonialText: [
-          'A person looking to solve insurance + taxes in one place, with simple explanation and Spanish support.',
+          'A person looking to solve their paperwork and taxes in one place, with simple explanation and Spanish support.',
           'An agent who starts with one line and evolves into an operation with follow-up, portfolio, and complementary services.',
           'An entrepreneur who wants to open a multi-services office with commercial structure, processes, and operational support.'
         ],
@@ -275,7 +275,7 @@
         title: 'Start on the right path.',
         desc: 'Whether you need services, want to grow as an agent, or are exploring a multi-services office, IZZY welcomes you with a clear conversation.',
         cards: ['I need services', 'I want to grow as an agent', 'I want to open an office'],
-        cardSubs: ['Insurance, taxes, ITIN, or business', 'Training, portfolio, and follow-up', 'Scalable multi-services office model']
+        cardSubs: ['Services for families and entrepreneurs', 'Training, portfolio, and follow-up', 'Scalable multi-services office model']
       },
       footer: {
         tagline: 'Protecting families, building futures.',
@@ -283,9 +283,9 @@
         serviciosClave: 'Key services',
         contacto: 'Contact',
         links1: ['Services', 'Agent pathway', 'Office model', 'IZZY System'],
-        links2: ['Auto Insurance', 'Life Insurance', 'Health Insurance', 'Medicare / Health Plans', 'Commercial Insurance', 'Taxes, ITIN & Registration'],
+        links2: ['Family Protection', 'Initial Financial Guidance', 'Taxes', 'ITIN', 'Business Registration', 'Administrative Support'],
         contactMeta: ['California & Florida', 'Mon-Sat · By appointment'],
-        disclaimer: 'IZZY Financial & Business Services is an independent agency. Insurance products (auto, life, health, Medicare, and commercial) are subject to carrier approval, state availability, and applicant eligibility. Taxes, DMV, and business services are general guidance and do not constitute legal or certified accounting advice. No specific income is guaranteed for independent agents. © 2026 IZZY Financial & Business Services. All rights reserved.'
+        disclaimer: 'IZZY Financial & Business Services offers general guidance and administrative services. Some services may require licensing, authorization, appointment, independent professional review, or compliance with state and federal requirements. Availability of services may vary by state, provider, eligibility, and applicable regulations. Approvals, rates, coverages, savings, income, or results are not guaranteed. IZZY Financial & Business Services is not affiliated with, endorsed by, or approved by any government entity, federal program, state department, carrier, or insurance company, unless expressly stated in writing. © 2026 IZZY Financial & Business Services. All rights reserved.'
       },
       contactFormTitle: 'Tell us what you need', formName: 'Name', formPhone: 'Phone', formIntent: 'Intent', formState: 'State',
       formNamePlaceholder: 'Your name', formSubmit: 'Send via WhatsApp', callNow: 'Call Now',
@@ -303,9 +303,9 @@
       },
       wa: {
         hero: {
-          cliente: { label: 'Start consultation', text: 'Hi, I want a consultation about IZZY services' },
-          agente: { label: 'Apply as agent', text: 'Hi, I want information about the agent opportunity' },
-          oficina: { label: 'Open my IZZY office', text: 'Hi, I want to learn about the IZZY office model' }
+          cliente: { label: 'Start consultation', text: 'Hi, I want initial guidance on services for families or entrepreneurs.' },
+          agente: { label: 'Apply as agent', text: 'Hi, I want more information about IZZY Financial & Business Services.' },
+          oficina: { label: 'Open my IZZY office', text: 'Hi, I want to learn about the IZZY multiservices model.' }
         },
         formIntro: 'Hi, I want a consultation.',
         fields: { name: 'Name', phone: 'Phone', intent: 'Intent', state: 'State' }
