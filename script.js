@@ -53,10 +53,10 @@
         descs: [
           'Cobertura personal y comercial con comparación de opciones para elegir con claridad.',
           'Opciones de término, vida entera e IUL para proteger a tu familia y tu legado.',
-          'Planes ACA y suplementarios con acompañamiento para encontrar el mejor ajuste.',
-          'Asesoría en Advantage, Medigap y Parte D con explicación simple de costos y beneficios.',
-          'Responsabilidad general, propiedad comercial y coberturas clave para operar con tranquilidad.',
-          'Impuestos personales/comerciales, ITIN, registro y nómina en una sola ruta de servicio.',
+          'Preparación de impuestos personales y comerciales con acompañamiento claro para organizar tu año fiscal.',
+          'Apoyo para solicitud o renovación de ITIN, con checklist de documentos y pasos claros en español e inglés.',
+          'Registro de negocio y estructura inicial para operar con base formal, incluyendo pasos clave y requisitos comunes.',
+          'Apoyo en formularios, organización documental y seguimiento de trámites para que no se te pase ningún paso.',
           'Apoyo en trámites DMV y documentos con guía paso a paso, sin barrera de idioma.',
           'Estructura, orientación financiera y soporte práctico para emprender con base sólida.'
         ]
@@ -204,10 +204,10 @@
         descs: [
           'Personal and commercial coverage with option comparisons so you can choose with clarity.',
           'Term, whole life, and IUL options to protect your family and legacy.',
-          'ACA and supplemental plans with guidance to find the best fit.',
-          'Guidance on Advantage, Medigap, and Part D with simple cost and benefit explanations.',
-          'General liability, commercial property, and key coverages to operate with peace of mind.',
-          'Personal/business taxes, ITIN, registration, and payroll in one service path.',
+          'Personal and business tax preparation with clear guidance so you can stay organized and compliant.',
+          'Support for ITIN applications or renewals, including document checklist and next steps.',
+          'Business registration and initial setup guidance to operate on a formal and reliable foundation.',
+          'Administrative help with forms, document organization, and process follow-up to keep everything on track.',
           'Support with DMV procedures and documents, step by step and without language barriers.',
           'Structure, financial guidance, and practical support to build with a solid foundation.'
         ]
