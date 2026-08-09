@@ -1159,6 +1159,64 @@ button { font: inherit; border: none; background: none; cursor: pointer; }
   line-height: 1.65;
 }
 
+/* ---- Bio Card (Nosotros) ---- */
+.bio-card {
+  margin-top: 2.5rem;
+  display: flex;
+  align-items: center;
+  gap: 1.75rem;
+  padding: 2rem;
+  background: var(--c-white);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-sm);
+  flex-wrap: wrap;
+}
+.bio-card__photo {
+  flex-shrink: 0;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  overflow: hidden;
+  background: var(--grad-navy);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.bio-card__photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.bio-card__photo-placeholder {
+  color: rgba(255,255,255,.7);
+  font-family: var(--font-display);
+  font-size: .85rem;
+  letter-spacing: .05em;
+  text-transform: uppercase;
+}
+.bio-card__info {
+  flex: 1;
+  min-width: 220px;
+}
+.bio-card__name {
+  font-family: var(--font-display);
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--c-navy);
+}
+.bio-card__role {
+  display: block;
+  font-size: .85rem;
+  color: var(--c-gold-dark);
+  font-weight: 600;
+  margin: .3rem 0 .75rem;
+}
+.bio-card__text {
+  font-size: .92rem;
+  color: var(--c-text-muted);
+  line-height: 1.65;
+}
+
 /* ============================================================
    PROOF
    ============================================================ */

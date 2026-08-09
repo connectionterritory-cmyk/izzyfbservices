@@ -1,5 +1,5 @@
 /**
- * IZZY Financial & Business Services — script.js
+ * Caicedo Team (IZZY Financial & Business Services) — script.js
  * Features: sticky header, mobile nav, scroll reveal, smooth scroll, i18n ES/EN
  */
 
@@ -10,102 +10,100 @@
 
   const t = {
     es: {
-      navServicios: 'Orientación', navModelo: 'Taxes & ITIN', navAgentes: 'Agentes', navSistema: 'Oficinas', navContacto: 'Contáctanos',
-      heroBadge: 'Launchpad financiero para la comunidad hispana',
-      heroTitle: 'Todo lo que necesitas para<br><span class="gradient-text">proteger, organizar y crecer.</span>',
-      heroSubtitle: 'Te ayudamos a entender tus opciones, organizar documentos y recibir orientación inicial en áreas como protección familiar, taxes, ITIN, registro de negocios y servicios administrativos.',
-      intentAria: 'Elige tu intención', intentCliente: 'Soy cliente', intentAgente: 'Soy agente', intentOficina: 'Quiero oficina',
-      ctaSecondary: 'Ver todos los servicios', ctaTertiary: 'Hablar con un asesor',
-      trust: ['Atención bilingüe', 'California & Florida', 'Consulta sin costo', 'Apoyo administrativo', 'Modelo para agentes'],
-      stats: ['Servicios', 'Estados', 'Sistema'],
+      navVida: 'Vida', navSalud: 'Salud y Medicare', navRetiro: 'Retiro', navNosotros: 'Nosotros', navEquipo: 'Únete al equipo', navContacto: 'Contacto',
+      heroBadge: 'Protección de vida, salud y retiro para la comunidad hispana',
+      heroTitle: 'Protegemos lo que<br><span class="gradient-text">más importa.</span>',
+      heroSubtitle: 'Soluciones personalizadas de seguros de vida, salud y retiro para proteger a tu familia y construir tu independencia financiera — con atención bilingüe y sin letra pequeña.',
+      intentAria: 'Elige tu camino', intentCliente: 'Quiero proteger a mi familia', intentAgente: 'Quiero conocer la oportunidad',
+      ctaSecondary: 'Ver todos los servicios', ctaTertiary: 'Habla con Moisés',
+      trust: ['Atención bilingüe', 'California & Florida', 'Consulta sin costo', 'Agente independiente', 'Caicedo Team'],
+      stats: ['Pilares', 'Estados', 'Equipo'],
       visualEyebrow: 'Atención real, imagen profesional',
       visualTitle: 'Una experiencia <span class="gradient-text">moderna y confiable</span>',
-      visualDesc: 'Combinamos asesoría humana, estructura operativa y acompañamiento bilingüe para familias, agentes y emprendedores.',
+      visualDesc: 'Combinamos asesoría humana, tecnología y acompañamiento bilingüe para familias y para quienes quieren construir una carrera en seguros.',
       visualCards: {
-        titles: ['Asesoría clara', 'Crecimiento estructurado', 'Resultados con seguimiento'],
+        titles: ['Asesoría clara', 'Crecimiento con estructura', 'Resultados con seguimiento'],
         descs: [
-          'Orientación inicial y servicios para familias y emprendedores.',
-          'Modelo serio para agentes y oficinas multiservices.',
-          'Procesos, CRM y acompañamiento continuo para avanzar.'
+          'Explicamos tus opciones de vida, salud y retiro sin tecnicismos.',
+          'Un sistema serio para agentes que quieren construir su propio equipo.',
+          'Procesos, CRM y acompañamiento continuo para avanzar con claridad.'
         ]
       },
-      categories: ['Protección familiar', 'Taxes, ITIN y documentos', 'Apoyo administrativo', 'Modelo de oficina multiservices'],
+      categories: ['Vida', 'Salud y Medicare', 'Retiro', 'Únete al equipo'],
       caminos: {
         eyebrow: 'Elige tu camino',
-        title: 'Una plataforma para <span class="gradient-text">clientes, agentes y emprendedores</span>',
-        desc: 'IZZY conecta servicios esenciales con entrenamiento, seguimiento y una visión empresarial duplicable para la comunidad hispana.',
-        labels: ['Soy Cliente', 'Soy Agente', 'Quiero Emprender'],
-        cardTitles: ['Protege y organiza tu vida financiera.', 'Construye una carrera con estructura.', 'Desarrolla una oficina multiservices.'],
+        title: 'Una plataforma para <span class="gradient-text">familias y agentes</span>',
+        desc: 'Caicedo Team conecta protección esencial con entrenamiento, seguimiento y una visión profesional duplicable para la comunidad hispana.',
+        labels: ['Soy Cliente', 'Soy Agente', 'Soy Líder'],
+        cardTitles: ['Protege a tu familia y tu futuro.', 'Construye una carrera con estructura.', 'Desarrolla tu propio equipo.'],
         cardDescs: [
-          'Apoyo inicial para personas que desean entender opciones de protección familiar, organización financiera, documentos y servicios de apoyo.',
-          'Entrenamiento, seguimiento, referidos y expansión multiservices para agentes que quieren crecer con un sistema serio.',
-          'Un modelo duplicable con CRM, marketing, procesos y múltiples líneas de servicio para crear presencia local.'
+          'Orientación clara sobre seguro de vida, IUL, salud, Medicare y estrategias de retiro para proteger lo que más importa.',
+          'Entrenamiento, seguimiento, referidos y una ruta profesional real para agentes de vida y salud que quieren crecer con un sistema serio.',
+          'Un modelo duplicable con CRM, mentoría y procesos para pasar de productor a líder dentro de Caicedo Team.'
         ],
-        links: ['Necesito servicios →', 'Quiero crecer como agente →', 'Quiero abrir una oficina →']
+        links: ['Necesito protección →', 'Quiero crecer como agente →', 'Quiero liderar un equipo →']
       },
       servicios: {
-        eyebrow: 'Ecosistema de servicios',
-        title: 'Servicios que ayudan a <span class="gradient-text">proteger, organizar y crecer</span>',
-        desc: 'Reunimos protección, trámites y soporte empresarial para servir mejor a cada familia, cliente y emprendedor.',
+        eyebrow: 'Nuestros pilares',
+        title: 'Protección que ayuda a <span class="gradient-text">vivir, cuidarte y crecer</span>',
+        desc: 'Organizamos la protección financiera en tres pilares simples: vida, salud y retiro.',
         pills: ['Atención bilingüe', 'California & Florida', 'Consulta inicial sin costo'],
         link: 'Consulta gratis →',
-        titles: ['Protección familiar', 'Orientación financiera inicial', 'Taxes', 'ITIN', 'Registro de negocios', 'Apoyo administrativo', 'Document Support', 'Servicios para pequeños negocios'],
+        titles: ['Vida', 'Salud y Medicare', 'Retiro'],
         descs: [
-          'Cobertura personal y comercial con comparación de opciones para elegir con claridad.',
-          'Opciones de término, vida entera e IUL para proteger a tu familia y tu legado.',
-          'Preparación de impuestos personales y comerciales con acompañamiento claro para organizar tu año fiscal.',
-          'Apoyo para solicitud o renovación de ITIN, con checklist de documentos y pasos claros en español e inglés.',
-          'Registro de negocio y estructura inicial para operar con base formal, incluyendo pasos clave y requisitos comunes.',
-          'Apoyo en formularios, organización documental y seguimiento de trámites para que no se te pase ningún paso.',
-          'Apoyo en trámites DMV y documentos con guía paso a paso, sin barrera de idioma.',
-          'Estructura, orientación financiera y soporte práctico para emprender con base sólida.'
+          'Seguro de término, vida entera, IUL y gastos finales para proteger a tu familia y tu legado.',
+          'Medicare Advantage, Medicare Supplement y planes ACA explicados con claridad, sin letra pequeña.',
+          'Anualidades y estrategias de retiro para construir ingresos garantizados a largo plazo.'
         ]
       },
       modelo: {
-        eyebrow: 'Modelo multiservices',
-        title: 'Un modelo de servicios para apoyar a la comunidad.',
-        desc: 'El objetivo no es vender un producto aislado. Es construir una cartera, generar seguimiento, abrir nuevas líneas de servicio y desarrollar una operación local con procesos.'
+        eyebrow: 'Modelo de crecimiento',
+        title: 'De agente independiente a <span class="gradient-text">líder de equipo.</span>',
+        desc: 'El objetivo no es vender una póliza aislada. Es construir una cartera, generar seguimiento real y desarrollar tu propio equipo dentro de Caicedo Team.'
       },
       agentes: {
         eyebrow: 'Oportunidad profesional',
-        title: 'Para agentes con <span class="gradient-text">mentalidad empresarial</span>',
-        desc: 'Una oportunidad seria para agentes de vida y salud que quieren desarrollar múltiples líneas de ingreso, mejor seguimiento y una ruta hacia el modelo multiservices.',
-        benefitTitles: ['Construye una cartera', 'Desarrolla varias líneas', 'Entrenamiento y scripts', 'Sistema de seguimiento', 'Crecimiento acompañado', 'Modelo duplicable'],
+        title: 'Únete a <span class="gradient-text">Caicedo Team</span>',
+        desc: 'Una oportunidad seria para agentes de vida y salud que quieren desarrollar una carrera real, con mejor seguimiento y una ruta clara hacia el liderazgo de equipo.',
+        benefitTitles: ['Construye una cartera', 'Domina vida, salud y retiro', 'Entrenamiento y scripts', 'Sistema de seguimiento', 'Crecimiento acompañado', 'Modelo duplicable'],
         benefitDescs: [
           'Aprende a servir clientes con seguimiento, renovaciones, referidos y relaciones sostenibles.',
-          'Conecta servicios administrativos y de apoyo según la necesidad real de la comunidad.',
+          'Desarrolla licencias y conocimiento en los tres pilares: vida, salud/Medicare y retiro.',
           'Producto, ventas, cumplimiento, mensajes de WhatsApp y conversaciones consultivas.',
           'CRM, etiquetas, recordatorios y campañas para no depender de memoria ni mensajes sueltos.',
-          'Mentoría, revisión de oportunidades y enfoque en hábitos comerciales consistentes.',
-          'Una ruta para pasar de productor a líder, equipo y eventualmente oficina multiservices.'
+          'Mentoría directa, revisión de oportunidades y enfoque en hábitos comerciales consistentes.',
+          'Una ruta para pasar de productor a líder y construir tu propio equipo dentro de Caicedo Team.'
         ],
-        ctas: ['Aplicar como agente', 'Quiero el modelo de oficina']
+        ctas: ['Aplicar al equipo', 'Quiero más información']
       },
       sistema: {
-        eyebrow: 'Sistema IZZY',
+        eyebrow: 'Sistema Caicedo Team',
         title: 'Infraestructura para <span class="gradient-text">crecer con orden</span>',
-        desc: 'La diferencia está en el seguimiento. IZZY combina servicios, procesos y automatización para convertir conversaciones en relaciones de largo plazo.',
-        itemTitles: ['Pipeline de leads', 'WhatsApp follow-up', 'Campañas locales', 'Referidos y renovaciones', 'Entrenamiento', 'Procesos duplicables'],
+        desc: 'La diferencia está en el seguimiento. Combinamos protección, procesos y automatización para convertir conversaciones en relaciones de largo plazo.',
+        itemTitles: ['Pipeline de leads', 'WhatsApp follow-up', 'Campañas por temporada', 'Referidos y renovaciones', 'Entrenamiento', 'Procesos duplicables'],
         itemDescs: [
-          'Clientes, agentes y prospectos de oficina organizados por etapa, interés y próxima acción.',
-          'Mensajes por intención: consulta, agente u oficina, con seguimiento claro y humano.',
-          'Temporadas de taxes y negocios con mensajes de orientación segmentados.',
-          'Proceso para pedir reseñas, referidos, revisiones anuales y oportunidades cruzadas.',
+          'Clientes y prospectos de equipo organizados por etapa, interés y próxima acción.',
+          'Mensajes por intención: protección familiar u oportunidad profesional, con seguimiento claro y humano.',
+          'Temporada de Medicare (AEP), revisiones de póliza y campañas de retiro con mensajes segmentados.',
+          'Proceso para pedir referidos, revisiones anuales y renovaciones sin perder el contacto.',
           'Guías, scripts, sesiones y hábitos comerciales para agentes y equipos en crecimiento.',
-          'Plantillas, checklist y estructura para futuras oficinas multiservices IZZY.'
+          'Plantillas, checklist y estructura lista para que nuevos agentes se integren rápido.'
         ]
       },
       porque: {
-        eyebrow: 'Nuestra diferencia',
-        title: '¿Por qué <span class="gradient-text">IZZY</span>?',
-        desc: 'Porque combinamos confianza comunitaria con una mentalidad empresarial moderna: servicios, seguimiento y desarrollo de agentes bajo una misma marca.',
+        eyebrow: 'Nosotros',
+        title: '¿Por qué <span class="gradient-text">Caicedo Team</span>?',
+        desc: 'Porque combinamos confianza comunitaria con una mentalidad profesional moderna: protección, seguimiento y desarrollo de agentes bajo un mismo equipo.',
         itemTitles: ['100% Bilingüe', 'Agente Independiente', 'Mentalidad de Sistema', 'Enfocados en la Comunidad'],
         itemDescs: [
           'Atención completa en español e inglés. Explicamos los detalles sin barreras de idioma.',
           'No estamos atados a una sola compañía. Buscamos la mejor opción del mercado para ti.',
           'No improvisamos seguimiento. Organizamos leads, citas, renovaciones y oportunidades.',
           'Servimos principalmente a familias latinas y comunidades inmigrantes con empatía y respeto.'
-        ]
+        ],
+        bioName: 'Moisés Caicedo',
+        bioRole: 'Agente de Seguros de Vida y Salud · Fundador de Caicedo Team',
+        bioText: '[Tu historia aquí: cuéntales por qué empezaste en seguros, a quién ayudas y qué te hace diferente. 2–4 líneas.]'
       },
       resultados: {
         eyebrow: 'Base de confianza',
@@ -114,36 +112,36 @@
         metricsStrong: ['Atención bilingüe', 'Cobertura activa', 'Consulta inicial', 'Seguimiento'],
         metricsDesc: ['Español e inglés', 'California y Florida', 'Orientación clara por WhatsApp o llamada', 'Proceso paso a paso por intención'],
         testimonialText: [
-          'Persona que busca resolver sus trámites y taxes en un solo lugar, con explicación simple y acompañamiento en español.',
-          'Agente que empieza con una línea y evoluciona a una operación con seguimiento, cartera y servicios complementarios.',
-          'Emprendedor que quiere abrir oficina multiservices con estructura comercial, procesos y soporte operativo.'
+          'Familia que busca proteger su futuro con un seguro de vida claro, explicado en español y sin presión.',
+          'Agente que empieza con una línea de vida y evoluciona hacia salud, Medicare y retiro con seguimiento real.',
+          'Productor que decide liderar su propio equipo dentro de Caicedo Team con mentoría y procesos.'
         ],
-        testimonialRole: ['Caso tipo · Cliente', 'Caso tipo · Agente', 'Caso tipo · Oficina']
+        testimonialRole: ['Caso tipo · Cliente', 'Caso tipo · Agente', 'Caso tipo · Líder de equipo']
       },
       ctaFinal: {
         title: 'Empieza por el camino correcto.',
-        desc: 'Ya sea que necesites servicios, quieras crecer como agente o estés explorando una oficina multiservices, IZZY te recibe con una conversación clara.',
-        cards: ['Necesito servicios', 'Quiero crecer como agente', 'Quiero abrir una oficina'],
-        cardSubs: ['Servicios para familias y emprendedores', 'Entrenamiento, cartera y seguimiento', 'Modelo multiservices duplicable']
+        desc: 'Ya sea que quieras proteger a tu familia o conocer la oportunidad profesional, Caicedo Team te recibe con una conversación clara.',
+        cards: ['Quiero proteger a mi familia', 'Quiero conocer la oportunidad profesional'],
+        cardSubs: ['Vida, salud y retiro', 'Entrenamiento, cartera y liderazgo']
       },
       footer: {
         tagline: 'Protegiendo familias, construyendo futuros.',
         plataforma: 'Plataforma',
-        serviciosClave: 'Servicios clave',
+        serviciosClave: 'Nuestros pilares',
         contacto: 'Contacto',
-        links1: ['Servicios', 'Ruta para agentes', 'Modelo para oficinas', 'Sistema IZZY'],
-        links2: ['Protección familiar', 'Orientación financiera inicial', 'Taxes', 'ITIN', 'Registro de negocios', 'Apoyo administrativo'],
+        links1: ['Servicios', 'Únete al equipo', 'Nosotros', 'Sistema Caicedo Team'],
+        links2: ['Vida', 'Salud y Medicare', 'Retiro'],
         contactMeta: ['California & Florida', 'Lun-Sáb · Atención por cita'],
-        disclaimer: 'IZZY Financial & Business Services ofrece orientación general y servicios administrativos. Algunos servicios pueden requerir licencia, autorización, appointment, revisión profesional independiente o cumplimiento de requisitos estatales y federales. La disponibilidad de servicios puede variar según el estado, proveedor, elegibilidad y regulación aplicable. No se garantizan aprobaciones, tarifas, coberturas, ahorros, ingresos ni resultados. IZZY Financial & Business Services no está afiliado, respaldado ni aprobado por ninguna entidad gubernamental, programa federal, departamento estatal, carrier o compañía de seguros, salvo que se indique expresamente por escrito. © 2026 IZZY Financial & Business Services. Todos los derechos reservados.'
+        disclaimer: 'Caicedo Team / IZZY Financial & Business Services ofrece orientación general y servicios de seguros de vida, salud y retiro. Algunos servicios pueden requerir licencia, autorización, appointment, revisión profesional independiente o cumplimiento de requisitos estatales y federales. La disponibilidad de servicios puede variar según el estado, proveedor, elegibilidad y regulación aplicable. No se garantizan aprobaciones, tarifas, coberturas, ahorros, ingresos ni resultados. Caicedo Team no está afiliado, respaldado ni aprobado por ninguna entidad gubernamental, programa federal, departamento estatal, carrier o compañía de seguros, salvo que se indique expresamente por escrito. © 2026 Caicedo Team. Todos los derechos reservados.'
       },
-      contactFormTitle: 'Cuéntanos qué necesitas', formName: 'Nombre', formPhone: 'Teléfono', formIntent: 'Intención', formState: 'Estado',
+      contactFormTitle: 'Cuéntanos qué necesitas', formName: 'Nombre', formPhone: 'Teléfono', formIntent: '¿Qué buscas?', formState: 'Estado',
       formNamePlaceholder: 'Tu nombre', formSubmit: 'Enviar por WhatsApp', callNow: 'Llamar Ahora',
       states: ['California', 'Florida', 'Otro'],
-      intents: ['Soy cliente', 'Soy agente', 'Quiero oficina'],
+      intents: ['Proteger a mi familia', 'Oportunidad profesional'],
       validation: {
         name: 'Ingresa tu nombre.',
         phone: 'Ingresa un teléfono válido (mínimo 10 dígitos).',
-        intent: 'Selecciona tu intención.',
+        intent: 'Selecciona qué buscas.',
         state: 'Selecciona tu estado.',
         review: 'Revisa los campos marcados antes de enviar.',
         saving: 'Guardando lead...',
@@ -152,111 +150,108 @@
       },
       wa: {
         hero: {
-          cliente: { label: 'Empezar consulta', text: 'Hola, quiero orientación inicial sobre servicios para familias o emprendedores.' },
-          agente: { label: 'Aplicar como agente', text: 'Hola, quiero más información sobre IZZY Financial & Business Services.' },
-          oficina: { label: 'Abrir mi oficina IZZY', text: 'Hola, quiero conocer el modelo multiservices de IZZY.' }
+          cliente: { label: 'Agenda una consulta', text: 'Hola, quiero proteger a mi familia con un seguro de vida, salud o retiro.' },
+          agente: { label: 'Habla con Moisés', text: 'Hola, quiero conocer la oportunidad profesional de Caicedo Team.' }
         },
-        formIntro: 'Hola, quiero una consulta.',
-        fields: { name: 'Nombre', phone: 'Teléfono', intent: 'Intención', state: 'Estado' }
+        formIntro: 'Hola, quiero una consulta con Caicedo Team.',
+        fields: { name: 'Nombre', phone: 'Teléfono', intent: 'Interés', state: 'Estado' }
       }
     },
     en: {
-      navServicios: 'Guidance', navModelo: 'Taxes & ITIN', navAgentes: 'Agents', navSistema: 'Offices', navContacto: 'Contact Us',
-      heroBadge: 'Financial launchpad for the Hispanic community',
-      heroTitle: 'Everything you need to<br><span class="gradient-text">protect, organize, and grow.</span>',
-      heroSubtitle: 'We help you understand your options, organize documents, and receive initial guidance in areas like family protection, taxes, ITIN, business registration, and administrative services.',
-      intentAria: 'Choose your path', intentCliente: 'I am a client', intentAgente: 'I am an agent', intentOficina: 'I want an office',
-      ctaSecondary: 'View all services', ctaTertiary: 'Talk to an advisor',
-      trust: ['Bilingual service', 'California & Florida', 'Free consultation', 'Administrative Support', 'Agent growth model'],
-      stats: ['Services', 'States', 'System'],
+      navVida: 'Life', navSalud: 'Health & Medicare', navRetiro: 'Retirement', navNosotros: 'About', navEquipo: 'Join the Team', navContacto: 'Contact',
+      heroBadge: 'Life, health, and retirement protection for the Hispanic community',
+      heroTitle: 'We protect what<br><span class="gradient-text">matters most.</span>',
+      heroSubtitle: 'Personalized life, health, and retirement insurance solutions to protect your family and build financial independence — bilingual service, no fine print.',
+      intentAria: 'Choose your path', intentCliente: 'I want to protect my family', intentAgente: 'I want to learn about the opportunity',
+      ctaSecondary: 'View all services', ctaTertiary: 'Talk to Moisés',
+      trust: ['Bilingual service', 'California & Florida', 'Free consultation', 'Independent agent', 'Caicedo Team'],
+      stats: ['Pillars', 'States', 'Team'],
       visualEyebrow: 'Real service, professional image',
       visualTitle: 'A <span class="gradient-text">modern and trusted</span> experience',
-      visualDesc: 'We combine human guidance, operational structure, and bilingual support for families, agents, and entrepreneurs.',
+      visualDesc: 'We combine human guidance, technology, and bilingual support for families and for people who want to build a career in insurance.',
       visualCards: {
         titles: ['Clear guidance', 'Structured growth', 'Results with follow-up'],
         descs: [
-          'Step-by-step guidance for family and business services.',
-          'A serious model for agents and multi-services offices.',
-          'Processes, CRM, and ongoing support to move forward.'
+          'We explain your life, health, and retirement options without the jargon.',
+          'A serious system for agents who want to build their own team.',
+          'Processes, CRM, and ongoing support to move forward with clarity.'
         ]
       },
-      categories: ['Family Protection', 'Taxes, ITIN, and documents', 'Learning pathway', 'Multi-services office model'],
+      categories: ['Life', 'Health & Medicare', 'Retirement', 'Join the Team'],
       caminos: {
         eyebrow: 'Choose your path',
-        title: 'One platform for <span class="gradient-text">clients, agents, and entrepreneurs</span>',
-        desc: 'IZZY connects essential services with training, follow-up, and a scalable business vision for the Hispanic community.',
-        labels: ['I am a Client', 'I am an Agent', 'I want to Build'],
-        cardTitles: ['Protect and organize your financial life.', 'Build a career with structure.', 'Develop a multi-services office.'],
+        title: 'One platform for <span class="gradient-text">families and agents</span>',
+        desc: 'Caicedo Team connects essential protection with training, follow-up, and a scalable professional vision for the Hispanic community.',
+        labels: ['I am a Client', 'I am an Agent', 'I am a Leader'],
+        cardTitles: ['Protect your family and your future.', 'Build a career with structure.', 'Build your own team.'],
         cardDescs: [
-          'Initial support for people who want to understand options for family protection, financial organization, documents, and support services.',
-          'Training, follow-up, referrals, and multi-service expansion for agents who want to grow with a serious system.',
-          'A scalable model with CRM, marketing, processes, and multiple service lines to build local presence.'
+          'Clear guidance on life insurance, IUL, health, Medicare, and retirement strategies to protect what matters most.',
+          'Training, follow-up, referrals, and a real professional path for life and health agents who want to grow with a serious system.',
+          'A scalable model with CRM, mentorship, and processes to move from producer to leader within Caicedo Team.'
         ],
-        links: ['I need services →', 'I want to grow as an agent →', 'I want to open an office →']
+        links: ['I need protection →', 'I want to grow as an agent →', 'I want to lead a team →']
       },
       servicios: {
-        eyebrow: 'Service ecosystem',
-        title: 'Services that help you <span class="gradient-text">protect, organize, and grow</span>',
-        desc: 'We bring together protection, paperwork, and business support to serve every family, client, and entrepreneur better.',
+        eyebrow: 'Our pillars',
+        title: 'Protection that helps you <span class="gradient-text">live, care, and grow</span>',
+        desc: 'We organize financial protection into three simple pillars: life, health, and retirement.',
         pills: ['Bilingual service', 'California & Florida', 'Free initial consultation'],
         link: 'Free consultation →',
-        titles: ['Family Protection', 'Initial Financial Guidance', 'Taxes', 'ITIN', 'Business Registration', 'Administrative Support', 'Document Support', 'Small Business Support'],
+        titles: ['Life', 'Health & Medicare', 'Retirement'],
         descs: [
-          'Personal and commercial coverage with option comparisons so you can choose with clarity.',
-          'Term, whole life, and IUL options to protect your family and legacy.',
-          'Personal and business tax preparation with clear guidance so you can stay organized and compliant.',
-          'Support for ITIN applications or renewals, including document checklist and next steps.',
-          'Business registration and initial setup guidance to operate on a formal and reliable foundation.',
-          'Administrative help with forms, document organization, and process follow-up to keep everything on track.',
-          'Support with DMV procedures and documents, step by step and without language barriers.',
-          'Structure, financial guidance, and practical support to build with a solid foundation.'
+          'Term, whole life, IUL, and final expense coverage to protect your family and your legacy.',
+          'Medicare Advantage, Medicare Supplement, and ACA plans explained clearly, no fine print.',
+          'Annuities and retirement strategies to build guaranteed long-term income.'
         ]
       },
       modelo: {
-        eyebrow: 'Multi-services model',
-        title: 'A service model to support the community.',
-        desc: 'The goal is not to sell a single product. It is to build a portfolio, create follow-up, open new service lines, and develop a local operation with processes.'
+        eyebrow: 'Growth model',
+        title: 'From independent agent to <span class="gradient-text">team leader.</span>',
+        desc: 'The goal is not to sell a single policy. It is to build a portfolio, create real follow-up, and develop your own team within Caicedo Team.'
       },
       agentes: {
         eyebrow: 'Professional opportunity',
-        title: 'For agents with an <span class="gradient-text">entrepreneurial mindset</span>',
-        desc: 'A serious opportunity for life and health agents who want to develop multiple income lines, stronger follow-up, and a path toward the multi-services model.',
-        benefitTitles: ['Build a portfolio', 'Develop multiple lines', 'Training and scripts', 'Follow-up system', 'Guided growth', 'Scalable model'],
+        title: 'Join <span class="gradient-text">Caicedo Team</span>',
+        desc: 'A serious opportunity for life and health agents who want to build a real career, with stronger follow-up and a clear path to team leadership.',
+        benefitTitles: ['Build a portfolio', 'Master life, health & retirement', 'Training and scripts', 'Follow-up system', 'Guided growth', 'Scalable model'],
         benefitDescs: [
           'Learn to serve clients with follow-up, renewals, referrals, and sustainable relationships.',
-          'Connect administrative and support services based on real community needs.',
+          'Build licensing and knowledge across the three pillars: life, health/Medicare, and retirement.',
           'Product, sales, compliance, WhatsApp messaging, and consultative conversations.',
           'CRM, tags, reminders, and campaigns so you do not depend on memory or scattered messages.',
-          'Mentorship, opportunity review, and focus on consistent commercial habits.',
-          'A path to move from producer to leader, team, and eventually a multi-services office.'
+          'Direct mentorship, opportunity review, and focus on consistent business habits.',
+          'A path to move from producer to leader and build your own team within Caicedo Team.'
         ],
-        ctas: ['Apply as an agent', 'I want the office model']
+        ctas: ['Apply to join', 'I want more information']
       },
       sistema: {
-        eyebrow: 'IZZY System',
+        eyebrow: 'Caicedo Team System',
         title: 'Infrastructure to <span class="gradient-text">grow with order</span>',
-        desc: 'The difference is follow-up. IZZY combines services, processes, and automation to turn conversations into long-term relationships.',
-        itemTitles: ['Lead pipeline', 'WhatsApp follow-up', 'Local campaigns', 'Referrals and renewals', 'Training', 'Scalable processes'],
+        desc: 'The difference is follow-up. We combine protection, processes, and automation to turn conversations into long-term relationships.',
+        itemTitles: ['Lead pipeline', 'WhatsApp follow-up', 'Seasonal campaigns', 'Referrals and renewals', 'Training', 'Scalable processes'],
         itemDescs: [
-          'Clients, agents, and office prospects organized by stage, interest, and next action.',
-          'Intent-based messaging: consultation, agent, or office, with clear and human follow-up.',
-          'Tax season and business campaigns with segmented guidance messaging.',
-          'A process to request reviews, referrals, annual check-ins, and cross-selling opportunities.',
+          'Clients and team prospects organized by stage, interest, and next action.',
+          'Intent-based messaging: family protection or professional opportunity, with clear and human follow-up.',
+          'Medicare AEP season, policy reviews, and retirement campaigns with segmented messaging.',
+          'A process to request referrals, annual reviews, and renewals without losing touch.',
           'Guides, scripts, sessions, and sales habits for agents and growing teams.',
-          'Templates, checklists, and structure for future IZZY multi-services offices.'
+          'Templates, checklists, and structure ready for new agents to onboard quickly.'
         ]
       },
       porque: {
-        eyebrow: 'Our difference',
-        title: 'Why <span class="gradient-text">IZZY</span>?',
-        desc: 'Because we combine community trust with a modern business mindset: services, follow-up, and agent development under one brand.',
+        eyebrow: 'About us',
+        title: 'Why <span class="gradient-text">Caicedo Team</span>?',
+        desc: 'Because we combine community trust with a modern professional mindset: protection, follow-up, and agent development under one team.',
         itemTitles: ['100% Bilingual', 'Independent Agent', 'System Mindset', 'Community Focused'],
         itemDescs: [
           'Full service in Spanish and English. We explain details without language barriers.',
           'We are not tied to a single carrier. We search for the best market option for you.',
           'We do not improvise follow-up. We organize leads, appointments, renewals, and opportunities.',
           'We primarily serve Latino families and immigrant communities with empathy and respect.'
-        ]
+        ],
+        bioName: 'Moisés Caicedo',
+        bioRole: 'Life & Health Insurance Agent · Founder of Caicedo Team',
+        bioText: '[Your story here: tell them why you got into insurance, who you help, and what makes you different. 2–4 lines.]'
       },
       resultados: {
         eyebrow: 'Trust foundation',
@@ -265,36 +260,36 @@
         metricsStrong: ['Bilingual service', 'Active coverage', 'Initial consultation', 'Follow-up'],
         metricsDesc: ['Spanish and English', 'California and Florida', 'Clear guidance via WhatsApp or phone', 'Step-by-step process by intent'],
         testimonialText: [
-          'A person looking to solve their paperwork and taxes in one place, with simple explanation and Spanish support.',
-          'An agent who starts with one line and evolves into an operation with follow-up, portfolio, and complementary services.',
-          'An entrepreneur who wants to open a multi-services office with commercial structure, processes, and operational support.'
+          'A family looking to protect their future with clear life insurance, explained in Spanish and without pressure.',
+          'An agent who starts with one life line and grows into health, Medicare, and retirement with real follow-up.',
+          'A producer who decides to lead their own team within Caicedo Team with mentorship and process.'
         ],
-        testimonialRole: ['Case type · Client', 'Case type · Agent', 'Case type · Office']
+        testimonialRole: ['Case type · Client', 'Case type · Agent', 'Case type · Team Leader']
       },
       ctaFinal: {
         title: 'Start on the right path.',
-        desc: 'Whether you need services, want to grow as an agent, or are exploring a multi-services office, IZZY welcomes you with a clear conversation.',
-        cards: ['I need services', 'I want to grow as an agent', 'I want to open an office'],
-        cardSubs: ['Services for families and entrepreneurs', 'Training, portfolio, and follow-up', 'Scalable multi-services office model']
+        desc: 'Whether you want to protect your family or learn about the professional opportunity, Caicedo Team welcomes you with a clear conversation.',
+        cards: ['I want to protect my family', 'I want to learn about the opportunity'],
+        cardSubs: ['Life, health, and retirement', 'Training, portfolio, and leadership']
       },
       footer: {
         tagline: 'Protecting families, building futures.',
         plataforma: 'Platform',
-        serviciosClave: 'Key services',
+        serviciosClave: 'Our pillars',
         contacto: 'Contact',
-        links1: ['Services', 'Agent pathway', 'Office model', 'IZZY System'],
-        links2: ['Family Protection', 'Initial Financial Guidance', 'Taxes', 'ITIN', 'Business Registration', 'Administrative Support'],
+        links1: ['Services', 'Join the team', 'About', 'Caicedo Team System'],
+        links2: ['Life', 'Health & Medicare', 'Retirement'],
         contactMeta: ['California & Florida', 'Mon-Sat · By appointment'],
-        disclaimer: 'IZZY Financial & Business Services offers general guidance and administrative services. Some services may require licensing, authorization, appointment, independent professional review, or compliance with state and federal requirements. Availability of services may vary by state, provider, eligibility, and applicable regulations. Approvals, rates, coverages, savings, income, or results are not guaranteed. IZZY Financial & Business Services is not affiliated with, endorsed by, or approved by any government entity, federal program, state department, carrier, or insurance company, unless expressly stated in writing. © 2026 IZZY Financial & Business Services. All rights reserved.'
+        disclaimer: 'Caicedo Team / IZZY Financial & Business Services offers general guidance and life, health, and retirement insurance services. Some services may require licensing, authorization, appointment, independent professional review, or compliance with state and federal requirements. Availability of services may vary by state, provider, eligibility, and applicable regulations. Approvals, rates, coverages, savings, income, or results are not guaranteed. Caicedo Team is not affiliated with, endorsed by, or approved by any government entity, federal program, state department, carrier, or insurance company, unless expressly stated in writing. © 2026 Caicedo Team. All rights reserved.'
       },
-      contactFormTitle: 'Tell us what you need', formName: 'Name', formPhone: 'Phone', formIntent: 'Intent', formState: 'State',
+      contactFormTitle: 'Tell us what you need', formName: 'Name', formPhone: 'Phone', formIntent: 'What are you looking for?', formState: 'State',
       formNamePlaceholder: 'Your name', formSubmit: 'Send via WhatsApp', callNow: 'Call Now',
       states: ['California', 'Florida', 'Other'],
-      intents: ['I am a client', 'I am an agent', 'I want an office'],
+      intents: ['Protect my family', 'Professional opportunity'],
       validation: {
         name: 'Please enter your name.',
         phone: 'Please enter a valid phone number (at least 10 digits).',
-        intent: 'Please select your intent.',
+        intent: 'Please select what you are looking for.',
         state: 'Please select your state.',
         review: 'Please review the highlighted fields before submitting.',
         saving: 'Saving lead...',
@@ -303,12 +298,11 @@
       },
       wa: {
         hero: {
-          cliente: { label: 'Start consultation', text: 'Hi, I want initial guidance on services for families or entrepreneurs.' },
-          agente: { label: 'Apply as agent', text: 'Hi, I want more information about IZZY Financial & Business Services.' },
-          oficina: { label: 'Open my IZZY office', text: 'Hi, I want to learn about the IZZY multiservices model.' }
+          cliente: { label: 'Book a consultation', text: 'Hi, I want to protect my family with life, health, or retirement insurance.' },
+          agente: { label: 'Talk to Moisés', text: 'Hi, I want to learn about the Caicedo Team professional opportunity.' }
         },
-        formIntro: 'Hi, I want a consultation.',
-        fields: { name: 'Name', phone: 'Phone', intent: 'Intent', state: 'State' }
+        formIntro: 'Hi, I would like a consultation with Caicedo Team.',
+        fields: { name: 'Name', phone: 'Phone', intent: 'Interest', state: 'State' }
       }
     }
   };
@@ -330,7 +324,7 @@
     });
   };
 
-  const waLink = (text) => `https://wa.me/18182667038?text=${encodeURIComponent(text)}`;
+  const waLink = (text) => `https://wa.me/17866146546?text=${encodeURIComponent(text)}`;
 
   const langButtons = document.querySelectorAll('.lang-switch__btn');
   const intentButtons = document.querySelectorAll('.intent-switch__btn');
@@ -340,10 +334,11 @@
     const L = t[lang];
     document.documentElement.lang = lang;
 
-    setText('#nav-servicios', L.navServicios);
-    setText('#nav-modelo', L.navModelo);
-    setText('#nav-agentes', L.navAgentes);
-    setText('#nav-sistema', L.navSistema);
+    setText('#nav-vida', L.navVida);
+    setText('#nav-salud', L.navSalud);
+    setText('#nav-retiro', L.navRetiro);
+    setText('#nav-nosotros', L.navNosotros);
+    setText('#nav-equipo', L.navEquipo);
     setText('#nav-contacto', L.navContacto);
     setText('#hero-badge', L.heroBadge);
     setText('#hero-title', L.heroTitle, true);
@@ -353,7 +348,6 @@
 
     if (intentButtons[0]) intentButtons[0].textContent = L.intentCliente;
     if (intentButtons[1]) intentButtons[1].textContent = L.intentAgente;
-    if (intentButtons[2]) intentButtons[2].textContent = L.intentOficina;
 
     const ctaAgentHero = document.getElementById('cta-agent-hero');
     if (ctaAgentHero) ctaAgentHero.lastChild.textContent = ` ${L.ctaSecondary}`;
@@ -383,7 +377,7 @@
     setListText('#servicios .services-pill', L.servicios.pills);
     setListText('#services-grid .service-card__title', L.servicios.titles);
     setListText('#services-grid .service-card__desc', L.servicios.descs);
-    setListText('#services-grid .service-card__link', Array(8).fill(L.servicios.link));
+    setListText('#services-grid .service-card__link', Array(3).fill(L.servicios.link));
 
     setText('#modelo .section__eyebrow', L.modelo.eyebrow);
     setText('#modelo .section__title', L.modelo.title, true);
@@ -409,6 +403,9 @@
     setText('#por-que-izzy .section__desc', L.porque.desc);
     setListText('#why-grid .why-item__title', L.porque.itemTitles);
     setListText('#why-grid .why-item p', L.porque.itemDescs);
+    setText('#bio-name', L.porque.bioName);
+    setText('#bio-role', L.porque.bioRole);
+    setText('#bio-text', L.porque.bioText);
 
     setText('#resultados .section__eyebrow', L.resultados.eyebrow);
     setText('#resultados .section__title', L.resultados.title, true);
@@ -438,10 +435,9 @@
     if (ctaCallFinal) ctaCallFinal.lastChild.textContent = ` ${L.callNow}`;
 
     const intentSelect = document.getElementById('lead-intent');
-    if (intentSelect && intentSelect.options.length >= 3) {
+    if (intentSelect && intentSelect.options.length >= 2) {
       intentSelect.options[0].text = L.intents[0];
       intentSelect.options[1].text = L.intents[1];
-      intentSelect.options[2].text = L.intents[2];
     }
 
     const stateSelect = document.getElementById('lead-state');
@@ -672,7 +668,7 @@
 
       const payload = {
         createdAt: new Date().toISOString(),
-        source: 'Landing IZZY',
+        source: 'Landing Caicedo Team',
         name,
         phone,
         intent: intentLabel,

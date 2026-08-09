@@ -1,23 +1,23 @@
-# IZZY Financial & Business Services
+# Caicedo Team (IZZY Financial & Business Services)
 
 **Landing page estática para GitHub Pages**
 
 🌐 **URL:** https://connectionterritory-cmyk.github.io/izzyfbservices/  
-📞 **Teléfono / WhatsApp:** (818) 266-7038  
+📞 **Teléfono / WhatsApp:** (786) 614-6546  
 📍 **Área de servicio:** California & Florida
 
 ---
 
 ## Descripción
 
-Landing page profesional, bilingüe y responsiva para IZZY Financial & Business Services. Diseñada para convertir visitantes en prospectos a través de WhatsApp y llamada directa, comunicando tanto los servicios al cliente como la oportunidad para agentes y productores.
+Landing page profesional, bilingüe y responsiva para Caicedo Team, agencia independiente de seguros de vida, salud/Medicare y retiro. Diseñada para convertir visitantes en prospectos a través de WhatsApp y llamada directa, comunicando tanto la protección al cliente como la oportunidad profesional para agentes.
 
 ### Secciones
-1. **Hero** — Propuesta de valor principal con CTA doble
-2. **Servicios** — 6 tarjetas de servicio con links directos a WhatsApp
-3. **Oportunidad para agentes** — Programa de desarrollo profesional
-4. **Nuestro método** — 6 pasos del proceso de formación
-5. **Por qué IZZY** — Diferenciadores de la marca
+1. **Hero** — Propuesta de valor principal con CTA doble (proteger a mi familia / oportunidad profesional)
+2. **Nuestros pilares** — Vida, Salud y Medicare, Retiro con links directos a WhatsApp
+3. **Modelo de crecimiento** — Roadmap de agente independiente a líder de equipo
+4. **Únete a Caicedo Team** — Oportunidad profesional para agentes
+5. **Nosotros** — Diferenciadores de la marca + bio de Moisés Caicedo
 6. **CTA Final** — WhatsApp y llamada directa
 7. **Footer** — Contacto y disclaimer legal
 
@@ -48,8 +48,8 @@ Landing page profesional, bilingüe y responsiva para IZZY Financial & Business 
 
 | Canal | Valor |
 |---|---|
-| Teléfono | (818) 266-7038 |
-| WhatsApp | https://wa.me/18182667038 |
+| Teléfono | (786) 614-6546 |
+| WhatsApp | https://wa.me/17866146546 |
 | Área | California & Florida |
 
 ---
@@ -57,8 +57,8 @@ Landing page profesional, bilingüe y responsiva para IZZY Financial & Business 
 ## Cómo editar
 
 ### Cambiar número de WhatsApp / teléfono
-Busca `18182667038` en `index.html` y reemplaza con el número nuevo (formato internacional sin `+`).  
-Busca `8182667038` para los links `tel:`.
+Busca `17866146546` en `index.html` y reemplaza con el número nuevo (formato internacional sin `+`).  
+Busca `7866146546` para los links `tel:`.
 
 ### Conectar leads a Google Sheets
 1. Crea una hoja de cálculo en Google Sheets.
@@ -98,7 +98,17 @@ En `styles.css` las primeras líneas tienen las variables:
 |---|---|
 | v1.0 | Lanzamiento inicial — servicios básicos |
 | v2.0 | Rediseño completo — servicios + oportunidad de agente + método profesional |
+| v3.0 | Rebranding a Caicedo Team — pilares Vida/Salud/Retiro, sección Nosotros con bio, WhatsApp (786) 614-6546 |
 
 ---
 
-© 2026 IZZY Financial & Business Services. Todos los derechos reservados.
+## Pendiente antes de publicar
+
+- [ ] Reemplazar la foto placeholder en `#bio-card` (`index.html`) por una foto real de Moisés Caicedo
+- [ ] Reemplazar el texto `bioText` en `script.js` (objetos `t.es.porque` y `t.en.porque`) por la historia real
+- [ ] Confirmar si el logo (`assets/izzy-eagle-logo.png`) se reemplaza por un logo propio de Caicedo Team
+- [ ] Confirmar colores de marca finales (actualmente se mantiene la paleta navy/verde-azulado existente)
+
+---
+
+© 2026 Caicedo Team. Todos los derechos reservados.
