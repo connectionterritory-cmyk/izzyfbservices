@@ -16,29 +16,29 @@
       heroSubtitle: 'Te ayudamos a entender tus opciones, organizar documentos y recibir orientación inicial en áreas como protección familiar, taxes, ITIN, registro de negocios y servicios administrativos.',
       intentAria: 'Elige tu intención', intentCliente: 'Soy cliente', intentAgente: 'Career', intentOficina: 'Quiero oficina',
       ctaSecondary: 'Career', ctaTertiary: 'Hablar con un asesor',
-      trust: ['Atención bilingüe', 'California & Florida', 'Consulta sin costo', 'Apoyo administrativo', 'Career para agentes'],
+      trust: ['Atención bilingüe', 'California & Florida', 'Consulta sin costo', 'Apoyo administrativo', 'Career profesional'],
       stats: ['Servicios', 'Estados', 'Sistema'],
       visualEyebrow: 'Atención real, imagen profesional',
       visualTitle: 'Una experiencia <span class="gradient-text">moderna y confiable</span>',
-      visualDesc: 'Combinamos asesoría humana, estructura operativa y acompañamiento bilingüe para familias, agentes y emprendedores.',
+      visualDesc: 'Combinamos asesoría humana, estructura operativa y acompañamiento bilingüe para familias, personas en Career y emprendedores.',
       visualCards: {
         titles: ['Asesoría clara', 'Crecimiento estructurado', 'Resultados con seguimiento'],
         descs: [
           'Orientación inicial y servicios para familias y emprendedores.',
-          'Modelo serio para agentes y oficinas multiservices.',
+          'Modelo serio para Career y oficinas multiservices.',
           'Procesos, CRM y acompañamiento continuo para avanzar.'
         ]
       },
       categories: ['Protección familiar', 'Taxes, ITIN y documentos', 'Career', 'Modelo de oficina multiservices'],
       caminos: {
         eyebrow: 'Elige tu camino',
-        title: 'Una plataforma para <span class="gradient-text">clientes, agentes y emprendedores</span>',
+        title: 'Una plataforma para <span class="gradient-text">clientes, Career y emprendedores</span>',
         desc: 'IZZY conecta servicios esenciales con entrenamiento, seguimiento y una visión empresarial duplicable para la comunidad hispana.',
         labels: ['Soy Cliente', 'Career', 'Quiero Emprender'],
         cardTitles: ['Protege y organiza tu vida financiera.', 'Construye una carrera con estructura.', 'Desarrolla una oficina multiservices.'],
         cardDescs: [
           'Apoyo inicial para personas que desean entender opciones de protección familiar, organización financiera, documentos y servicios de apoyo.',
-          'Entrenamiento, seguimiento, referidos y expansión multiservices para agentes que quieren crecer con un sistema serio.',
+          'Entrenamiento, seguimiento, referidos y expansión multiservices para personas que quieren crecer en Career con un sistema serio.',
           'Un modelo duplicable con CRM, marketing, procesos y múltiples líneas de servicio para crear presencia local.'
         ],
         links: ['Necesito servicios →', 'Ver Career →', 'Quiero abrir una oficina →']
@@ -68,8 +68,8 @@
       },
       agentes: {
         eyebrow: 'Career',
-        title: 'Para agentes con <span class="gradient-text">mentalidad empresarial</span>',
-        desc: 'Una oportunidad seria para agentes de vida y salud que quieren desarrollar múltiples líneas de ingreso, mejor seguimiento y una ruta hacia el modelo multiservices.',
+        title: 'Para personas con <span class="gradient-text">mentalidad empresarial</span>',
+        desc: 'Una oportunidad seria dentro de Career para desarrollar multiples lineas de ingreso, mejor seguimiento y una ruta hacia el modelo multiservices.',
         benefitTitles: ['Construye una cartera', 'Desarrolla varias líneas', 'Entrenamiento y scripts', 'Sistema de seguimiento', 'Crecimiento acompañado', 'Modelo duplicable'],
         benefitDescs: [
           'Aprende a servir clientes con seguimiento, renovaciones, referidos y relaciones sostenibles.',
@@ -87,18 +87,18 @@
         desc: 'La diferencia está en el seguimiento. IZZY combina servicios, procesos y automatización para convertir conversaciones en relaciones de largo plazo.',
         itemTitles: ['Pipeline de leads', 'WhatsApp follow-up', 'Campañas locales', 'Referidos y renovaciones', 'Entrenamiento', 'Procesos duplicables'],
         itemDescs: [
-          'Clientes, agentes y prospectos de oficina organizados por etapa, interés y próxima acción.',
-          'Mensajes por intención: consulta, agente u oficina, con seguimiento claro y humano.',
+          'Clientes, personas en Career y prospectos de oficina organizados por etapa, interes y proxima accion.',
+          'Mensajes por intencion: consulta, Career u oficina, con seguimiento claro y humano.',
           'Temporadas de taxes y negocios con mensajes de orientación segmentados.',
           'Proceso para pedir reseñas, referidos, revisiones anuales y oportunidades cruzadas.',
-          'Guías, scripts, sesiones y hábitos comerciales para agentes y equipos en crecimiento.',
+          'Guias, scripts, sesiones y habitos comerciales para Career y equipos en crecimiento.',
           'Plantillas, checklist y estructura para futuras oficinas multiservices IZZY.'
         ]
       },
       porque: {
         eyebrow: 'Nuestra diferencia',
         title: '¿Por qué <span class="gradient-text">IZZY</span>?',
-        desc: 'Porque combinamos confianza comunitaria con una mentalidad empresarial moderna: servicios, seguimiento y desarrollo de agentes bajo una misma marca.',
+        desc: 'Porque combinamos confianza comunitaria con una mentalidad empresarial moderna: servicios, seguimiento y desarrollo de Career bajo una misma marca.',
         itemTitles: ['100% Bilingüe', 'Agente Independiente', 'Mentalidad de Sistema', 'Enfocados en la Comunidad'],
         itemDescs: [
           'Atención completa en español e inglés. Explicamos los detalles sin barreras de idioma.',
@@ -122,7 +122,7 @@
       },
       ctaFinal: {
         title: 'Empieza por el camino correcto.',
-        desc: 'Ya sea que necesites servicios, quieras crecer como agente o estés explorando una oficina multiservices, IZZY te recibe con una conversación clara.',
+        desc: 'Ya sea que necesites servicios, quieras crecer dentro de Career o estes explorando una oficina multiservices, IZZY te recibe con una conversacion clara.',
         cards: ['Necesito servicios', 'Career', 'Quiero abrir una oficina'],
         cardSubs: ['Servicios para familias y emprendedores', 'Entrenamiento, cartera y seguimiento', 'Modelo multiservices duplicable']
       },
@@ -153,7 +153,7 @@
       wa: {
         hero: {
           cliente: { label: 'Empezar consulta', text: 'Hola, quiero orientación inicial sobre servicios para familias o emprendedores.' },
-          agente: { label: 'Aplicar al Career', text: 'Hola, quiero mas informacion sobre el Career de IZZY Financial & Business Services.' },
+          agente: { label: 'Aplicar al Career', text: 'Hola, quiero mas informacion sobre Career en IZZY Financial & Business Services.' },
           oficina: { label: 'Abrir mi oficina IZZY', text: 'Hola, quiero conocer el modelo multiservices de IZZY.' }
         },
         formIntro: 'Hola, quiero una consulta.',
@@ -161,38 +161,38 @@
       }
     },
     en: {
-      navServicios: 'Guidance', navModelo: 'Taxes & ITIN', navAgentes: 'Agents', navSistema: 'Offices', navContacto: 'Contact Us',
+      navServicios: 'Guidance', navModelo: 'Taxes & ITIN', navAgentes: 'Career', navSistema: 'Offices', navContacto: 'Contact Us',
       heroBadge: 'Financial launchpad for the Hispanic community',
       heroTitle: 'Everything you need to<br><span class="gradient-text">protect, organize, and grow.</span>',
       heroSubtitle: 'We help you understand your options, organize documents, and receive initial guidance in areas like family protection, taxes, ITIN, business registration, and administrative services.',
-      intentAria: 'Choose your path', intentCliente: 'I am a client', intentAgente: 'I am an agent', intentOficina: 'I want an office',
-      ctaSecondary: 'View opportunity', ctaTertiary: 'Talk to an advisor',
-      trust: ['Bilingual service', 'California & Florida', 'Free consultation', 'Administrative Support', 'Agent growth model'],
+      intentAria: 'Choose your path', intentCliente: 'I am a client', intentAgente: 'Career', intentOficina: 'I want an office',
+      ctaSecondary: 'Career', ctaTertiary: 'Talk to an advisor',
+      trust: ['Bilingual service', 'California & Florida', 'Free consultation', 'Administrative Support', 'Professional Career'],
       stats: ['Services', 'States', 'System'],
       visualEyebrow: 'Real service, professional image',
       visualTitle: 'A <span class="gradient-text">modern and trusted</span> experience',
-      visualDesc: 'We combine human guidance, operational structure, and bilingual support for families, agents, and entrepreneurs.',
+      visualDesc: 'We combine human guidance, operational structure, and bilingual support for families, people in Career, and entrepreneurs.',
       visualCards: {
         titles: ['Clear guidance', 'Structured growth', 'Results with follow-up'],
         descs: [
           'Step-by-step guidance for family and business services.',
-          'A serious model for agents and multi-services offices.',
+          'A serious model for Career and multi-services offices.',
           'Processes, CRM, and ongoing support to move forward.'
         ]
       },
       categories: ['Family Protection', 'Taxes, ITIN, and documents', 'Learning pathway', 'Multi-services office model'],
       caminos: {
         eyebrow: 'Choose your path',
-        title: 'One platform for <span class="gradient-text">clients, agents, and entrepreneurs</span>',
+        title: 'One platform for <span class="gradient-text">clients, Career, and entrepreneurs</span>',
         desc: 'IZZY connects essential services with training, follow-up, and a scalable business vision for the Hispanic community.',
-        labels: ['I am a Client', 'I am an Agent', 'I want to Build'],
+        labels: ['I am a Client', 'Career', 'I want to Build'],
         cardTitles: ['Protect and organize your financial life.', 'Build a career with structure.', 'Develop a multi-services office.'],
         cardDescs: [
           'Initial support for people who want to understand options for family protection, financial organization, documents, and support services.',
-          'Training, follow-up, referrals, and multi-service expansion for agents who want to grow with a serious system.',
+          'Training, follow-up, referrals, and multi-service expansion for people who want to grow in Career with a serious system.',
           'A scalable model with CRM, marketing, processes, and multiple service lines to build local presence.'
         ],
-        links: ['I need services →', 'View opportunity →', 'I want to open an office →']
+        links: ['I need services →', 'View Career →', 'I want to open an office →']
       },
       servicios: {
         eyebrow: 'Service ecosystem',
@@ -218,9 +218,9 @@
         desc: 'The goal is not to sell a single product. It is to build a portfolio, create follow-up, open new service lines, and develop a local operation with processes.'
       },
       agentes: {
-        eyebrow: 'Professional opportunity',
-        title: 'For agents with an <span class="gradient-text">entrepreneurial mindset</span>',
-        desc: 'A serious opportunity for life and health agents who want to develop multiple income lines, stronger follow-up, and a path toward the multi-services model.',
+        eyebrow: 'Career',
+        title: 'For people with an <span class="gradient-text">entrepreneurial mindset</span>',
+        desc: 'A serious opportunity inside Career to develop multiple income lines, stronger follow-up, and a path toward the multi-services model.',
         benefitTitles: ['Build a portfolio', 'Develop multiple lines', 'Training and scripts', 'Follow-up system', 'Guided growth', 'Scalable model'],
         benefitDescs: [
           'Learn to serve clients with follow-up, renewals, referrals, and sustainable relationships.',
@@ -230,7 +230,7 @@
           'Mentorship, opportunity review, and focus on consistent commercial habits.',
           'A path to move from producer to leader, team, and eventually a multi-services office.'
         ],
-        ctas: ['Apply as an agent', 'I want the office model']
+        ctas: ['Apply to Career', 'I want the office model']
       },
       sistema: {
         eyebrow: 'IZZY System',
@@ -238,18 +238,18 @@
         desc: 'The difference is follow-up. IZZY combines services, processes, and automation to turn conversations into long-term relationships.',
         itemTitles: ['Lead pipeline', 'WhatsApp follow-up', 'Local campaigns', 'Referrals and renewals', 'Training', 'Scalable processes'],
         itemDescs: [
-          'Clients, agents, and office prospects organized by stage, interest, and next action.',
-          'Intent-based messaging: consultation, agent, or office, with clear and human follow-up.',
+          'Clients, people in Career, and office prospects organized by stage, interest, and next action.',
+          'Intent-based messaging: consultation, Career, or office, with clear and human follow-up.',
           'Tax season and business campaigns with segmented guidance messaging.',
           'A process to request reviews, referrals, annual check-ins, and cross-selling opportunities.',
-          'Guides, scripts, sessions, and sales habits for agents and growing teams.',
+          'Guides, scripts, sessions, and sales habits for Career and growing teams.',
           'Templates, checklists, and structure for future IZZY multi-services offices.'
         ]
       },
       porque: {
         eyebrow: 'Our difference',
         title: 'Why <span class="gradient-text">IZZY</span>?',
-        desc: 'Because we combine community trust with a modern business mindset: services, follow-up, and agent development under one brand.',
+        desc: 'Because we combine community trust with a modern business mindset: services, follow-up, and Career development under one brand.',
         itemTitles: ['100% Bilingual', 'Independent Agent', 'System Mindset', 'Community Focused'],
         itemDescs: [
           'Full service in Spanish and English. We explain details without language barriers.',
@@ -266,15 +266,15 @@
         metricsDesc: ['Spanish and English', 'California and Florida', 'Clear guidance via WhatsApp or phone', 'Step-by-step process by intent'],
         testimonialText: [
           'A person looking to solve their paperwork and taxes in one place, with simple explanation and Spanish support.',
-          'An agent who starts with one line and evolves into an operation with follow-up, portfolio, and complementary services.',
+          'A person in Career who starts with one line and evolves into an operation with follow-up, portfolio, and complementary services.',
           'An entrepreneur who wants to open a multi-services office with commercial structure, processes, and operational support.'
         ],
         testimonialRole: ['Case type · Client', 'Case type · Agent', 'Case type · Office']
       },
       ctaFinal: {
         title: 'Start on the right path.',
-        desc: 'Whether you need services, want to grow as an agent, or are exploring a multi-services office, IZZY welcomes you with a clear conversation.',
-        cards: ['I need services', 'I want to grow as an agent', 'I want to open an office'],
+        desc: 'Whether you need services, want to grow in Career, or are exploring a multi-services office, IZZY welcomes you with a clear conversation.',
+        cards: ['I need services', 'Career', 'I want to open an office'],
         cardSubs: ['Services for families and entrepreneurs', 'Training, portfolio, and follow-up', 'Scalable multi-services office model']
       },
       footer: {
@@ -282,7 +282,7 @@
         plataforma: 'Platform',
         serviciosClave: 'Key services',
         contacto: 'Contact',
-        links1: ['Services', 'Agent pathway', 'Opportunity presentation', 'Office model', 'IZZY System'],
+        links1: ['Services', 'Career', 'Career deck', 'Office model', 'IZZY System'],
         links2: ['Family Protection', 'Initial Financial Guidance', 'Taxes', 'ITIN', 'Business Registration', 'Administrative Support'],
         contactMeta: ['California & Florida', 'Mon-Sat · By appointment'],
         disclaimer: 'IZZY Financial & Business Services offers general guidance and administrative services. Some services may require licensing, authorization, appointment, independent professional review, or compliance with state and federal requirements. Availability of services may vary by state, provider, eligibility, and applicable regulations. Approvals, rates, coverages, savings, income, or results are not guaranteed. IZZY Financial & Business Services is not affiliated with, endorsed by, or approved by any government entity, federal program, state department, carrier, or insurance company, unless expressly stated in writing. © 2026 IZZY Financial & Business Services. All rights reserved.'
@@ -290,7 +290,7 @@
       contactFormTitle: 'Tell us what you need', formName: 'Name', formPhone: 'Phone', formIntent: 'Intent', formState: 'State',
       formNamePlaceholder: 'Your name', formSubmit: 'Send via WhatsApp', callNow: 'Call Now',
       states: ['California', 'Florida', 'Other'],
-      intents: ['I am a client', 'I am an agent', 'I want an office'],
+      intents: ['I am a client', 'Career', 'I want an office'],
       validation: {
         name: 'Please enter your name.',
         phone: 'Please enter a valid phone number (at least 10 digits).',
@@ -304,7 +304,7 @@
       wa: {
         hero: {
           cliente: { label: 'Start consultation', text: 'Hi, I want initial guidance on services for families or entrepreneurs.' },
-          agente: { label: 'Apply as agent', text: 'Hi, I want more information about IZZY Financial & Business Services.' },
+          agente: { label: 'Apply to Career', text: 'Hi, I want more information about Career at IZZY Financial & Business Services.' },
           oficina: { label: 'Open my IZZY office', text: 'Hi, I want to learn about the IZZY multiservices model.' }
         },
         formIntro: 'Hi, I want a consultation.',
