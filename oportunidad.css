@@ -701,27 +701,29 @@ button {
 }
 
 @media (max-width: 720px) {
-  .topbar,
-  .topbar__meta,
-  .deck-controls {
-    flex-direction: column;
-  }
-
   .topbar {
+    flex-direction: column;
     align-items: stretch;
   }
 
-  .topbar__meta,
+  .topbar__meta {
+    flex-wrap: wrap;
+    row-gap: 0.6rem;
+  }
+
   .deck-controls {
-    align-items: stretch;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: calc(100% - 2.8rem);
   }
 
   .progress-shell {
-    top: 7.9rem;
+    top: 9.6rem;
   }
 
   .slide {
-    padding-top: 10.5rem;
+    padding-top: 12.6rem;
+    padding-bottom: 10rem;
   }
 
   .slide__title {

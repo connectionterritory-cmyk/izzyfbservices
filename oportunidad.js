@@ -95,7 +95,11 @@
 
   const getVisibleStageIndex = (slide) => {
     const stages = Array.from(slide.querySelectorAll(".reveal-stage"));
-    return stages.findIndex((stage) => stage.classList.contains("is-visible"));
+    let lastVisible = -1;
+    stages.forEach((stage, index) => {
+      if (stage.classList.contains("is-visible")) lastVisible = index;
+    });
+    return lastVisible;
   };
 
   const revealNextStage = (slide) => {
