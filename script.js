@@ -15,7 +15,7 @@
       heroTitle: 'Todo lo que necesitas para<br><span class="gradient-text">proteger, organizar y crecer.</span>',
       heroSubtitle: 'Te ayudamos a entender tus opciones, organizar documentos y recibir orientación inicial en áreas como protección familiar, taxes, ITIN, registro de negocios y servicios administrativos.',
       intentAria: 'Elige tu intención', intentCliente: 'Soy cliente', intentAgente: 'Soy agente', intentOficina: 'Quiero oficina',
-      ctaSecondary: 'Ver oportunidad', ctaTertiary: 'Hablar con un asesor',
+      ctaSecondary: 'Career', ctaTertiary: 'Hablar con un asesor',
       trust: ['Atención bilingüe', 'California & Florida', 'Consulta sin costo', 'Apoyo administrativo', 'Modelo para agentes'],
       stats: ['Servicios', 'Estados', 'Sistema'],
       visualEyebrow: 'Atención real, imagen profesional',
@@ -41,7 +41,7 @@
           'Entrenamiento, seguimiento, referidos y expansión multiservices para agentes que quieren crecer con un sistema serio.',
           'Un modelo duplicable con CRM, marketing, procesos y múltiples líneas de servicio para crear presencia local.'
         ],
-        links: ['Necesito servicios →', 'Ver oportunidad →', 'Quiero abrir una oficina →']
+        links: ['Necesito servicios →', 'Career →', 'Quiero abrir una oficina →']
       },
       servicios: {
         eyebrow: 'Ecosistema de servicios',
@@ -131,7 +131,7 @@
         plataforma: 'Plataforma',
         serviciosClave: 'Servicios clave',
         contacto: 'Contacto',
-        links1: ['Servicios', 'Ruta para agentes', 'Presentación oportunidad', 'Modelo para oficinas', 'Sistema IZZY'],
+        links1: ['Servicios', 'Ruta para agentes', 'Career', 'Modelo para oficinas', 'Sistema IZZY'],
         links2: ['Protección familiar', 'Orientación financiera inicial', 'Taxes', 'ITIN', 'Registro de negocios', 'Apoyo administrativo'],
         contactMeta: ['California & Florida', 'Lun-Sáb · Atención por cita'],
         disclaimer: 'IZZY Financial & Business Services ofrece orientación general y servicios administrativos. Algunos servicios pueden requerir licencia, autorización, appointment, revisión profesional independiente o cumplimiento de requisitos estatales y federales. La disponibilidad de servicios puede variar según el estado, proveedor, elegibilidad y regulación aplicable. No se garantizan aprobaciones, tarifas, coberturas, ahorros, ingresos ni resultados. IZZY Financial & Business Services no está afiliado, respaldado ni aprobado por ninguna entidad gubernamental, programa federal, departamento estatal, carrier o compañía de seguros, salvo que se indique expresamente por escrito. © 2026 IZZY Financial & Business Services. Todos los derechos reservados.'
