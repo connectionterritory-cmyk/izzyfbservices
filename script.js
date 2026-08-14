@@ -13,7 +13,7 @@
     es: {
       navServicios: 'Orientacion',
       navModelo: 'Vida',
-      navAgentes: 'Salud y Medicare',
+      navAgentes: 'Career',
       navSistema: 'Retiro',
       navContacto: 'Contactanos',
       heroBadge: 'Orientacion financiera bilingue para la comunidad hispana',
@@ -21,9 +21,9 @@
       heroSubtitle: 'Te ayudamos a entender tus opciones en seguro de vida, salud, Medicare, retiro y educacion financiera con una conversacion clara, humana y bilingue.',
       intentAria: 'Elige tu prioridad',
       intentCliente: 'Proteccion familiar',
-      intentAgente: 'Salud y Medicare',
+      intentAgente: 'Career',
       intentOficina: 'Retiro',
-      ctaSecondary: 'Ver soluciones',
+      ctaSecondary: 'Ver Career',
       ctaTertiary: 'Hablar con un asesor',
       trust: ['Atencion bilingue', 'California & Florida', 'Consulta sin costo', 'Orientacion personalizada', 'Proteccion a largo plazo'],
       stats: ['Servicios', 'Estados', 'Equipo'],
@@ -38,23 +38,23 @@
           'Revision anual, ajustes y acompanamiento para cada etapa de vida.'
         ]
       },
-      categories: ['Seguro de vida', 'Salud y Medicare', 'Retiro y anualidades', 'Educacion financiera'],
+      categories: ['Seguro de vida', 'Career', 'Retiro y anualidades', 'Educacion financiera'],
       caminos: {
         eyebrow: 'Elige tu prioridad',
         title: 'Soluciones para <span class="gradient-text">proteger hoy y planificar manana</span>',
         desc: 'IZZY conecta orientacion, comparacion de opciones y acompanamiento bilingue para que cada familia avance con mas confianza.',
-        labels: ['Proteccion familiar', 'Salud y Medicare', 'Retiro'],
+        labels: ['Proteccion familiar', 'Career', 'Retiro'],
         cardTitles: [
           'Cuida a tu familia con una base solida.',
-          'Encuentra cobertura con mas claridad.',
+          'Explora una oportunidad con estructura.',
           'Construye ingresos y tranquilidad a largo plazo.'
         ],
         cardDescs: [
           'Explora opciones de seguro de vida, proteccion de ingresos y estrategias para cuidar a quienes mas quieres.',
-          'Te ayudamos a entender planes de salud, periodos de elegibilidad y opciones Medicare sin complicaciones innecesarias.',
+          'Conoce la ruta de crecimiento de Trainee a Marketing Director dentro de una presentacion clara, visual e interactiva.',
           'Revisa estrategias de retiro, acumulacion y preservacion para tomar decisiones con mas vision y menos incertidumbre.'
         ],
-        links: ['Quiero proteccion →', 'Ver opciones de salud →', 'Planificar mi retiro →']
+        links: ['Quiero proteccion →', 'Ver Career →', 'Planificar mi retiro →']
       },
       servicios: {
         eyebrow: 'Servicios financieros',
@@ -89,19 +89,19 @@
         desc: 'La meta no es solo ahorrar. Es crear una estrategia que combine proteccion, acumulacion, ingresos futuros y revisiones periodicas.'
       },
       agentes: {
-        eyebrow: 'Salud y Medicare',
-        title: 'Cobertura medica con <span class="gradient-text">acompanamiento claro</span>',
-        desc: 'Te guiamos para entender opciones, periodos de inscripcion y coberturas sin perderte en tecnicismos.',
-        benefitTitles: ['Elegibilidad', 'Comparacion de opciones', 'Explicacion sencilla', 'Seguimiento', 'Presupuesto y prioridad', 'Atencion bilingue'],
+        eyebrow: 'Career',
+        title: 'Una oportunidad con <span class="gradient-text">ruta de crecimiento clara</span>',
+        desc: 'Tambien puedes explorar el camino profesional de IZZY, desde el inicio hasta desarrollo de liderazgo y construccion de agencia.',
+        benefitTitles: ['Ruta paso a paso', 'Vision de crecimiento', 'Presentacion lista', 'Mensaje consistente', 'Uso comercial', 'Puente con IZZY'],
         benefitDescs: [
-          'Identificamos el momento correcto para actuar segun edad, periodo y situacion personal.',
-          'Aterrizamos diferencias practicas entre coberturas para que puedas decidir con mas seguridad.',
-          'Traducimos terminos complejos en conversaciones faciles de entender en espanol o ingles.',
-          'Acompanamos cambios de etapa, renovaciones y dudas posteriores a la eleccion inicial.',
-          'Buscamos equilibrio entre proteccion real, costo y estabilidad financiera familiar.',
-          'La claridad del idioma importa cuando se trata de cobertura, salud y decisiones sensibles.'
+          'La presentacion explica la progresion desde Trainee hasta Marketing Director de forma simple.',
+          'Muestra produccion, desarrollo de equipo y construccion de agencia dentro de una misma ruta.',
+          'El deck interactivo ya esta preparado para usar en Zoom o compartir como recurso visual.',
+          'Ayuda a explicar la oportunidad con una narrativa mas ordenada y profesional.',
+          'Sirve para conversaciones iniciales, seguimiento y presentaciones uno a uno o grupales.',
+          'Career queda conectado con la marca principal sin quitar el foco financiero del home.'
         ],
-        ctas: ['Quiero orientacion de salud', 'Revisar Medicare']
+        ctas: ['Quiero informacion de Career', 'Abrir presentacion']
       },
       sistema: {
         eyebrow: 'Sistema IZZY',
@@ -145,15 +145,15 @@
       ctaFinal: {
         title: 'Empieza por el camino correcto.',
         desc: 'Ya sea que quieras proteger a tu familia, revisar tu salud o planificar tu retiro, IZZY te recibe con una conversacion clara.',
-        cards: ['Seguro de vida', 'Salud y Medicare', 'Retiro'],
-        cardSubs: ['Proteccion familiar y legado', 'Cobertura medica con claridad', 'Estrategia, acumulacion e ingresos']
+        cards: ['Seguro de vida', 'Career', 'Retiro'],
+        cardSubs: ['Proteccion familiar y legado', 'Presentacion y oportunidad', 'Estrategia, acumulacion e ingresos']
       },
       footer: {
         tagline: 'Protegiendo familias, construyendo futuros.',
         plataforma: 'Plataforma',
         serviciosClave: 'Servicios clave',
         contacto: 'Contacto',
-        links1: ['Servicios', 'Salud y Medicare', 'Retiro', 'Soluciones', 'Sistema IZZY'],
+        links1: ['Servicios', 'Career', 'Career deck', 'Soluciones', 'Sistema IZZY'],
         links2: ['Seguro de vida', 'Proteccion de ingresos', 'Salud individual', 'Medicare', 'Anualidades', 'Planificacion de retiro'],
         contactMeta: ['California & Florida', 'Lun-Sab · Atencion por cita'],
         disclaimer: 'IZZY Financial & Business Services ofrece orientacion general sobre servicios financieros y de seguros. Algunos servicios pueden requerir licencia, autorizacion, revision profesional independiente o cumplimiento de requisitos estatales y federales. La disponibilidad puede variar segun el estado, proveedor, elegibilidad y regulacion aplicable. No se garantizan aprobaciones, tarifas, coberturas, ahorros ni resultados. IZZY Financial & Business Services no esta afiliado, respaldado ni aprobado por ninguna entidad gubernamental o carrier, salvo que se indique expresamente por escrito. © 2026 IZZY Financial & Business Services. Todos los derechos reservados.'
@@ -167,7 +167,7 @@
       formSubmit: 'Enviar por WhatsApp',
       callNow: 'Llamar ahora',
       states: ['California', 'Florida', 'Otro'],
-      intents: ['Proteccion familiar', 'Salud y Medicare', 'Retiro'],
+      intents: ['Proteccion familiar', 'Career', 'Retiro'],
       validation: {
         name: 'Ingresa tu nombre.',
         phone: 'Ingresa un telefono valido (minimo 10 digitos).',
@@ -181,7 +181,7 @@
       wa: {
         hero: {
           cliente: { label: 'Empezar consulta', text: 'Hola, quiero orientacion inicial sobre proteccion familiar.' },
-          agente: { label: 'Ver opciones de salud', text: 'Hola, quiero orientacion sobre salud y Medicare.' },
+          agente: { label: 'Ver Career', text: 'Hola, quiero informacion sobre Career.' },
           oficina: { label: 'Planificar mi retiro', text: 'Hola, quiero orientacion sobre retiro y anualidades.' }
         },
         formIntro: 'Hola, quiero una consulta sobre servicios financieros.',
@@ -191,7 +191,7 @@
     en: {
       navServicios: 'Guidance',
       navModelo: 'Life',
-      navAgentes: 'Health & Medicare',
+      navAgentes: 'Career',
       navSistema: 'Retirement',
       navContacto: 'Contact Us',
       heroBadge: 'Bilingual financial guidance for the Hispanic community',
@@ -199,9 +199,9 @@
       heroSubtitle: 'We help you understand your options in life insurance, health, Medicare, retirement, and financial education through a clear, human, bilingual conversation.',
       intentAria: 'Choose your priority',
       intentCliente: 'Family protection',
-      intentAgente: 'Health & Medicare',
+      intentAgente: 'Career',
       intentOficina: 'Retirement',
-      ctaSecondary: 'View solutions',
+      ctaSecondary: 'View Career',
       ctaTertiary: 'Talk to an advisor',
       trust: ['Bilingual service', 'California & Florida', 'Free consultation', 'Personalized guidance', 'Long-term protection'],
       stats: ['Services', 'States', 'Team'],
@@ -216,23 +216,23 @@
           'Annual reviews, adjustments, and support for every life stage.'
         ]
       },
-      categories: ['Life insurance', 'Health & Medicare', 'Retirement & annuities', 'Financial education'],
+      categories: ['Life insurance', 'Career', 'Retirement & annuities', 'Financial education'],
       caminos: {
         eyebrow: 'Choose your priority',
         title: 'Solutions to <span class="gradient-text">protect today and plan ahead</span>',
         desc: 'IZZY combines guidance, option comparison, and bilingual support so every family can move forward with greater confidence.',
-        labels: ['Family protection', 'Health & Medicare', 'Retirement'],
+        labels: ['Family protection', 'Career', 'Retirement'],
         cardTitles: [
           'Protect your family with a stronger foundation.',
-          'Find coverage with more clarity.',
+          'Explore an opportunity with structure.',
           'Build long-term income and peace of mind.'
         ],
         cardDescs: [
           'Explore life insurance, income protection, and strategies to care for the people who matter most.',
-          'We help you understand health plans, eligibility windows, and Medicare options without unnecessary confusion.',
+          'See the growth path from Trainee to Marketing Director in a clear, visual, interactive presentation.',
           'Review retirement, accumulation, and preservation strategies so you can decide with more vision and less uncertainty.'
         ],
-        links: ['I want protection →', 'View health options →', 'Plan my retirement →']
+        links: ['I want protection →', 'View Career →', 'Plan my retirement →']
       },
       servicios: {
         eyebrow: 'Financial services',
@@ -267,19 +267,19 @@
         desc: 'The goal is not only to save. It is to build a strategy that combines protection, accumulation, future income, and periodic reviews.'
       },
       agentes: {
-        eyebrow: 'Health & Medicare',
-        title: 'Medical coverage with <span class="gradient-text">clear guidance</span>',
-        desc: 'We help you understand options, enrollment periods, and coverage without getting lost in technical language.',
-        benefitTitles: ['Eligibility', 'Option comparison', 'Simple explanation', 'Follow-up', 'Budget and priority', 'Bilingual care'],
+        eyebrow: 'Career',
+        title: 'An opportunity with a <span class="gradient-text">clear growth path</span>',
+        desc: 'You can also explore IZZY’s professional path, from getting started through leadership development and agency building.',
+        benefitTitles: ['Step-by-step route', 'Growth vision', 'Ready presentation', 'Consistent message', 'Commercial use', 'Bridge with IZZY'],
         benefitDescs: [
-          'We identify the right time to act based on age, enrollment period, and personal situation.',
-          'We break down practical coverage differences so you can decide with greater confidence.',
-          'We translate complex terms into conversations that are easy to understand in Spanish or English.',
-          'We support life-stage changes, renewals, and questions after the initial decision.',
-          'We look for balance between real protection, cost, and family financial stability.',
-          'Language clarity matters when health coverage and sensitive decisions are involved.'
+          'The presentation explains the progression from Trainee to Marketing Director in a simple way.',
+          'It shows production, team development, and agency building in one connected route.',
+          'The interactive deck is already prepared to use on Zoom or share as a visual resource.',
+          'It helps explain the opportunity with a more structured and professional narrative.',
+          'It works for first conversations, follow-up, and one-to-one or group presentations.',
+          'Career stays connected to the main brand without taking the homepage away from its financial focus.'
         ],
-        ctas: ['I want health guidance', 'Review Medicare']
+        ctas: ['I want Career information', 'Open presentation']
       },
       sistema: {
         eyebrow: 'IZZY System',
@@ -323,15 +323,15 @@
       ctaFinal: {
         title: 'Start on the right path.',
         desc: 'Whether you want to protect your family, review your health coverage, or plan retirement, IZZY welcomes you with a clear conversation.',
-        cards: ['Life insurance', 'Health & Medicare', 'Retirement'],
-        cardSubs: ['Family protection and legacy', 'Medical coverage with clarity', 'Strategy, accumulation, and income']
+        cards: ['Life insurance', 'Career', 'Retirement'],
+        cardSubs: ['Family protection and legacy', 'Presentation and opportunity', 'Strategy, accumulation, and income']
       },
       footer: {
         tagline: 'Protecting families, building futures.',
         plataforma: 'Platform',
         serviciosClave: 'Key services',
         contacto: 'Contact',
-        links1: ['Services', 'Health & Medicare', 'Retirement', 'Solutions', 'IZZY System'],
+        links1: ['Services', 'Career', 'Career deck', 'Solutions', 'IZZY System'],
         links2: ['Life insurance', 'Income protection', 'Individual health', 'Medicare', 'Annuities', 'Retirement planning'],
         contactMeta: ['California & Florida', 'Mon-Sat · By appointment'],
         disclaimer: 'IZZY Financial & Business Services offers general guidance on financial and insurance services. Some services may require licensing, authorization, independent professional review, or compliance with state and federal requirements. Availability may vary by state, provider, eligibility, and applicable regulation. Approvals, rates, coverages, savings, and results are not guaranteed. IZZY Financial & Business Services is not affiliated with, endorsed by, or approved by any government entity or carrier unless expressly stated in writing. © 2026 IZZY Financial & Business Services. All rights reserved.'
@@ -345,7 +345,7 @@
       formSubmit: 'Send via WhatsApp',
       callNow: 'Call now',
       states: ['California', 'Florida', 'Other'],
-      intents: ['Family protection', 'Health & Medicare', 'Retirement'],
+      intents: ['Family protection', 'Career', 'Retirement'],
       validation: {
         name: 'Enter your name.',
         phone: 'Enter a valid phone number (at least 10 digits).',
@@ -359,7 +359,7 @@
       wa: {
         hero: {
           cliente: { label: 'Start consultation', text: 'Hi, I want initial guidance about family protection.' },
-          agente: { label: 'View health options', text: 'Hi, I want guidance about health and Medicare.' },
+          agente: { label: 'View Career', text: 'Hi, I want information about Career.' },
           oficina: { label: 'Plan my retirement', text: 'Hi, I want guidance about retirement and annuities.' }
         },
         formIntro: 'Hi, I want a consultation about financial services.',
