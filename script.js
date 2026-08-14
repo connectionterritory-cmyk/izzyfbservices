@@ -10,13 +10,13 @@
 
   const t = {
     es: {
-      navServicios: 'Orientación', navModelo: 'Taxes & ITIN', navAgentes: 'Agentes', navSistema: 'Oficinas', navContacto: 'Contáctanos',
+      navServicios: 'Orientación', navModelo: 'Taxes & ITIN', navAgentes: 'Career', navSistema: 'Oficinas', navContacto: 'Contáctanos',
       heroBadge: 'Launchpad financiero para la comunidad hispana',
       heroTitle: 'Todo lo que necesitas para<br><span class="gradient-text">proteger, organizar y crecer.</span>',
       heroSubtitle: 'Te ayudamos a entender tus opciones, organizar documentos y recibir orientación inicial en áreas como protección familiar, taxes, ITIN, registro de negocios y servicios administrativos.',
-      intentAria: 'Elige tu intención', intentCliente: 'Soy cliente', intentAgente: 'Soy agente', intentOficina: 'Quiero oficina',
+      intentAria: 'Elige tu intención', intentCliente: 'Soy cliente', intentAgente: 'Career', intentOficina: 'Quiero oficina',
       ctaSecondary: 'Career', ctaTertiary: 'Hablar con un asesor',
-      trust: ['Atención bilingüe', 'California & Florida', 'Consulta sin costo', 'Apoyo administrativo', 'Modelo para agentes'],
+      trust: ['Atención bilingüe', 'California & Florida', 'Consulta sin costo', 'Apoyo administrativo', 'Career para agentes'],
       stats: ['Servicios', 'Estados', 'Sistema'],
       visualEyebrow: 'Atención real, imagen profesional',
       visualTitle: 'Una experiencia <span class="gradient-text">moderna y confiable</span>',
@@ -29,19 +29,19 @@
           'Procesos, CRM y acompañamiento continuo para avanzar.'
         ]
       },
-      categories: ['Protección familiar', 'Taxes, ITIN y documentos', 'Apoyo administrativo', 'Modelo de oficina multiservices'],
+      categories: ['Protección familiar', 'Taxes, ITIN y documentos', 'Career', 'Modelo de oficina multiservices'],
       caminos: {
         eyebrow: 'Elige tu camino',
         title: 'Una plataforma para <span class="gradient-text">clientes, agentes y emprendedores</span>',
         desc: 'IZZY conecta servicios esenciales con entrenamiento, seguimiento y una visión empresarial duplicable para la comunidad hispana.',
-        labels: ['Soy Cliente', 'Soy Agente', 'Quiero Emprender'],
+        labels: ['Soy Cliente', 'Career', 'Quiero Emprender'],
         cardTitles: ['Protege y organiza tu vida financiera.', 'Construye una carrera con estructura.', 'Desarrolla una oficina multiservices.'],
         cardDescs: [
           'Apoyo inicial para personas que desean entender opciones de protección familiar, organización financiera, documentos y servicios de apoyo.',
           'Entrenamiento, seguimiento, referidos y expansión multiservices para agentes que quieren crecer con un sistema serio.',
           'Un modelo duplicable con CRM, marketing, procesos y múltiples líneas de servicio para crear presencia local.'
         ],
-        links: ['Necesito servicios →', 'Career →', 'Quiero abrir una oficina →']
+        links: ['Necesito servicios →', 'Ver Career →', 'Quiero abrir una oficina →']
       },
       servicios: {
         eyebrow: 'Ecosistema de servicios',
@@ -67,7 +67,7 @@
         desc: 'El objetivo no es vender un producto aislado. Es construir una cartera, generar seguimiento, abrir nuevas líneas de servicio y desarrollar una operación local con procesos.'
       },
       agentes: {
-        eyebrow: 'Oportunidad profesional',
+        eyebrow: 'Career',
         title: 'Para agentes con <span class="gradient-text">mentalidad empresarial</span>',
         desc: 'Una oportunidad seria para agentes de vida y salud que quieren desarrollar múltiples líneas de ingreso, mejor seguimiento y una ruta hacia el modelo multiservices.',
         benefitTitles: ['Construye una cartera', 'Desarrolla varias líneas', 'Entrenamiento y scripts', 'Sistema de seguimiento', 'Crecimiento acompañado', 'Modelo duplicable'],
@@ -79,7 +79,7 @@
           'Mentoría, revisión de oportunidades y enfoque en hábitos comerciales consistentes.',
           'Una ruta para pasar de productor a líder, equipo y eventualmente oficina multiservices.'
         ],
-        ctas: ['Aplicar como agente', 'Quiero el modelo de oficina']
+        ctas: ['Aplicar al Career', 'Quiero el modelo de oficina']
       },
       sistema: {
         eyebrow: 'Sistema IZZY',
@@ -123,7 +123,7 @@
       ctaFinal: {
         title: 'Empieza por el camino correcto.',
         desc: 'Ya sea que necesites servicios, quieras crecer como agente o estés explorando una oficina multiservices, IZZY te recibe con una conversación clara.',
-        cards: ['Necesito servicios', 'Quiero crecer como agente', 'Quiero abrir una oficina'],
+        cards: ['Necesito servicios', 'Career', 'Quiero abrir una oficina'],
         cardSubs: ['Servicios para familias y emprendedores', 'Entrenamiento, cartera y seguimiento', 'Modelo multiservices duplicable']
       },
       footer: {
@@ -131,7 +131,7 @@
         plataforma: 'Plataforma',
         serviciosClave: 'Servicios clave',
         contacto: 'Contacto',
-        links1: ['Servicios', 'Ruta para agentes', 'Career', 'Modelo para oficinas', 'Sistema IZZY'],
+        links1: ['Servicios', 'Career', 'Career deck', 'Modelo para oficinas', 'Sistema IZZY'],
         links2: ['Protección familiar', 'Orientación financiera inicial', 'Taxes', 'ITIN', 'Registro de negocios', 'Apoyo administrativo'],
         contactMeta: ['California & Florida', 'Lun-Sáb · Atención por cita'],
         disclaimer: 'IZZY Financial & Business Services ofrece orientación general y servicios administrativos. Algunos servicios pueden requerir licencia, autorización, appointment, revisión profesional independiente o cumplimiento de requisitos estatales y federales. La disponibilidad de servicios puede variar según el estado, proveedor, elegibilidad y regulación aplicable. No se garantizan aprobaciones, tarifas, coberturas, ahorros, ingresos ni resultados. IZZY Financial & Business Services no está afiliado, respaldado ni aprobado por ninguna entidad gubernamental, programa federal, departamento estatal, carrier o compañía de seguros, salvo que se indique expresamente por escrito. © 2026 IZZY Financial & Business Services. Todos los derechos reservados.'
@@ -139,7 +139,7 @@
       contactFormTitle: 'Cuéntanos qué necesitas', formName: 'Nombre', formPhone: 'Teléfono', formIntent: 'Intención', formState: 'Estado',
       formNamePlaceholder: 'Tu nombre', formSubmit: 'Enviar por WhatsApp', callNow: 'Llamar Ahora',
       states: ['California', 'Florida', 'Otro'],
-      intents: ['Soy cliente', 'Soy agente', 'Quiero oficina'],
+      intents: ['Soy cliente', 'Career', 'Quiero oficina'],
       validation: {
         name: 'Ingresa tu nombre.',
         phone: 'Ingresa un teléfono válido (mínimo 10 dígitos).',
@@ -153,7 +153,7 @@
       wa: {
         hero: {
           cliente: { label: 'Empezar consulta', text: 'Hola, quiero orientación inicial sobre servicios para familias o emprendedores.' },
-          agente: { label: 'Aplicar como agente', text: 'Hola, quiero más información sobre IZZY Financial & Business Services.' },
+          agente: { label: 'Aplicar al Career', text: 'Hola, quiero mas informacion sobre el Career de IZZY Financial & Business Services.' },
           oficina: { label: 'Abrir mi oficina IZZY', text: 'Hola, quiero conocer el modelo multiservices de IZZY.' }
         },
         formIntro: 'Hola, quiero una consulta.',
