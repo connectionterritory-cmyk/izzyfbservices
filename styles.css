@@ -1348,6 +1348,35 @@ button { font: inherit; border: none; background: none; cursor: pointer; }
   line-height: 1.45;
 }
 
+.career-inline {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: .85rem;
+  flex-wrap: wrap;
+  margin: 0 0 2rem;
+  padding: .9rem 1.1rem;
+  border-radius: 999px;
+  background: rgba(255,255,255,.05);
+  border: 1px solid rgba(255,255,255,.12);
+}
+
+.career-inline__copy {
+  color: rgba(255,255,255,.76);
+  font-size: .92rem;
+  line-height: 1.5;
+}
+
+.career-inline__link {
+  color: var(--c-gold-light);
+  font-weight: 800;
+  white-space: nowrap;
+}
+
+.career-inline__link:hover {
+  color: #fff;
+}
+
 .lead-form {
   margin: 0 auto;
   max-width: 860px;
