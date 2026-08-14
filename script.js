@@ -5,145 +5,173 @@
 
 (function () {
   'use strict';
+
   const LEADS_WEBHOOK_URL = 'https://script.google.com/macros/s/AKfycbxSbryrhzhA58y5RoyY6bXXnagUE8WVFF5z0UDWDgMs7GXGrtQNvNXos-WoXzGJoKeNfQ/exec';
   const DEFAULT_LANG = 'es';
 
   const t = {
     es: {
-      navServicios: 'Orientación', navModelo: 'Taxes & ITIN', navAgentes: 'Career', navSistema: 'Oficinas', navContacto: 'Contáctanos',
-      heroBadge: 'Launchpad financiero para la comunidad hispana',
-      heroTitle: 'Todo lo que necesitas para<br><span class="gradient-text">proteger, organizar y crecer.</span>',
-      heroSubtitle: 'Te ayudamos a entender tus opciones, organizar documentos y recibir orientación inicial en áreas como protección familiar, taxes, ITIN, registro de negocios y servicios administrativos.',
-      intentAria: 'Elige tu intención', intentCliente: 'Soy cliente', intentAgente: 'Career', intentOficina: 'Quiero oficina',
-      ctaSecondary: 'Career', ctaTertiary: 'Hablar con un asesor',
-      trust: ['Atención bilingüe', 'California & Florida', 'Consulta sin costo', 'Apoyo administrativo', 'Career profesional'],
-      stats: ['Servicios', 'Estados', 'Sistema'],
-      visualEyebrow: 'Atención real, imagen profesional',
+      navServicios: 'Orientacion',
+      navModelo: 'Vida',
+      navAgentes: 'Salud y Medicare',
+      navSistema: 'Retiro',
+      navContacto: 'Contactanos',
+      heroBadge: 'Orientacion financiera bilingue para la comunidad hispana',
+      heroTitle: 'Todo lo que necesitas para<br><span class="gradient-text">proteger tu familia y planificar tu futuro.</span>',
+      heroSubtitle: 'Te ayudamos a entender tus opciones en seguro de vida, salud, Medicare, retiro y educacion financiera con una conversacion clara, humana y bilingue.',
+      intentAria: 'Elige tu prioridad',
+      intentCliente: 'Proteccion familiar',
+      intentAgente: 'Salud y Medicare',
+      intentOficina: 'Retiro',
+      ctaSecondary: 'Ver soluciones',
+      ctaTertiary: 'Hablar con un asesor',
+      trust: ['Atencion bilingue', 'California & Florida', 'Consulta sin costo', 'Orientacion personalizada', 'Proteccion a largo plazo'],
+      stats: ['Servicios', 'Estados', 'Equipo'],
+      visualEyebrow: 'Atencion real, imagen profesional',
       visualTitle: 'Una experiencia <span class="gradient-text">moderna y confiable</span>',
-      visualDesc: 'Combinamos asesoría humana, estructura operativa y acompañamiento bilingüe para familias, personas en Career y emprendedores.',
+      visualDesc: 'Combinamos asesoria humana, estructura clara y acompanamiento bilingue para familias que quieren tomar mejores decisiones financieras.',
       visualCards: {
-        titles: ['Asesoría clara', 'Crecimiento estructurado', 'Resultados con seguimiento'],
+        titles: ['Asesoria clara', 'Planificacion estructurada', 'Seguimiento constante'],
         descs: [
-          'Orientación inicial y servicios para familias y emprendedores.',
-          'Modelo serio para Career y oficinas multiservices.',
-          'Procesos, CRM y acompañamiento continuo para avanzar.'
+          'Orientacion simple para proteger ingresos, familia y patrimonio.',
+          'Recomendaciones claras para vida, salud, Medicare y retiro.',
+          'Revision anual, ajustes y acompanamiento para cada etapa de vida.'
         ]
       },
-      categories: ['Protección familiar', 'Taxes, ITIN y documentos', 'Career', 'Modelo de oficina multiservices'],
+      categories: ['Seguro de vida', 'Salud y Medicare', 'Retiro y anualidades', 'Educacion financiera'],
       caminos: {
-        eyebrow: 'Elige tu camino',
-        title: 'Una plataforma para <span class="gradient-text">clientes, Career y emprendedores</span>',
-        desc: 'IZZY conecta servicios esenciales con entrenamiento, seguimiento y una visión empresarial duplicable para la comunidad hispana.',
-        labels: ['Soy Cliente', 'Career', 'Quiero Emprender'],
-        cardTitles: ['Protege y organiza tu vida financiera.', 'Construye una carrera con estructura.', 'Desarrolla una oficina multiservices.'],
-        cardDescs: [
-          'Apoyo inicial para personas que desean entender opciones de protección familiar, organización financiera, documentos y servicios de apoyo.',
-          'Entrenamiento, seguimiento, referidos y expansión multiservices para personas que quieren crecer en Career con un sistema serio.',
-          'Un modelo duplicable con CRM, marketing, procesos y múltiples líneas de servicio para crear presencia local.'
+        eyebrow: 'Elige tu prioridad',
+        title: 'Soluciones para <span class="gradient-text">proteger hoy y planificar manana</span>',
+        desc: 'IZZY conecta orientacion, comparacion de opciones y acompanamiento bilingue para que cada familia avance con mas confianza.',
+        labels: ['Proteccion familiar', 'Salud y Medicare', 'Retiro'],
+        cardTitles: [
+          'Cuida a tu familia con una base solida.',
+          'Encuentra cobertura con mas claridad.',
+          'Construye ingresos y tranquilidad a largo plazo.'
         ],
-        links: ['Necesito servicios →', 'Ver Career →', 'Quiero abrir una oficina →']
+        cardDescs: [
+          'Explora opciones de seguro de vida, proteccion de ingresos y estrategias para cuidar a quienes mas quieres.',
+          'Te ayudamos a entender planes de salud, periodos de elegibilidad y opciones Medicare sin complicaciones innecesarias.',
+          'Revisa estrategias de retiro, acumulacion y preservacion para tomar decisiones con mas vision y menos incertidumbre.'
+        ],
+        links: ['Quiero proteccion →', 'Ver opciones de salud →', 'Planificar mi retiro →']
       },
       servicios: {
-        eyebrow: 'Ecosistema de servicios',
+        eyebrow: 'Servicios financieros',
         title: 'Servicios que ayudan a <span class="gradient-text">proteger, organizar y crecer</span>',
-        desc: 'Reunimos protección, trámites y soporte empresarial para servir mejor a cada familia, cliente y emprendedor.',
-        pills: ['Atención bilingüe', 'California & Florida', 'Consulta inicial sin costo'],
+        desc: 'Nos enfocamos en las areas financieras que mas impacto tienen en la tranquilidad de una familia: proteccion, salud, retiro y educacion financiera.',
+        pills: ['Atencion bilingue', 'California & Florida', 'Consulta inicial sin costo'],
         link: 'Consulta gratis →',
-        titles: ['Protección familiar', 'Orientación financiera inicial', 'Taxes', 'ITIN', 'Registro de negocios', 'Apoyo administrativo', 'Document Support', 'Servicios para pequeños negocios'],
+        titles: [
+          'Seguro de vida',
+          'Proteccion de ingresos',
+          'Salud individual y familiar',
+          'Medicare',
+          'Anualidades',
+          'Planificacion de retiro',
+          'Educacion financiera',
+          'Revision financiera anual'
+        ],
         descs: [
-          'Cobertura personal y comercial con comparación de opciones para elegir con claridad.',
-          'Opciones de término, vida entera e IUL para proteger a tu familia y tu legado.',
-          'Preparación de impuestos personales y comerciales con acompañamiento claro para organizar tu año fiscal.',
-          'Apoyo para solicitud o renovación de ITIN, con checklist de documentos y pasos claros en español e inglés.',
-          'Registro de negocio y estructura inicial para operar con base formal, incluyendo pasos clave y requisitos comunes.',
-          'Apoyo en formularios, organización documental y seguimiento de trámites para que no se te pase ningún paso.',
-          'Apoyo en trámites DMV y documentos con guía paso a paso, sin barrera de idioma.',
-          'Estructura, orientación financiera y soporte práctico para emprender con base sólida.'
+          'Opciones de termino, vida entera e IUL para proteger a tu familia, crear legado y fortalecer tu plan financiero.',
+          'Estrategias para reducir el impacto financiero de eventos inesperados y mantener estabilidad en casa.',
+          'Orientacion para comparar coberturas medicas y elegir una opcion alineada a tu presupuesto y tus necesidades.',
+          'Acompanamiento para entender elegibilidad, periodos de inscripcion y diferencias entre las opciones disponibles.',
+          'Soluciones enfocadas en acumulacion, proteccion del capital e ingresos para etapas de retiro.',
+          'Conversaciones claras para alinear metas de retiro, horizonte de tiempo y opciones de construccion patrimonial.',
+          'Explicamos conceptos, escenarios y decisiones para que avances con confianza y no solo con urgencia.',
+          'Revisamos cambios de etapa, prioridades familiares y cobertura actual para mantener tu estrategia actualizada.'
         ]
       },
       modelo: {
-        eyebrow: 'Modelo multiservices',
-        title: 'Un modelo de servicios para apoyar a la comunidad.',
-        desc: 'El objetivo no es vender un producto aislado. Es construir una cartera, generar seguimiento, abrir nuevas líneas de servicio y desarrollar una operación local con procesos.'
+        eyebrow: 'Retiro y patrimonio',
+        title: 'Construye un retiro con <span class="gradient-text">claridad y disciplina.</span>',
+        desc: 'La meta no es solo ahorrar. Es crear una estrategia que combine proteccion, acumulacion, ingresos futuros y revisiones periodicas.'
       },
       agentes: {
-        eyebrow: 'Career',
-        title: 'Para personas con <span class="gradient-text">mentalidad empresarial</span>',
-        desc: 'Una oportunidad seria dentro de Career para desarrollar multiples lineas de ingreso, mejor seguimiento y una ruta hacia el modelo multiservices.',
-        benefitTitles: ['Construye una cartera', 'Desarrolla varias líneas', 'Entrenamiento y scripts', 'Sistema de seguimiento', 'Crecimiento acompañado', 'Modelo duplicable'],
+        eyebrow: 'Salud y Medicare',
+        title: 'Cobertura medica con <span class="gradient-text">acompanamiento claro</span>',
+        desc: 'Te guiamos para entender opciones, periodos de inscripcion y coberturas sin perderte en tecnicismos.',
+        benefitTitles: ['Elegibilidad', 'Comparacion de opciones', 'Explicacion sencilla', 'Seguimiento', 'Presupuesto y prioridad', 'Atencion bilingue'],
         benefitDescs: [
-          'Aprende a servir clientes con seguimiento, renovaciones, referidos y relaciones sostenibles.',
-          'Conecta servicios administrativos y de apoyo según la necesidad real de la comunidad.',
-          'Producto, ventas, cumplimiento, mensajes de WhatsApp y conversaciones consultivas.',
-          'CRM, etiquetas, recordatorios y campañas para no depender de memoria ni mensajes sueltos.',
-          'Mentoría, revisión de oportunidades y enfoque en hábitos comerciales consistentes.',
-          'Una ruta para pasar de productor a líder, equipo y eventualmente oficina multiservices.'
+          'Identificamos el momento correcto para actuar segun edad, periodo y situacion personal.',
+          'Aterrizamos diferencias practicas entre coberturas para que puedas decidir con mas seguridad.',
+          'Traducimos terminos complejos en conversaciones faciles de entender en espanol o ingles.',
+          'Acompanamos cambios de etapa, renovaciones y dudas posteriores a la eleccion inicial.',
+          'Buscamos equilibrio entre proteccion real, costo y estabilidad financiera familiar.',
+          'La claridad del idioma importa cuando se trata de cobertura, salud y decisiones sensibles.'
         ],
-        ctas: ['Aplicar al Career', 'Quiero el modelo de oficina']
+        ctas: ['Quiero orientacion de salud', 'Revisar Medicare']
       },
       sistema: {
         eyebrow: 'Sistema IZZY',
         title: 'Infraestructura para <span class="gradient-text">crecer con orden</span>',
-        desc: 'La diferencia está en el seguimiento. IZZY combina servicios, procesos y automatización para convertir conversaciones en relaciones de largo plazo.',
-        itemTitles: ['Pipeline de leads', 'WhatsApp follow-up', 'Campañas locales', 'Referidos y renovaciones', 'Entrenamiento', 'Procesos duplicables'],
+        desc: 'La diferencia esta en el seguimiento. IZZY combina educacion, proceso y acompanamiento para convertir una consulta en una estrategia de largo plazo.',
+        itemTitles: ['Diagnostico inicial', 'WhatsApp follow-up', 'Educacion continua', 'Revision anual', 'Explicacion bilingue', 'Proceso claro'],
         itemDescs: [
-          'Clientes, personas en Career y prospectos de oficina organizados por etapa, interes y proxima accion.',
-          'Mensajes por intencion: consulta, Career u oficina, con seguimiento claro y humano.',
-          'Temporadas de taxes y negocios con mensajes de orientación segmentados.',
-          'Proceso para pedir reseñas, referidos, revisiones anuales y oportunidades cruzadas.',
-          'Guias, scripts, sesiones y habitos comerciales para Career y equipos en crecimiento.',
-          'Plantillas, checklist y estructura para futuras oficinas multiservices IZZY.'
+          'Empezamos entendiendo objetivo, presupuesto, etapa de vida y preocupaciones reales.',
+          'Mensajes claros para resolver dudas y mantener continuidad despues de cada conversacion.',
+          'Contenido y conversaciones enfocadas en vida, salud, Medicare y retiro.',
+          'Revisiones periodicas para adaptar tu proteccion a cambios familiares y financieros.',
+          'Traducimos procesos y opciones a un lenguaje simple que genera confianza real.',
+          'Una experiencia consistente desde la primera pregunta hasta la revision anual.'
         ]
       },
       porque: {
         eyebrow: 'Nuestra diferencia',
-        title: '¿Por qué <span class="gradient-text">IZZY</span>?',
-        desc: 'Porque combinamos confianza comunitaria con una mentalidad empresarial moderna: servicios, seguimiento y desarrollo de Career bajo una misma marca.',
-        itemTitles: ['100% Bilingüe', 'Agente Independiente', 'Mentalidad de Sistema', 'Enfocados en la Comunidad'],
+        title: '¿Por que <span class="gradient-text">IZZY</span>?',
+        desc: 'Porque combinamos confianza comunitaria con claridad, seguimiento y una experiencia financiera mas humana.',
+        itemTitles: ['100% Bilingue', 'Orientacion objetiva', 'Proceso ordenado', 'Enfocados en la comunidad'],
         itemDescs: [
-          'Atención completa en español e inglés. Explicamos los detalles sin barreras de idioma.',
-          'No estamos atados a una sola compañía. Buscamos la mejor opción del mercado para ti.',
-          'No improvisamos seguimiento. Organizamos leads, citas, renovaciones y oportunidades.',
-          'Servimos principalmente a familias latinas y comunidades inmigrantes con empatía y respeto.'
+          'Atencion completa en espanol e ingles. Explicamos detalles sin barreras de idioma.',
+          'Te ayudamos a entender opciones y comparar con una conversacion centrada en tu necesidad real.',
+          'No improvisamos el seguimiento. Organizamos cada paso para que sepas que sigue.',
+          'Servimos principalmente a familias latinas con empatia, paciencia y respeto.'
         ]
       },
       resultados: {
         eyebrow: 'Base de confianza',
         title: 'Estamos en fase de <span class="gradient-text">lanzamiento</span>',
-        desc: 'Todavía no publicamos métricas numéricas. Preferimos transparencia total mientras construimos resultados medibles.',
-        metricsStrong: ['Atención bilingüe', 'Cobertura activa', 'Consulta inicial', 'Seguimiento'],
-        metricsDesc: ['Español e inglés', 'California y Florida', 'Orientación clara por WhatsApp o llamada', 'Proceso paso a paso por intención'],
+        desc: 'Todavia no publicamos metricas numericas. Preferimos transparencia total mientras construimos resultados medibles.',
+        metricsStrong: ['Atencion bilingue', 'Cobertura activa', 'Consulta inicial', 'Seguimiento'],
+        metricsDesc: ['Espanol e ingles', 'California y Florida', 'Orientacion clara por WhatsApp o llamada', 'Proceso paso a paso y revision anual'],
         testimonialText: [
-          'Persona que busca resolver sus trámites y taxes en un solo lugar, con explicación simple y acompañamiento en español.',
-          'Agente que empieza con una línea y evoluciona a una operación con seguimiento, cartera y servicios complementarios.',
-          'Emprendedor que quiere abrir oficina multiservices con estructura comercial, procesos y soporte operativo.'
+          'Familia que quiere proteger ingresos y seres queridos con una explicacion simple y sin presion.',
+          'Persona que necesita entender Medicare o cobertura medica y agradece una guia clara en su idioma.',
+          'Cliente que busca ordenar su retiro con una estrategia mas consciente, sostenible y revisable.'
         ],
-        testimonialRole: ['Caso tipo · Cliente', 'Caso tipo · Agente', 'Caso tipo · Oficina']
+        testimonialRole: ['Caso tipo · Vida', 'Caso tipo · Salud', 'Caso tipo · Retiro']
       },
       ctaFinal: {
         title: 'Empieza por el camino correcto.',
-        desc: 'Ya sea que necesites servicios, quieras crecer dentro de Career o estes explorando una oficina multiservices, IZZY te recibe con una conversacion clara.',
-        cards: ['Necesito servicios', 'Career', 'Quiero abrir una oficina'],
-        cardSubs: ['Servicios para familias y emprendedores', 'Entrenamiento, cartera y seguimiento', 'Modelo multiservices duplicable']
+        desc: 'Ya sea que quieras proteger a tu familia, revisar tu salud o planificar tu retiro, IZZY te recibe con una conversacion clara.',
+        cards: ['Seguro de vida', 'Salud y Medicare', 'Retiro'],
+        cardSubs: ['Proteccion familiar y legado', 'Cobertura medica con claridad', 'Estrategia, acumulacion e ingresos']
       },
       footer: {
         tagline: 'Protegiendo familias, construyendo futuros.',
         plataforma: 'Plataforma',
         serviciosClave: 'Servicios clave',
         contacto: 'Contacto',
-        links1: ['Servicios', 'Career', 'Career deck', 'Modelo para oficinas', 'Sistema IZZY'],
-        links2: ['Protección familiar', 'Orientación financiera inicial', 'Taxes', 'ITIN', 'Registro de negocios', 'Apoyo administrativo'],
-        contactMeta: ['California & Florida', 'Lun-Sáb · Atención por cita'],
-        disclaimer: 'IZZY Financial & Business Services ofrece orientación general y servicios administrativos. Algunos servicios pueden requerir licencia, autorización, appointment, revisión profesional independiente o cumplimiento de requisitos estatales y federales. La disponibilidad de servicios puede variar según el estado, proveedor, elegibilidad y regulación aplicable. No se garantizan aprobaciones, tarifas, coberturas, ahorros, ingresos ni resultados. IZZY Financial & Business Services no está afiliado, respaldado ni aprobado por ninguna entidad gubernamental, programa federal, departamento estatal, carrier o compañía de seguros, salvo que se indique expresamente por escrito. © 2026 IZZY Financial & Business Services. Todos los derechos reservados.'
+        links1: ['Servicios', 'Salud y Medicare', 'Retiro', 'Soluciones', 'Sistema IZZY'],
+        links2: ['Seguro de vida', 'Proteccion de ingresos', 'Salud individual', 'Medicare', 'Anualidades', 'Planificacion de retiro'],
+        contactMeta: ['California & Florida', 'Lun-Sab · Atencion por cita'],
+        disclaimer: 'IZZY Financial & Business Services ofrece orientacion general sobre servicios financieros y de seguros. Algunos servicios pueden requerir licencia, autorizacion, revision profesional independiente o cumplimiento de requisitos estatales y federales. La disponibilidad puede variar segun el estado, proveedor, elegibilidad y regulacion aplicable. No se garantizan aprobaciones, tarifas, coberturas, ahorros ni resultados. IZZY Financial & Business Services no esta afiliado, respaldado ni aprobado por ninguna entidad gubernamental o carrier, salvo que se indique expresamente por escrito. © 2026 IZZY Financial & Business Services. Todos los derechos reservados.'
       },
-      contactFormTitle: 'Cuéntanos qué necesitas', formName: 'Nombre', formPhone: 'Teléfono', formIntent: 'Intención', formState: 'Estado',
-      formNamePlaceholder: 'Tu nombre', formSubmit: 'Enviar por WhatsApp', callNow: 'Llamar Ahora',
+      contactFormTitle: 'Cuentanos que necesitas',
+      formName: 'Nombre',
+      formPhone: 'Telefono',
+      formIntent: 'Prioridad',
+      formState: 'Estado',
+      formNamePlaceholder: 'Tu nombre',
+      formSubmit: 'Enviar por WhatsApp',
+      callNow: 'Llamar ahora',
       states: ['California', 'Florida', 'Otro'],
-      intents: ['Soy cliente', 'Career', 'Quiero oficina'],
+      intents: ['Proteccion familiar', 'Salud y Medicare', 'Retiro'],
       validation: {
         name: 'Ingresa tu nombre.',
-        phone: 'Ingresa un teléfono válido (mínimo 10 dígitos).',
-        intent: 'Selecciona tu intención.',
+        phone: 'Ingresa un telefono valido (minimo 10 digitos).',
+        intent: 'Selecciona tu prioridad.',
         state: 'Selecciona tu estado.',
         review: 'Revisa los campos marcados antes de enviar.',
         saving: 'Guardando lead...',
@@ -152,163 +180,190 @@
       },
       wa: {
         hero: {
-          cliente: { label: 'Empezar consulta', text: 'Hola, quiero orientación inicial sobre servicios para familias o emprendedores.' },
-          agente: { label: 'Aplicar al Career', text: 'Hola, quiero mas informacion sobre Career en IZZY Financial & Business Services.' },
-          oficina: { label: 'Abrir mi oficina IZZY', text: 'Hola, quiero conocer el modelo multiservices de IZZY.' }
+          cliente: { label: 'Empezar consulta', text: 'Hola, quiero orientacion inicial sobre proteccion familiar.' },
+          agente: { label: 'Ver opciones de salud', text: 'Hola, quiero orientacion sobre salud y Medicare.' },
+          oficina: { label: 'Planificar mi retiro', text: 'Hola, quiero orientacion sobre retiro y anualidades.' }
         },
-        formIntro: 'Hola, quiero una consulta.',
-        fields: { name: 'Nombre', phone: 'Teléfono', intent: 'Intención', state: 'Estado' }
+        formIntro: 'Hola, quiero una consulta sobre servicios financieros.',
+        fields: { name: 'Nombre', phone: 'Telefono', intent: 'Prioridad', state: 'Estado' }
       }
     },
     en: {
-      navServicios: 'Guidance', navModelo: 'Taxes & ITIN', navAgentes: 'Career', navSistema: 'Offices', navContacto: 'Contact Us',
-      heroBadge: 'Financial launchpad for the Hispanic community',
-      heroTitle: 'Everything you need to<br><span class="gradient-text">protect, organize, and grow.</span>',
-      heroSubtitle: 'We help you understand your options, organize documents, and receive initial guidance in areas like family protection, taxes, ITIN, business registration, and administrative services.',
-      intentAria: 'Choose your path', intentCliente: 'I am a client', intentAgente: 'Career', intentOficina: 'I want an office',
-      ctaSecondary: 'Career', ctaTertiary: 'Talk to an advisor',
-      trust: ['Bilingual service', 'California & Florida', 'Free consultation', 'Administrative Support', 'Professional Career'],
-      stats: ['Services', 'States', 'System'],
-      visualEyebrow: 'Real service, professional image',
+      navServicios: 'Guidance',
+      navModelo: 'Life',
+      navAgentes: 'Health & Medicare',
+      navSistema: 'Retirement',
+      navContacto: 'Contact Us',
+      heroBadge: 'Bilingual financial guidance for the Hispanic community',
+      heroTitle: 'Everything you need to<br><span class="gradient-text">protect your family and plan your future.</span>',
+      heroSubtitle: 'We help you understand your options in life insurance, health, Medicare, retirement, and financial education through a clear, human, bilingual conversation.',
+      intentAria: 'Choose your priority',
+      intentCliente: 'Family protection',
+      intentAgente: 'Health & Medicare',
+      intentOficina: 'Retirement',
+      ctaSecondary: 'View solutions',
+      ctaTertiary: 'Talk to an advisor',
+      trust: ['Bilingual service', 'California & Florida', 'Free consultation', 'Personalized guidance', 'Long-term protection'],
+      stats: ['Services', 'States', 'Team'],
+      visualEyebrow: 'Real care, professional image',
       visualTitle: 'A <span class="gradient-text">modern and trusted</span> experience',
-      visualDesc: 'We combine human guidance, operational structure, and bilingual support for families, people in Career, and entrepreneurs.',
+      visualDesc: 'We combine human guidance, clear structure, and bilingual support for families who want to make stronger financial decisions.',
       visualCards: {
-        titles: ['Clear guidance', 'Structured growth', 'Results with follow-up'],
+        titles: ['Clear guidance', 'Structured planning', 'Ongoing follow-up'],
         descs: [
-          'Step-by-step guidance for family and business services.',
-          'A serious model for Career and multi-services offices.',
-          'Processes, CRM, and ongoing support to move forward.'
+          'Simple guidance to protect income, family, and long-term security.',
+          'Clear recommendations for life, health, Medicare, and retirement.',
+          'Annual reviews, adjustments, and support for every life stage.'
         ]
       },
-      categories: ['Family Protection', 'Taxes, ITIN, and documents', 'Learning pathway', 'Multi-services office model'],
+      categories: ['Life insurance', 'Health & Medicare', 'Retirement & annuities', 'Financial education'],
       caminos: {
-        eyebrow: 'Choose your path',
-        title: 'One platform for <span class="gradient-text">clients, Career, and entrepreneurs</span>',
-        desc: 'IZZY connects essential services with training, follow-up, and a scalable business vision for the Hispanic community.',
-        labels: ['I am a Client', 'Career', 'I want to Build'],
-        cardTitles: ['Protect and organize your financial life.', 'Build a career with structure.', 'Develop a multi-services office.'],
-        cardDescs: [
-          'Initial support for people who want to understand options for family protection, financial organization, documents, and support services.',
-          'Training, follow-up, referrals, and multi-service expansion for people who want to grow in Career with a serious system.',
-          'A scalable model with CRM, marketing, processes, and multiple service lines to build local presence.'
+        eyebrow: 'Choose your priority',
+        title: 'Solutions to <span class="gradient-text">protect today and plan ahead</span>',
+        desc: 'IZZY combines guidance, option comparison, and bilingual support so every family can move forward with greater confidence.',
+        labels: ['Family protection', 'Health & Medicare', 'Retirement'],
+        cardTitles: [
+          'Protect your family with a stronger foundation.',
+          'Find coverage with more clarity.',
+          'Build long-term income and peace of mind.'
         ],
-        links: ['I need services →', 'View Career →', 'I want to open an office →']
+        cardDescs: [
+          'Explore life insurance, income protection, and strategies to care for the people who matter most.',
+          'We help you understand health plans, eligibility windows, and Medicare options without unnecessary confusion.',
+          'Review retirement, accumulation, and preservation strategies so you can decide with more vision and less uncertainty.'
+        ],
+        links: ['I want protection →', 'View health options →', 'Plan my retirement →']
       },
       servicios: {
-        eyebrow: 'Service ecosystem',
+        eyebrow: 'Financial services',
         title: 'Services that help you <span class="gradient-text">protect, organize, and grow</span>',
-        desc: 'We bring together protection, paperwork, and business support to serve every family, client, and entrepreneur better.',
+        desc: 'We focus on the financial areas that have the greatest impact on family peace of mind: protection, health, retirement, and financial education.',
         pills: ['Bilingual service', 'California & Florida', 'Free initial consultation'],
         link: 'Free consultation →',
-        titles: ['Family Protection', 'Initial Financial Guidance', 'Taxes', 'ITIN', 'Business Registration', 'Administrative Support', 'Document Support', 'Small Business Support'],
+        titles: [
+          'Life insurance',
+          'Income protection',
+          'Individual and family health',
+          'Medicare',
+          'Annuities',
+          'Retirement planning',
+          'Financial education',
+          'Annual financial review'
+        ],
         descs: [
-          'Personal and commercial coverage with option comparisons so you can choose with clarity.',
-          'Term, whole life, and IUL options to protect your family and legacy.',
-          'Personal and business tax preparation with clear guidance so you can stay organized and compliant.',
-          'Support for ITIN applications or renewals, including document checklist and next steps.',
-          'Business registration and initial setup guidance to operate on a formal and reliable foundation.',
-          'Administrative help with forms, document organization, and process follow-up to keep everything on track.',
-          'Support with DMV procedures and documents, step by step and without language barriers.',
-          'Structure, financial guidance, and practical support to build with a solid foundation.'
+          'Term, whole life, and IUL options to protect your family, create legacy, and strengthen your financial plan.',
+          'Strategies to reduce the financial impact of unexpected events and preserve stability at home.',
+          'Guidance to compare medical coverage and choose an option aligned with your budget and needs.',
+          'Support to understand eligibility, enrollment periods, and differences across the available options.',
+          'Solutions focused on accumulation, principal protection, and income for retirement stages.',
+          'Clear conversations to align retirement goals, time horizon, and long-term wealth-building options.',
+          'We explain concepts, scenarios, and decisions so you can move forward with confidence instead of urgency.',
+          'We review life-stage changes, family priorities, and current coverage to keep your strategy up to date.'
         ]
       },
       modelo: {
-        eyebrow: 'Multi-services model',
-        title: 'A service model to support the community.',
-        desc: 'The goal is not to sell a single product. It is to build a portfolio, create follow-up, open new service lines, and develop a local operation with processes.'
+        eyebrow: 'Retirement and wealth',
+        title: 'Build retirement with <span class="gradient-text">clarity and discipline.</span>',
+        desc: 'The goal is not only to save. It is to build a strategy that combines protection, accumulation, future income, and periodic reviews.'
       },
       agentes: {
-        eyebrow: 'Career',
-        title: 'For people with an <span class="gradient-text">entrepreneurial mindset</span>',
-        desc: 'A serious opportunity inside Career to develop multiple income lines, stronger follow-up, and a path toward the multi-services model.',
-        benefitTitles: ['Build a portfolio', 'Develop multiple lines', 'Training and scripts', 'Follow-up system', 'Guided growth', 'Scalable model'],
+        eyebrow: 'Health & Medicare',
+        title: 'Medical coverage with <span class="gradient-text">clear guidance</span>',
+        desc: 'We help you understand options, enrollment periods, and coverage without getting lost in technical language.',
+        benefitTitles: ['Eligibility', 'Option comparison', 'Simple explanation', 'Follow-up', 'Budget and priority', 'Bilingual care'],
         benefitDescs: [
-          'Learn to serve clients with follow-up, renewals, referrals, and sustainable relationships.',
-          'Connect administrative and support services based on real community needs.',
-          'Product, sales, compliance, WhatsApp messaging, and consultative conversations.',
-          'CRM, tags, reminders, and campaigns so you do not depend on memory or scattered messages.',
-          'Mentorship, opportunity review, and focus on consistent commercial habits.',
-          'A path to move from producer to leader, team, and eventually a multi-services office.'
+          'We identify the right time to act based on age, enrollment period, and personal situation.',
+          'We break down practical coverage differences so you can decide with greater confidence.',
+          'We translate complex terms into conversations that are easy to understand in Spanish or English.',
+          'We support life-stage changes, renewals, and questions after the initial decision.',
+          'We look for balance between real protection, cost, and family financial stability.',
+          'Language clarity matters when health coverage and sensitive decisions are involved.'
         ],
-        ctas: ['Apply to Career', 'I want the office model']
+        ctas: ['I want health guidance', 'Review Medicare']
       },
       sistema: {
         eyebrow: 'IZZY System',
         title: 'Infrastructure to <span class="gradient-text">grow with order</span>',
-        desc: 'The difference is follow-up. IZZY combines services, processes, and automation to turn conversations into long-term relationships.',
-        itemTitles: ['Lead pipeline', 'WhatsApp follow-up', 'Local campaigns', 'Referrals and renewals', 'Training', 'Scalable processes'],
+        desc: 'The difference is follow-up. IZZY combines education, process, and support to turn a consultation into a long-term strategy.',
+        itemTitles: ['Initial diagnosis', 'WhatsApp follow-up', 'Continuous education', 'Annual review', 'Bilingual explanation', 'Clear process'],
         itemDescs: [
-          'Clients, people in Career, and office prospects organized by stage, interest, and next action.',
-          'Intent-based messaging: consultation, Career, or office, with clear and human follow-up.',
-          'Tax season and business campaigns with segmented guidance messaging.',
-          'A process to request reviews, referrals, annual check-ins, and cross-selling opportunities.',
-          'Guides, scripts, sessions, and sales habits for Career and growing teams.',
-          'Templates, checklists, and structure for future IZZY multi-services offices.'
+          'We begin by understanding goals, budget, life stage, and real concerns.',
+          'Clear messages to answer questions and maintain continuity after every conversation.',
+          'Content and conversations focused on life, health, Medicare, and retirement.',
+          'Periodic reviews to adapt your protection to family and financial changes.',
+          'We translate processes and options into simple language that builds real trust.',
+          'A consistent experience from the first question through the annual review.'
         ]
       },
       porque: {
         eyebrow: 'Our difference',
         title: 'Why <span class="gradient-text">IZZY</span>?',
-        desc: 'Because we combine community trust with a modern business mindset: services, follow-up, and Career development under one brand.',
-        itemTitles: ['100% Bilingual', 'Independent Agent', 'System Mindset', 'Community Focused'],
+        desc: 'Because we combine community trust with clarity, follow-up, and a more human financial experience.',
+        itemTitles: ['100% Bilingual', 'Objective guidance', 'Structured process', 'Community focused'],
         itemDescs: [
-          'Full service in Spanish and English. We explain details without language barriers.',
-          'We are not tied to a single carrier. We search for the best market option for you.',
-          'We do not improvise follow-up. We organize leads, appointments, renewals, and opportunities.',
-          'We primarily serve Latino families and immigrant communities with empathy and respect.'
+          'Complete care in Spanish and English. We explain details without language barriers.',
+          'We help you understand and compare options through a conversation centered on your real needs.',
+          'We do not improvise follow-up. We organize each step so you always know what comes next.',
+          'We primarily serve Latino families with empathy, patience, and respect.'
         ]
       },
       resultados: {
-        eyebrow: 'Trust foundation',
+        eyebrow: 'Foundation of trust',
         title: 'We are in a <span class="gradient-text">launch phase</span>',
         desc: 'We are not publishing numeric metrics yet. We prefer full transparency while we build measurable results.',
         metricsStrong: ['Bilingual service', 'Active coverage', 'Initial consultation', 'Follow-up'],
-        metricsDesc: ['Spanish and English', 'California and Florida', 'Clear guidance via WhatsApp or phone', 'Step-by-step process by intent'],
+        metricsDesc: ['Spanish and English', 'California and Florida', 'Clear guidance through WhatsApp or phone', 'Step-by-step process and annual review'],
         testimonialText: [
-          'A person looking to solve their paperwork and taxes in one place, with simple explanation and Spanish support.',
-          'A person in Career who starts with one line and evolves into an operation with follow-up, portfolio, and complementary services.',
-          'An entrepreneur who wants to open a multi-services office with commercial structure, processes, and operational support.'
+          'A family that wants to protect income and loved ones with a simple explanation and no pressure.',
+          'A person who needs to understand Medicare or medical coverage and values clear guidance in their language.',
+          'A client who wants to organize retirement through a more intentional, sustainable, and reviewable strategy.'
         ],
-        testimonialRole: ['Case type · Client', 'Case type · Agent', 'Case type · Office']
+        testimonialRole: ['Use case · Life', 'Use case · Health', 'Use case · Retirement']
       },
       ctaFinal: {
         title: 'Start on the right path.',
-        desc: 'Whether you need services, want to grow in Career, or are exploring a multi-services office, IZZY welcomes you with a clear conversation.',
-        cards: ['I need services', 'Career', 'I want to open an office'],
-        cardSubs: ['Services for families and entrepreneurs', 'Training, portfolio, and follow-up', 'Scalable multi-services office model']
+        desc: 'Whether you want to protect your family, review your health coverage, or plan retirement, IZZY welcomes you with a clear conversation.',
+        cards: ['Life insurance', 'Health & Medicare', 'Retirement'],
+        cardSubs: ['Family protection and legacy', 'Medical coverage with clarity', 'Strategy, accumulation, and income']
       },
       footer: {
         tagline: 'Protecting families, building futures.',
         plataforma: 'Platform',
         serviciosClave: 'Key services',
         contacto: 'Contact',
-        links1: ['Services', 'Career', 'Career deck', 'Office model', 'IZZY System'],
-        links2: ['Family Protection', 'Initial Financial Guidance', 'Taxes', 'ITIN', 'Business Registration', 'Administrative Support'],
+        links1: ['Services', 'Health & Medicare', 'Retirement', 'Solutions', 'IZZY System'],
+        links2: ['Life insurance', 'Income protection', 'Individual health', 'Medicare', 'Annuities', 'Retirement planning'],
         contactMeta: ['California & Florida', 'Mon-Sat · By appointment'],
-        disclaimer: 'IZZY Financial & Business Services offers general guidance and administrative services. Some services may require licensing, authorization, appointment, independent professional review, or compliance with state and federal requirements. Availability of services may vary by state, provider, eligibility, and applicable regulations. Approvals, rates, coverages, savings, income, or results are not guaranteed. IZZY Financial & Business Services is not affiliated with, endorsed by, or approved by any government entity, federal program, state department, carrier, or insurance company, unless expressly stated in writing. © 2026 IZZY Financial & Business Services. All rights reserved.'
+        disclaimer: 'IZZY Financial & Business Services offers general guidance on financial and insurance services. Some services may require licensing, authorization, independent professional review, or compliance with state and federal requirements. Availability may vary by state, provider, eligibility, and applicable regulation. Approvals, rates, coverages, savings, and results are not guaranteed. IZZY Financial & Business Services is not affiliated with, endorsed by, or approved by any government entity or carrier unless expressly stated in writing. © 2026 IZZY Financial & Business Services. All rights reserved.'
       },
-      contactFormTitle: 'Tell us what you need', formName: 'Name', formPhone: 'Phone', formIntent: 'Intent', formState: 'State',
-      formNamePlaceholder: 'Your name', formSubmit: 'Send via WhatsApp', callNow: 'Call Now',
+      contactFormTitle: 'Tell us what you need',
+      formName: 'Name',
+      formPhone: 'Phone',
+      formIntent: 'Priority',
+      formState: 'State',
+      formNamePlaceholder: 'Your name',
+      formSubmit: 'Send via WhatsApp',
+      callNow: 'Call now',
       states: ['California', 'Florida', 'Other'],
-      intents: ['I am a client', 'Career', 'I want an office'],
+      intents: ['Family protection', 'Health & Medicare', 'Retirement'],
       validation: {
-        name: 'Please enter your name.',
-        phone: 'Please enter a valid phone number (at least 10 digits).',
-        intent: 'Please select your intent.',
-        state: 'Please select your state.',
-        review: 'Please review the highlighted fields before submitting.',
+        name: 'Enter your name.',
+        phone: 'Enter a valid phone number (at least 10 digits).',
+        intent: 'Select your priority.',
+        state: 'Select your state.',
+        review: 'Please review the highlighted fields before sending.',
         saving: 'Saving lead...',
-        ok: 'Done: lead saved to Google Sheets and sent via WhatsApp.',
-        fail: 'Sent via WhatsApp. Could not confirm save to Sheets.'
+        ok: 'Done: lead saved to Google Sheets and sent through WhatsApp.',
+        fail: 'Sent through WhatsApp. Could not confirm save in Sheets.'
       },
       wa: {
         hero: {
-          cliente: { label: 'Start consultation', text: 'Hi, I want initial guidance on services for families or entrepreneurs.' },
-          agente: { label: 'Apply to Career', text: 'Hi, I want more information about Career at IZZY Financial & Business Services.' },
-          oficina: { label: 'Open my IZZY office', text: 'Hi, I want to learn about the IZZY multiservices model.' }
+          cliente: { label: 'Start consultation', text: 'Hi, I want initial guidance about family protection.' },
+          agente: { label: 'View health options', text: 'Hi, I want guidance about health and Medicare.' },
+          oficina: { label: 'Plan my retirement', text: 'Hi, I want guidance about retirement and annuities.' }
         },
-        formIntro: 'Hi, I want a consultation.',
-        fields: { name: 'Name', phone: 'Phone', intent: 'Intent', state: 'State' }
+        formIntro: 'Hi, I want a consultation about financial services.',
+        fields: { name: 'Name', phone: 'Phone', intent: 'Priority', state: 'State' }
       }
     }
   };
@@ -348,6 +403,7 @@
     setText('#hero-badge', L.heroBadge);
     setText('#hero-title', L.heroTitle, true);
     setText('#hero-subtitle', L.heroSubtitle);
+
     const intentSwitch = document.getElementById('intent-switch');
     if (intentSwitch) intentSwitch.setAttribute('aria-label', L.intentAria);
 
@@ -394,6 +450,7 @@
     setText('#agentes .section__desc', L.agentes.desc);
     setListText('#agent-grid .agent-benefit__title', L.agentes.benefitTitles);
     setListText('#agent-grid .agent-benefit__desc', L.agentes.benefitDescs);
+
     const agentWa = document.getElementById('cta-agent-wa');
     if (agentWa) agentWa.lastChild.textContent = ` ${L.agentes.ctas[0]}`;
     setText('#cta-office-model', L.agentes.ctas[1]);
@@ -464,6 +521,7 @@
     setText('.footer__contact .footer__heading', L.footer.contacto);
     setListText('.footer__products .footer__list a', L.footer.links1);
     setListText('.footer__links .footer__list a', L.footer.links2);
+
     const footerMeta = document.querySelectorAll('.footer__contact .footer__list li span');
     if (footerMeta[0] && footerMeta[0].lastChild) footerMeta[0].lastChild.textContent = L.footer.contactMeta[0];
     if (footerMeta[1] && footerMeta[1].lastChild) footerMeta[1].lastChild.textContent = L.footer.contactMeta[1];
@@ -476,7 +534,6 @@
     });
   };
 
-  /* ---- Sticky Header ---- */
   const header = document.getElementById('header');
   if (header) {
     const onScroll = () => {
@@ -486,7 +543,6 @@
     onScroll();
   }
 
-  /* ---- Mobile Nav Toggle ---- */
   const navToggle = document.getElementById('nav-toggle');
   const mainNav = document.getElementById('main-nav');
 
@@ -517,7 +573,6 @@
     });
   }
 
-  /* ---- Scroll Reveal ---- */
   const revealEls = document.querySelectorAll('.reveal');
   if ('IntersectionObserver' in window && revealEls.length) {
     const observer = new IntersectionObserver((entries) => {
@@ -534,7 +589,6 @@
     revealEls.forEach((el) => el.classList.add('visible'));
   }
 
-  /* ---- Smooth Scroll ---- */
   document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
     anchor.addEventListener('click', (e) => {
       const href = anchor.getAttribute('href');
@@ -547,7 +601,6 @@
     });
   });
 
-  /* ---- Intent switch ---- */
   if (intentButtons.length && heroPrimaryCta) {
     intentButtons.forEach((button) => {
       button.addEventListener('click', () => {
@@ -568,7 +621,6 @@
     });
   }
 
-  /* ---- Language switch ---- */
   langButtons.forEach((btn) => {
     btn.addEventListener('click', () => {
       const nextLang = btn.dataset.lang;
@@ -579,7 +631,6 @@
     });
   });
 
-  /* ---- Active Nav Link Highlighting ---- */
   const sections = document.querySelectorAll('section[id]');
   const navLinks = document.querySelectorAll('.nav__link[href^="#"]');
   if (sections.length && navLinks.length) {
@@ -598,13 +649,11 @@
     sections.forEach((sec) => sectionObserver.observe(sec));
   }
 
-  /* ---- WhatsApp CTA Pulse on mobile ---- */
   document.querySelectorAll('a[href^="https://wa.me"]').forEach((link) => {
     link.addEventListener('touchstart', () => { link.style.transform = 'scale(.97)'; }, { passive: true });
     link.addEventListener('touchend', () => { link.style.transform = ''; }, { passive: true });
   });
 
-  /* ---- Lead form ---- */
   const leadForm = document.getElementById('lead-form');
   const leadStatus = document.getElementById('lead-form-status');
   if (leadForm) {
@@ -634,9 +683,7 @@
       }
 
       field.setAttribute('aria-invalid', isValid ? 'false' : 'true');
-      if (errorEl) {
-        errorEl.textContent = isValid ? '' : t[currentLang].validation[fieldConfig.key];
-      }
+      if (errorEl) errorEl.textContent = isValid ? '' : t[currentLang].validation[fieldConfig.key];
       return isValid;
     };
 
@@ -710,11 +757,9 @@
       ].join('\n');
 
       const waUrl = waLink(text);
-      if (waPopup) {
-        waPopup.location.href = waUrl;
-      } else {
-        window.location.href = waUrl;
-      }
+      if (waPopup) waPopup.location.href = waUrl;
+      else window.location.href = waUrl;
+
       setStatus(savedToSheet ? t[currentLang].validation.ok : t[currentLang].validation.fail, savedToSheet ? 'is-success' : 'is-error');
 
       leadForm.reset();
@@ -724,6 +769,7 @@
         if (field) field.setAttribute('aria-invalid', 'false');
         if (errorEl) errorEl.textContent = '';
       });
+
       isSubmitting = false;
       if (submitBtn) submitBtn.disabled = false;
     });
