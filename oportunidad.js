@@ -8,6 +8,7 @@
   const nextButton = document.getElementById("next-button");
   const prevButton = document.getElementById("prev-button");
   const overviewButton = document.getElementById("overview-button");
+  const notesToggleButton = document.getElementById("notes-toggle");
 
   let activeIndex = 0;
 
@@ -95,7 +96,10 @@
 
   const getVisibleStageIndex = (slide) => {
     const stages = Array.from(slide.querySelectorAll(".reveal-stage"));
-    return stages.findIndex((stage) => stage.classList.contains("is-visible"));
+    for (let index = stages.length - 1; index >= 0; index -= 1) {
+      if (stages[index].classList.contains("is-visible")) return index;
+    }
+    return -1;
   };
 
   const revealNextStage = (slide) => {
@@ -106,6 +110,9 @@
     const nextStageIndex = currentStageIndex + 1;
     if (nextStageIndex >= stages.length) return false;
 
+    if (currentStageIndex >= 0) {
+      stages[currentStageIndex].classList.remove("is-visible");
+    }
     stages[nextStageIndex].classList.add("is-visible");
     return true;
   };
@@ -135,6 +142,26 @@
     overviewButton.addEventListener("click", () => activateSlide(0));
   }
 
+  const applyNotesVisibility = (isHidden) => {
+    document.body.classList.toggle("notes-hidden", isHidden);
+    if (notesToggleButton) {
+      notesToggleButton.textContent = isHidden ? "Mostrar notas" : "Ocultar notas";
+      notesToggleButton.setAttribute("aria-pressed", isHidden ? "true" : "false");
+    }
+  };
+
+  document.addEventListener("click", (event) => {
+    const noteDismiss = event.target.closest("[data-notes-toggle]");
+    if (!noteDismiss) return;
+    applyNotesVisibility(!document.body.classList.contains("notes-hidden"));
+  });
+
+  if (notesToggleButton) {
+    notesToggleButton.addEventListener("click", () => {
+      applyNotesVisibility(!document.body.classList.contains("notes-hidden"));
+    });
+  }
+
   document.addEventListener("keydown", (event) => {
     if (event.key === "ArrowRight" || event.key === "PageDown" || event.key === " ") {
       event.preventDefault();
@@ -154,10 +181,23 @@
     }
   });
 
+  slides.forEach((slide) => {
+    const note = slide.querySelector(".speaker-note");
+    if (!note || note.querySelector(".speaker-note__dismiss")) return;
+    const dismiss = document.createElement("button");
+    dismiss.type = "button";
+    dismiss.className = "speaker-note__dismiss";
+    dismiss.dataset.notesToggle = "true";
+    dismiss.setAttribute("aria-label", "Ocultar notas del presentador");
+    dismiss.textContent = "Ocultar";
+    note.prepend(dismiss);
+  });
+
   slides.forEach((slide) => resetStages(slide));
   slides[0].classList.add("is-active");
   updateProgress(slides[0]);
   updateCounters();
   updateControls();
   animateCountsInSlide(slides[0]);
+  applyNotesVisibility(false);
 })();
