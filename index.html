@@ -146,6 +146,7 @@
           <li><a href="#servicios" class="nav__link" id="nav-modelo">Vida</a></li>
           <li><a href="#agentes" class="nav__link" id="nav-agentes">Career</a></li>
           <li><a href="#modelo" class="nav__link" id="nav-sistema">Retiro</a></li>
+          <li><a href="https://wa.me/18182667038?text=Hola%2C%20quiero%20informacion%20sobre%20alivio%20de%20deuda%20(Mediator%20Debt%20Solutions)." class="nav__link" id="nav-debt" target="_blank" rel="noopener">Mediator Debt Solutions · Alivio de deuda</a></li>
           <li><a href="#contacto" class="nav__link nav__link--cta" id="nav-contacto">Contactanos</a></li>
         </ul>
       </nav>
@@ -181,18 +182,14 @@
           <button class="intent-switch__btn" data-intent="oficina" role="tab" aria-selected="false">Retiro</button>
         </div>
         <div class="hero__ctas reveal" id="hero-ctas">
-          <a href="https://wa.me/18182667038?text=Hola%2C%20quiero%20orientacion%20inicial%20sobre%20proteccion%20familiar." class="btn btn--primary" id="cta-whatsapp-hero" target="_blank" rel="noopener">
+          <a href="https://wa.me/18182667038?text=Hola%2C%20quiero%20orientacion%20inicial%20sobre%20proteccion%20familiar." class="btn btn--primary btn--lg" id="cta-whatsapp-hero" target="_blank" rel="noopener">
             <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
             Empezar consulta
           </a>
-          <a href="career/" class="btn btn--secondary" id="cta-agent-hero">
-            <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20" aria-hidden="true"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
-            Explorar Career
-          </a>
-          <a href="https://wa.me/18182667038?text=Hola%2C%20quiero%20hablar%20con%20un%20asesor%20sobre%20servicios%20financieros." class="btn btn--outline-white" id="cta-office-hero" target="_blank" rel="noopener">
-            Hablar con un asesor
-          </a>
         </div>
+        <a href="career/" class="hero__career-link reveal" id="cta-agent-hero">
+          ¿Buscas una oportunidad profesional? Explorar Career
+        </a>
         <div class="trust-strip reveal" id="trust-strip" aria-label="Senales de confianza">
           <span>Atencion bilingue</span>
           <span>California &amp; Florida</span>
@@ -377,55 +374,41 @@
         <span class="services-pill">California &amp; Florida</span>
         <span class="services-pill">Consulta inicial sin costo</span>
       </div>
-      <div class="services-grid" id="services-grid">
-        <article class="service-card reveal" id="card-auto">
-          <div class="service-card__icon" aria-hidden="true"><svg class="site-icon"><use href="#icon-auto"></use></svg></div>
-          <h3 class="service-card__title">Seguro de vida</h3>
-          <p class="service-card__desc">Opciones de termino, vida entera e IUL para proteger a tu familia, crear legado y fortalecer tu plan financiero.</p>
-          <a href="https://wa.me/18182667038?text=Quiero%20informacion%20sobre%20seguro%20de%20vida" class="service-card__link" id="link-auto" target="_blank" rel="noopener">Consulta gratis →</a>
-        </article>
-        <article class="service-card reveal" id="card-vida">
+      <div class="services-grid services-grid--featured" id="services-grid">
+        <article class="service-card service-card--featured reveal" id="card-vida">
           <div class="service-card__icon" aria-hidden="true"><svg class="site-icon"><use href="#icon-shield-family"></use></svg></div>
-          <h3 class="service-card__title">Proteccion de ingresos</h3>
-          <p class="service-card__desc">Estrategias para reducir el impacto financiero de eventos inesperados y mantener estabilidad en casa.</p>
-          <a href="https://wa.me/18182667038?text=Quiero%20informacion%20sobre%20proteccion%20de%20ingresos" class="service-card__link" id="link-vida" target="_blank" rel="noopener">Consulta gratis →</a>
+          <h3 class="service-card__title">Vida</h3>
+          <p class="service-card__desc">Seguro de termino, vida entera e IUL para proteger a tu familia, crear legado y reducir el impacto de imprevistos.</p>
+          <a href="https://wa.me/18182667038?text=Quiero%20informacion%20sobre%20seguro%20de%20vida" class="service-card__link" id="link-vida" target="_blank" rel="noopener">Consulta gratis →</a>
         </article>
-        <article class="service-card reveal" id="card-taxes-main">
+        <article class="service-card service-card--featured reveal" id="card-salud">
           <div class="service-card__icon" aria-hidden="true"><svg class="site-icon"><use href="#icon-medical-shield"></use></svg></div>
-          <h3 class="service-card__title">Salud individual y familiar</h3>
-          <p class="service-card__desc">Orientacion para comparar coberturas medicas y elegir una opcion alineada a tu presupuesto y tus necesidades.</p>
-          <a href="https://wa.me/18182667038?text=Quiero%20informacion%20sobre%20planes%20de%20salud" class="service-card__link" id="link-taxes-main" target="_blank" rel="noopener">Consulta gratis →</a>
+          <h3 class="service-card__title">Salud y Medicare</h3>
+          <p class="service-card__desc">Comparamos coberturas medicas, elegibilidad y periodos de inscripcion para que elijas con claridad en cualquier etapa.</p>
+          <a href="https://wa.me/18182667038?text=Quiero%20informacion%20sobre%20planes%20de%20salud" class="service-card__link" id="link-salud" target="_blank" rel="noopener">Consulta gratis →</a>
         </article>
-        <article class="service-card reveal" id="card-itin">
-          <div class="service-card__icon" aria-hidden="true"><svg class="site-icon"><use href="#icon-medical-cross"></use></svg></div>
-          <h3 class="service-card__title">Medicare</h3>
-          <p class="service-card__desc">Acompanamiento para entender elegibilidad, periodos de inscripcion y diferencias entre las opciones disponibles.</p>
-          <a href="https://wa.me/18182667038?text=Quiero%20informacion%20sobre%20Medicare" class="service-card__link" id="link-itin" target="_blank" rel="noopener">Consulta gratis →</a>
+        <article class="service-card service-card--featured reveal" id="card-retiro">
+          <div class="service-card__icon" aria-hidden="true"><svg class="site-icon"><use href="#icon-growth"></use></svg></div>
+          <h3 class="service-card__title">Retiro</h3>
+          <p class="service-card__desc">Estrategias de acumulacion, anualidades e ingresos garantizados para un retiro con metas claras y menos incertidumbre.</p>
+          <a href="https://wa.me/18182667038?text=Quiero%20informacion%20sobre%20planificacion%20de%20retiro" class="service-card__link" id="link-retiro" target="_blank" rel="noopener">Consulta gratis →</a>
         </article>
-        <article class="service-card reveal" id="card-comercial">
-          <div class="service-card__icon" aria-hidden="true"><svg class="site-icon"><use href="#icon-briefcase"></use></svg></div>
-          <h3 class="service-card__title">Anualidades</h3>
-          <p class="service-card__desc">Soluciones enfocadas en acumulacion, proteccion del capital e ingresos para etapas de retiro.</p>
-          <a href="https://wa.me/18182667038?text=Quiero%20informacion%20sobre%20anualidades" class="service-card__link" id="link-comercial" target="_blank" rel="noopener">Consulta gratis →</a>
-        </article>
-        <article class="service-card reveal" id="card-taxes">
-          <div class="service-card__icon" aria-hidden="true"><svg class="site-icon"><use href="#icon-document"></use></svg></div>
-          <h3 class="service-card__title">Planificacion de retiro</h3>
-          <p class="service-card__desc">Conversaciones claras para alinear metas de retiro, horizonte de tiempo y opciones de construccion patrimonial.</p>
-          <a href="https://wa.me/18182667038?text=Quiero%20informacion%20sobre%20planificacion%20de%20retiro" class="service-card__link" id="link-taxes" target="_blank" rel="noopener">Consulta gratis →</a>
-        </article>
-        <article class="service-card reveal" id="card-dmv">
+        <article class="service-card service-card--featured reveal" id="card-educacion">
           <div class="service-card__icon" aria-hidden="true"><svg class="site-icon"><use href="#icon-license"></use></svg></div>
           <h3 class="service-card__title">Educacion financiera</h3>
           <p class="service-card__desc">Explicamos conceptos, escenarios y decisiones para que avances con confianza y no solo con urgencia.</p>
-          <a href="https://wa.me/18182667038?text=Quiero%20informacion%20sobre%20educacion%20financiera" class="service-card__link" id="link-dmv" target="_blank" rel="noopener">Consulta gratis →</a>
+          <a href="https://wa.me/18182667038?text=Quiero%20informacion%20sobre%20educacion%20financiera" class="service-card__link" id="link-educacion" target="_blank" rel="noopener">Consulta gratis →</a>
         </article>
-        <article class="service-card reveal" id="card-negocio">
-          <div class="service-card__icon" aria-hidden="true"><svg class="site-icon"><use href="#icon-building"></use></svg></div>
-          <h3 class="service-card__title">Revision financiera anual</h3>
-          <p class="service-card__desc">Revisamos cambios de etapa, prioridades familiares y cobertura actual para mantener tu estrategia actualizada.</p>
-          <a href="https://wa.me/18182667038?text=Quiero%20agendar%20una%20revision%20financiera%20anual" class="service-card__link" id="link-negocio" target="_blank" rel="noopener">Consulta gratis →</a>
-        </article>
+      </div>
+      <div class="services-secondary reveal" id="services-secondary">
+        <span class="services-secondary__label" id="services-secondary-label">Tambien ofrecemos</span>
+        <div class="services-secondary__list">
+          <a href="https://wa.me/18182667038?text=Quiero%20informacion%20sobre%20proteccion%20de%20ingresos" class="services-secondary__item" target="_blank" rel="noopener">Proteccion de ingresos</a>
+          <a href="https://wa.me/18182667038?text=Quiero%20informacion%20sobre%20Medicare" class="services-secondary__item" target="_blank" rel="noopener">Medicare</a>
+          <a href="https://wa.me/18182667038?text=Quiero%20informacion%20sobre%20anualidades" class="services-secondary__item" target="_blank" rel="noopener">Anualidades</a>
+          <a href="https://wa.me/18182667038?text=Quiero%20agendar%20una%20revision%20financiera%20anual" class="services-secondary__item" target="_blank" rel="noopener">Revision financiera anual</a>
+          <a href="sabor-y-finanzas.html" class="services-secondary__item">Sabor y Finanzas</a>
+        </div>
       </div>
     </div>
   </section>
@@ -678,6 +661,7 @@
         </div>
         <form class="lead-form" id="lead-form" aria-label="Formulario de contacto inicial" novalidate>
           <h3 class="lead-form__title">Cuentanos que necesitas</h3>
+          <p class="lead-form__context" id="lead-form-context" hidden></p>
           <div class="lead-form__grid">
             <label class="lead-form__field">
               <span id="lead-name-label">Nombre</span>
@@ -689,7 +673,7 @@
               <input type="tel" id="lead-phone" name="phone" placeholder="(000) 000-0000" required aria-labelledby="lead-phone-label" aria-describedby="lead-phone-error" />
               <small class="lead-form__error" id="lead-phone-error"></small>
             </label>
-            <label class="lead-form__field">
+            <label class="lead-form__field" id="lead-intent-field">
               <span id="lead-intent-label">Prioridad</span>
               <select id="lead-intent" name="intent" required aria-labelledby="lead-intent-label" aria-describedby="lead-intent-error">
                 <option value="client">Proteccion familiar</option>
@@ -698,7 +682,7 @@
               </select>
               <small class="lead-form__error" id="lead-intent-error"></small>
             </label>
-            <label class="lead-form__field">
+            <label class="lead-form__field" id="lead-state-field">
               <span id="lead-state-label">Estado</span>
               <select id="lead-state" name="state" required aria-labelledby="lead-state-label" aria-describedby="lead-state-error">
                 <option value="ca">California</option>

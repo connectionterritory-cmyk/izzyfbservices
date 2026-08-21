@@ -15,6 +15,8 @@
       navModelo: 'Vida',
       navAgentes: 'Career',
       navSistema: 'Retiro',
+      navDebt: 'Mediator Debt Solutions · Alivio de deuda',
+      navDebtWa: 'Hola, quiero informacion sobre alivio de deuda (Mediator Debt Solutions).',
       navContacto: 'Contactanos',
       heroBadge: 'Orientacion financiera bilingue para la comunidad hispana',
       heroTitle: 'Todo lo que necesitas para<br><span class="gradient-text">proteger tu familia y planificar tu futuro.</span>',
@@ -23,8 +25,7 @@
       intentCliente: 'Proteccion familiar',
       intentAgente: 'Salud y Medicare',
       intentOficina: 'Retiro',
-      ctaSecondary: 'Explorar Career',
-      ctaTertiary: 'Hablar con un asesor',
+      heroCareerLink: '¿Buscas una oportunidad profesional? Explorar Career',
       trust: ['Atencion bilingue', 'California & Florida', 'Consulta sin costo', 'Orientacion personalizada', 'Proteccion a largo plazo'],
       stats: ['Servicios', 'Estados', 'Equipo'],
       visualEyebrow: 'Atencion real, imagen profesional',
@@ -63,25 +64,19 @@
         pills: ['Atencion bilingue', 'California & Florida', 'Consulta inicial sin costo'],
         link: 'Consulta gratis →',
         titles: [
-          'Seguro de vida',
-          'Proteccion de ingresos',
-          'Salud individual y familiar',
-          'Medicare',
-          'Anualidades',
-          'Planificacion de retiro',
-          'Educacion financiera',
-          'Revision financiera anual'
+          'Vida',
+          'Salud y Medicare',
+          'Retiro',
+          'Educacion financiera'
         ],
         descs: [
-          'Opciones de termino, vida entera e IUL para proteger a tu familia, crear legado y fortalecer tu plan financiero.',
-          'Estrategias para reducir el impacto financiero de eventos inesperados y mantener estabilidad en casa.',
-          'Orientacion para comparar coberturas medicas y elegir una opcion alineada a tu presupuesto y tus necesidades.',
-          'Acompanamiento para entender elegibilidad, periodos de inscripcion y diferencias entre las opciones disponibles.',
-          'Soluciones enfocadas en acumulacion, proteccion del capital e ingresos para etapas de retiro.',
-          'Conversaciones claras para alinear metas de retiro, horizonte de tiempo y opciones de construccion patrimonial.',
-          'Explicamos conceptos, escenarios y decisiones para que avances con confianza y no solo con urgencia.',
-          'Revisamos cambios de etapa, prioridades familiares y cobertura actual para mantener tu estrategia actualizada.'
-        ]
+          'Seguro de termino, vida entera e IUL para proteger a tu familia, crear legado y reducir el impacto de imprevistos.',
+          'Comparamos coberturas medicas, elegibilidad y periodos de inscripcion para que elijas con claridad en cualquier etapa.',
+          'Estrategias de acumulacion, anualidades e ingresos garantizados para un retiro con metas claras y menos incertidumbre.',
+          'Explicamos conceptos, escenarios y decisiones para que avances con confianza y no solo con urgencia.'
+        ],
+        secondaryLabel: 'Tambien ofrecemos',
+        secondaryItems: ['Proteccion de ingresos', 'Medicare', 'Anualidades', 'Revision financiera anual']
       },
       modelo: {
         eyebrow: 'Retiro y patrimonio',
@@ -160,6 +155,7 @@
         contactMeta: ['California & Florida', 'Lun-Sab · Atencion por cita'],
         disclaimer: 'IZZY Financial & Business Services ofrece orientacion general sobre servicios financieros y de seguros. Algunos servicios pueden requerir licencia, autorizacion, revision profesional independiente o cumplimiento de requisitos estatales y federales. La disponibilidad puede variar segun el estado, proveedor, elegibilidad y regulacion aplicable. No se garantizan aprobaciones, tarifas, coberturas, ahorros ni resultados. IZZY Financial & Business Services no esta afiliado, respaldado ni aprobado por ninguna entidad gubernamental o carrier, salvo que se indique expresamente por escrito. © 2026 IZZY Financial & Business Services. Todos los derechos reservados.'
       },
+      contactFormAria: 'Formulario de contacto inicial',
       contactFormTitle: 'Cuentanos que necesitas',
       formName: 'Nombre',
       formPhone: 'Telefono',
@@ -167,6 +163,12 @@
       formState: 'Estado',
       formNamePlaceholder: 'Tu nombre',
       formSubmit: 'Enviar por WhatsApp',
+      eventForm: {
+        aria: 'Formulario de confirmacion de asistencia para Sabor y Finanzas',
+        title: 'Confirma tu asistencia a Sabor y Finanzas',
+        context: 'Completa tu nombre y telefono para registrar tu asistencia. Al enviar, tambien se abrira WhatsApp con tu confirmacion.',
+        submit: 'Confirmar asistencia'
+      },
       callNow: 'Llamar ahora',
       states: ['California', 'Florida', 'Otro'],
       intents: ['Proteccion familiar', 'Career', 'Retiro'],
@@ -178,7 +180,10 @@
         review: 'Revisa los campos marcados antes de enviar.',
         saving: 'Guardando lead...',
         ok: 'Listo: lead guardado en Google Sheets y enviado por WhatsApp.',
-        fail: 'Enviado por WhatsApp. No se pudo confirmar guardado en Sheets.'
+        fail: 'Enviado por WhatsApp. No se pudo confirmar guardado en Sheets.',
+        savingEvent: 'Guardando tu confirmacion...',
+        okEvent: 'Listo: asistencia confirmada en Google Sheets y enviada por WhatsApp.',
+        failEvent: 'Abrimos WhatsApp, pero no pudimos confirmar el guardado de tu asistencia.'
       },
       wa: {
         hero: {
@@ -187,7 +192,8 @@
           oficina: { label: 'Planificar mi retiro', text: 'Hola, quiero orientacion sobre retiro y anualidades.' }
         },
         formIntro: 'Hola, quiero una consulta sobre servicios financieros.',
-        fields: { name: 'Nombre', phone: 'Telefono', intent: 'Prioridad', state: 'Estado' }
+        eventIntro: 'Hola, confirmo mi asistencia a Sabor y Finanzas.',
+        fields: { name: 'Nombre', phone: 'Telefono', intent: 'Prioridad', state: 'Estado', event: 'Evento' }
       }
     },
     en: {
@@ -195,6 +201,8 @@
       navModelo: 'Life',
       navAgentes: 'Career',
       navSistema: 'Retirement',
+      navDebt: 'Mediator Debt Solutions',
+      navDebtWa: 'Hi, I would like information about debt relief (Mediator Debt Solutions).',
       navContacto: 'Contact Us',
       heroBadge: 'Bilingual financial guidance for the Hispanic community',
       heroTitle: 'Everything you need to<br><span class="gradient-text">protect your family and plan your future.</span>',
@@ -203,8 +211,7 @@
       intentCliente: 'Family protection',
       intentAgente: 'Health & Medicare',
       intentOficina: 'Retirement',
-      ctaSecondary: 'Explore Career',
-      ctaTertiary: 'Talk to an advisor',
+      heroCareerLink: 'Looking for a professional opportunity? Explore Career',
       trust: ['Bilingual service', 'California & Florida', 'Free consultation', 'Personalized guidance', 'Long-term protection'],
       stats: ['Services', 'States', 'Team'],
       visualEyebrow: 'Real care, professional image',
@@ -243,25 +250,19 @@
         pills: ['Bilingual service', 'California & Florida', 'Free initial consultation'],
         link: 'Free consultation →',
         titles: [
-          'Life insurance',
-          'Income protection',
-          'Individual and family health',
-          'Medicare',
-          'Annuities',
-          'Retirement planning',
-          'Financial education',
-          'Annual financial review'
+          'Life',
+          'Health & Medicare',
+          'Retirement',
+          'Financial education'
         ],
         descs: [
-          'Term, whole life, and IUL options to protect your family, create legacy, and strengthen your financial plan.',
-          'Strategies to reduce the financial impact of unexpected events and preserve stability at home.',
-          'Guidance to compare medical coverage and choose an option aligned with your budget and needs.',
-          'Support to understand eligibility, enrollment periods, and differences across the available options.',
-          'Solutions focused on accumulation, principal protection, and income for retirement stages.',
-          'Clear conversations to align retirement goals, time horizon, and long-term wealth-building options.',
-          'We explain concepts, scenarios, and decisions so you can move forward with confidence instead of urgency.',
-          'We review life-stage changes, family priorities, and current coverage to keep your strategy up to date.'
-        ]
+          'Term, whole life, and IUL options to protect your family, create legacy, and reduce the impact of the unexpected.',
+          'We compare medical coverage, eligibility, and enrollment periods so you can choose with clarity at any stage.',
+          'Accumulation strategies, annuities, and guaranteed income for a retirement with clear goals and less uncertainty.',
+          'We explain concepts, scenarios, and decisions so you can move forward with confidence instead of urgency.'
+        ],
+        secondaryLabel: 'We also offer',
+        secondaryItems: ['Income protection', 'Medicare', 'Annuities', 'Annual financial review']
       },
       modelo: {
         eyebrow: 'Retirement and wealth',
@@ -340,6 +341,7 @@
         contactMeta: ['California & Florida', 'Mon-Sat · By appointment'],
         disclaimer: 'IZZY Financial & Business Services offers general guidance on financial and insurance services. Some services may require licensing, authorization, independent professional review, or compliance with state and federal requirements. Availability may vary by state, provider, eligibility, and applicable regulation. Approvals, rates, coverages, savings, and results are not guaranteed. IZZY Financial & Business Services is not affiliated with, endorsed by, or approved by any government entity or carrier unless expressly stated in writing. © 2026 IZZY Financial & Business Services. All rights reserved.'
       },
+      contactFormAria: 'Initial contact form',
       contactFormTitle: 'Tell us what you need',
       formName: 'Name',
       formPhone: 'Phone',
@@ -347,6 +349,12 @@
       formState: 'State',
       formNamePlaceholder: 'Your name',
       formSubmit: 'Send via WhatsApp',
+      eventForm: {
+        aria: 'Sabor y Finanzas attendance confirmation form',
+        title: 'Confirm your attendance for Sabor y Finanzas',
+        context: 'Enter your name and phone number to register your attendance. Submitting will also open WhatsApp with your confirmation message.',
+        submit: 'Confirm attendance'
+      },
       callNow: 'Call now',
       states: ['California', 'Florida', 'Other'],
       intents: ['Family protection', 'Career', 'Retirement'],
@@ -358,7 +366,10 @@
         review: 'Please review the highlighted fields before sending.',
         saving: 'Saving lead...',
         ok: 'Done: lead saved to Google Sheets and sent through WhatsApp.',
-        fail: 'Sent through WhatsApp. Could not confirm save in Sheets.'
+        fail: 'Sent through WhatsApp. Could not confirm save in Sheets.',
+        savingEvent: 'Saving your confirmation...',
+        okEvent: 'Done: attendance confirmed in Google Sheets and sent through WhatsApp.',
+        failEvent: 'WhatsApp opened, but we could not confirm that your attendance was saved.'
       },
       wa: {
         hero: {
@@ -367,13 +378,19 @@
           oficina: { label: 'Plan my retirement', text: 'Hi, I want guidance about retirement and annuities.' }
         },
         formIntro: 'Hi, I want a consultation about financial services.',
-        fields: { name: 'Name', phone: 'Phone', intent: 'Priority', state: 'State' }
+        eventIntro: 'Hi, I am confirming my attendance for Sabor y Finanzas.',
+        fields: { name: 'Name', phone: 'Phone', intent: 'Priority', state: 'State', event: 'Event' }
       }
     }
   };
 
   let currentLang = localStorage.getItem('izzy_lang') || DEFAULT_LANG;
   if (!t[currentLang]) currentLang = DEFAULT_LANG;
+  const queryParams = new URLSearchParams(window.location.search);
+  const eventSlug = (queryParams.get('evento') || queryParams.get('event') || '').trim().toLowerCase();
+  const currentPath = (window.location.pathname || '').toLowerCase();
+  const isSaborFinanzasPage = currentPath.endsWith('/sabor-y-finanzas.html') || currentPath.endsWith('sabor-y-finanzas.html');
+  const isSaborFinanzasMode = eventSlug === 'sabor-y-finanzas' || isSaborFinanzasPage;
 
   const setText = (selector, value, html = false) => {
     const el = document.querySelector(selector);
@@ -394,6 +411,58 @@
   const langButtons = document.querySelectorAll('.lang-switch__btn');
   const intentButtons = document.querySelectorAll('.intent-switch__btn');
   const heroPrimaryCta = document.getElementById('cta-whatsapp-hero');
+  const leadForm = document.getElementById('lead-form');
+  const leadFormContext = document.getElementById('lead-form-context');
+  const leadIntentField = document.getElementById('lead-intent-field');
+  const leadStateField = document.getElementById('lead-state-field');
+
+  const applyLeadFormMode = (lang) => {
+    if (!leadForm) return;
+
+    const L = t[lang];
+    const submitBtn = leadForm.querySelector('.lead-form__submit');
+    const intentSelect = document.getElementById('lead-intent');
+    const stateSelect = document.getElementById('lead-state');
+
+    if (isSaborFinanzasMode) {
+      leadForm.setAttribute('aria-label', L.eventForm.aria);
+      setText('#lead-form .lead-form__title', L.eventForm.title);
+      if (leadFormContext) {
+        leadFormContext.hidden = false;
+        leadFormContext.textContent = L.eventForm.context;
+      }
+      if (leadIntentField) leadIntentField.hidden = true;
+      if (leadStateField) leadStateField.hidden = true;
+      if (intentSelect) {
+        intentSelect.disabled = true;
+        intentSelect.required = false;
+      }
+      if (stateSelect) {
+        stateSelect.disabled = true;
+        stateSelect.required = false;
+      }
+      if (submitBtn) submitBtn.textContent = L.eventForm.submit;
+      return;
+    }
+
+    leadForm.setAttribute('aria-label', L.contactFormAria);
+    setText('#lead-form .lead-form__title', L.contactFormTitle);
+    if (leadFormContext) {
+      leadFormContext.hidden = true;
+      leadFormContext.textContent = '';
+    }
+    if (leadIntentField) leadIntentField.hidden = false;
+    if (leadStateField) leadStateField.hidden = false;
+    if (intentSelect) {
+      intentSelect.disabled = false;
+      intentSelect.required = true;
+    }
+    if (stateSelect) {
+      stateSelect.disabled = false;
+      stateSelect.required = true;
+    }
+    if (submitBtn) submitBtn.textContent = L.formSubmit;
+  };
 
   const applyLanguage = (lang) => {
     const L = t[lang];
@@ -415,9 +484,13 @@
     if (intentButtons[1]) intentButtons[1].textContent = L.intentAgente;
     if (intentButtons[2]) intentButtons[2].textContent = L.intentOficina;
 
-    const ctaAgentHero = document.getElementById('cta-agent-hero');
-    if (ctaAgentHero) ctaAgentHero.lastChild.textContent = ` ${L.ctaSecondary}`;
-    setText('#cta-office-hero', L.ctaTertiary);
+    setText('#cta-agent-hero', L.heroCareerLink);
+
+    const navDebt = document.getElementById('nav-debt');
+    if (navDebt) {
+      navDebt.textContent = L.navDebt;
+      navDebt.href = waLink(L.navDebtWa);
+    }
 
     setListText('#trust-strip span', L.trust);
     setListText('#hero-stats .stat__label', L.stats);
@@ -443,7 +516,9 @@
     setListText('#servicios .services-pill', L.servicios.pills);
     setListText('#services-grid .service-card__title', L.servicios.titles);
     setListText('#services-grid .service-card__desc', L.servicios.descs);
-    setListText('#services-grid .service-card__link', Array(8).fill(L.servicios.link));
+    setListText('#services-grid .service-card__link', Array(4).fill(L.servicios.link));
+    setText('#services-secondary-label', L.servicios.secondaryLabel);
+    setListText('#services-secondary .services-secondary__item', L.servicios.secondaryItems);
 
     setText('#modelo .section__eyebrow', L.modelo.eyebrow);
     setText('#modelo .section__title', L.modelo.title, true);
@@ -486,7 +561,6 @@
     setText('#career-inline-copy', L.ctaFinal.careerInlineCopy);
     setText('#career-inline-link', L.ctaFinal.careerInlineLink);
 
-    setText('#lead-form .lead-form__title', L.contactFormTitle);
     setText('#lead-name-label', L.formName);
     setText('#lead-phone-label', L.formPhone);
     setText('#lead-intent-label', L.formIntent);
@@ -495,8 +569,6 @@
     const nameInput = document.getElementById('lead-name');
     if (nameInput) nameInput.placeholder = L.formNamePlaceholder;
 
-    const submitBtn = document.querySelector('.lead-form__submit');
-    if (submitBtn) submitBtn.textContent = L.formSubmit;
     const ctaCallFinal = document.getElementById('cta-call-final');
     if (ctaCallFinal) ctaCallFinal.lastChild.textContent = ` ${L.callNow}`;
 
@@ -520,6 +592,8 @@
       heroPrimaryCta.href = waLink(cfg.text);
       heroPrimaryCta.lastChild.textContent = ` ${cfg.label}`;
     }
+
+    applyLeadFormMode(lang);
 
     setText('.footer__tagline', L.footer.tagline);
     setText('.footer__products .footer__heading', L.footer.plataforma);
@@ -660,7 +734,6 @@
     link.addEventListener('touchend', () => { link.style.transform = ''; }, { passive: true });
   });
 
-  const leadForm = document.getElementById('lead-form');
   const leadStatus = document.getElementById('lead-form-status');
   if (leadForm) {
     const formFields = [
@@ -681,6 +754,11 @@
       const field = document.getElementById(fieldConfig.id);
       const errorEl = document.getElementById(`${fieldConfig.id}-error`);
       if (!field) return true;
+      if (field.disabled) {
+        field.setAttribute('aria-invalid', 'false');
+        if (errorEl) errorEl.textContent = '';
+        return true;
+      }
 
       let isValid = field.checkValidity();
       if (fieldConfig.id === 'lead-phone') {
@@ -706,7 +784,11 @@
       e.preventDefault();
       if (isSubmitting) return;
 
-      const allValid = formFields.every(validateField);
+      const activeFields = formFields.filter(({ id }) => {
+        const field = document.getElementById(id);
+        return field && !field.disabled;
+      });
+      const allValid = activeFields.every(validateField);
       if (!allValid) {
         setStatus(t[currentLang].validation.review, 'is-error');
         return;
@@ -721,16 +803,27 @@
       const intentLabel = intentSelect?.options[intentSelect.selectedIndex]?.text || intent;
       const stateLabel = stateSelect?.options[stateSelect.selectedIndex]?.text || state;
 
-      if (!name || !phone || !intent || !state) return;
+      if (!name || !phone || (!isSaborFinanzasMode && (!intent || !state))) return;
 
-      const payload = {
-        createdAt: new Date().toISOString(),
-        source: 'Landing IZZY',
-        name,
-        phone,
-        intent: intentLabel,
-        state: stateLabel
-      };
+      const payload = isSaborFinanzasMode
+        ? {
+            createdAt: new Date().toISOString(),
+            source: 'Landing Sabor y Finanzas',
+            formType: 'sabor_y_finanzas',
+            eventName: 'Sabor y Finanzas',
+            attendanceStatus: 'confirmed',
+            language: currentLang,
+            name,
+            phone
+          }
+        : {
+            createdAt: new Date().toISOString(),
+            source: 'Landing IZZY',
+            name,
+            phone,
+            intent: intentLabel,
+            state: stateLabel
+          };
 
       const submitBtn = leadForm.querySelector('.lead-form__submit');
       isSubmitting = true;
@@ -740,7 +833,7 @@
 
       let savedToSheet = false;
       if (LEADS_WEBHOOK_URL) {
-        setStatus(t[currentLang].validation.saving, '');
+        setStatus(isSaborFinanzasMode ? t[currentLang].validation.savingEvent : t[currentLang].validation.saving, '');
         try {
           const response = await fetch(LEADS_WEBHOOK_URL, {
             method: 'POST',
@@ -754,19 +847,31 @@
       }
 
       const i18nWa = t[currentLang].wa;
-      const text = [
-        i18nWa.formIntro,
-        `${i18nWa.fields.name}: ${payload.name}`,
-        `${i18nWa.fields.phone}: ${payload.phone}`,
-        `${i18nWa.fields.intent}: ${payload.intent}`,
-        `${i18nWa.fields.state}: ${payload.state}`
-      ].join('\n');
+      const text = isSaborFinanzasMode
+        ? [
+            i18nWa.eventIntro,
+            `${i18nWa.fields.event}: Sabor y Finanzas`,
+            `${i18nWa.fields.name}: ${payload.name}`,
+            `${i18nWa.fields.phone}: ${payload.phone}`
+          ].join('\n')
+        : [
+            i18nWa.formIntro,
+            `${i18nWa.fields.name}: ${payload.name}`,
+            `${i18nWa.fields.phone}: ${payload.phone}`,
+            `${i18nWa.fields.intent}: ${payload.intent}`,
+            `${i18nWa.fields.state}: ${payload.state}`
+          ].join('\n');
 
       const waUrl = waLink(text);
       if (waPopup) waPopup.location.href = waUrl;
       else window.location.href = waUrl;
 
-      setStatus(savedToSheet ? t[currentLang].validation.ok : t[currentLang].validation.fail, savedToSheet ? 'is-success' : 'is-error');
+      setStatus(
+        savedToSheet
+          ? (isSaborFinanzasMode ? t[currentLang].validation.okEvent : t[currentLang].validation.ok)
+          : (isSaborFinanzasMode ? t[currentLang].validation.failEvent : t[currentLang].validation.fail),
+        savedToSheet ? 'is-success' : 'is-error'
+      );
 
       leadForm.reset();
       formFields.forEach(({ id }) => {

@@ -418,7 +418,25 @@ button { font: inherit; border: none; background: none; cursor: pointer; }
   flex-wrap: wrap;
   gap: 1rem;
   justify-content: center;
-  margin-bottom: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.hero__career-link {
+  display: inline-flex;
+  align-items: center;
+  gap: .35rem;
+  color: rgba(255,255,255,.6);
+  font-size: .85rem;
+  font-weight: 600;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  text-decoration-color: rgba(255,255,255,.3);
+  margin-bottom: 1.75rem;
+  transition: color var(--transition), text-decoration-color var(--transition);
+}
+.hero__career-link:hover {
+  color: rgba(255,255,255,.9);
+  text-decoration-color: rgba(255,255,255,.7);
 }
 
 .trust-strip {
@@ -842,6 +860,60 @@ button { font: inherit; border: none; background: none; cursor: pointer; }
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
   gap: 1rem;
+}
+.services-grid--featured {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 1.25rem;
+}
+.service-card--featured {
+  padding: 1.75rem 1.5rem;
+}
+.service-card--featured .service-card__icon {
+  width: 52px;
+  height: 52px;
+  margin-bottom: 1.4rem;
+}
+.service-card--featured .service-card__title {
+  font-size: 1.15rem;
+}
+
+.services-secondary {
+  margin-top: 2.25rem;
+  padding-top: 1.75rem;
+  border-top: 1px solid var(--c-border);
+  text-align: center;
+}
+.services-secondary__label {
+  display: block;
+  font-size: .78rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: .08em;
+  color: var(--c-text-muted);
+  margin-bottom: .9rem;
+}
+.services-secondary__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: .6rem;
+}
+.services-secondary__item {
+  display: inline-flex;
+  align-items: center;
+  padding: .55rem 1.1rem;
+  border-radius: 999px;
+  border: 1px solid var(--c-border);
+  background: var(--c-white);
+  color: var(--c-navy);
+  font-size: .85rem;
+  font-weight: 600;
+  transition: border-color var(--transition), color var(--transition), transform var(--transition);
+}
+.services-secondary__item:hover {
+  border-color: rgba(22,82,192,.4);
+  color: #1652c0;
+  transform: translateY(-2px);
 }
 
 .service-card {
@@ -1392,6 +1464,16 @@ button { font: inherit; border: none; background: none; cursor: pointer; }
   font-weight: 800;
   margin-bottom: .75rem;
 }
+.lead-form__context {
+  margin: -.1rem 0 .9rem;
+  padding: .9rem 1rem;
+  border-radius: 16px;
+  background: linear-gradient(135deg, rgba(255,255,255,.16), rgba(212,175,55,.14));
+  border: 1px solid rgba(255,255,255,.16);
+  color: #fff;
+  font-size: .88rem;
+  line-height: 1.6;
+}
 .lead-form__grid {
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr));
@@ -1533,6 +1615,12 @@ button { font: inherit; border: none; background: none; cursor: pointer; }
 /* ============================================================
    RESPONSIVE
    ============================================================ */
+@media (min-width: 769px) and (max-width: 1180px) {
+  .logo__text { font-size: .84rem; }
+  .nav__list { gap: 0; }
+  .nav__link { padding: .45rem .55rem; font-size: .78rem; }
+}
+
 @media (max-width: 768px) {
   .logo__text {
     font-size: .8rem;
@@ -1601,6 +1689,12 @@ button { font: inherit; border: none; background: none; cursor: pointer; }
     grid-template-columns: 1fr;
   }
   .services-topbar {
+    justify-content: flex-start;
+  }
+  .services-grid--featured {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .services-secondary__list {
     justify-content: flex-start;
   }
   .growth-roadmap {
@@ -1708,6 +1802,7 @@ button { font: inherit; border: none; background: none; cursor: pointer; }
 
   .hero__subtitle { margin-left: 0; margin-right: 0; }
   .hero__ctas { justify-content: flex-start; }
+  .hero__career-link { justify-content: flex-start; }
   .trust-strip { margin-left: 0; margin-right: auto; justify-content: flex-start; border-radius: var(--radius-md); }
   .hero__stats { justify-content: flex-start; }
   .intent-switch { display: inline-flex; }
