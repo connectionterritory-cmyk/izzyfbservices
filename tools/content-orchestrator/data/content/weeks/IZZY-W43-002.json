@@ -16,9 +16,9 @@
   "cta": "Comenta MERCADO si quieres que desarrolle una guía con formas prácticas de abrir nuevos mercados.",
   "source_patterns": [],
   "engine": "izzy-video-engine-remotion",
-  "status": "planned",
-  "brief_ref": null,
-  "storyboard_ref": null,
+  "status": "production",
+  "brief_ref": "tools/content-orchestrator/data/content/briefs/IZZY-W43-002-BRIEF.md",
+  "storyboard_ref": "tools/content-orchestrator/data/content/storyboards/IZZY-W43-002-STORYBOARD.md",
   "qa": {
     "brand": "pending",
     "copy": "pending",
