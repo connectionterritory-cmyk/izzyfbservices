@@ -1,0 +1,40 @@
+{
+  "content_id": "IZZY-W43-001",
+  "campaign": "new-agent-system",
+  "audience": [
+    "newly_licensed_insurance_agents",
+    "insurance_agents_struggling_after_natural_market",
+    "prospective_insurance_agents"
+  ],
+  "objective": [
+    "education",
+    "authority",
+    "engagement"
+  ],
+  "format": "carousel",
+  "topic": "What happens after getting an insurance license and why new agents need a repeatable sales and development system",
+  "hook": "Sacaste tu licencia de seguros... ¿Y ahora qué?",
+  "cta": "Si eres agente, líder o estás pensando entrar a esta industria: ¿qué fue —o qué sería— lo más difícil para ti después de obtener tu licencia? Te leo en los comentarios.",
+  "source_patterns": [],
+  "engine": "carousel-engine-v1",
+  "status": "draft",
+  "brief_ref": null,
+  "storyboard_ref": null,
+  "qa": {
+    "brand": "passed",
+    "copy": "passed",
+    "compliance": "passed",
+    "assets": "passed"
+  },
+  "distribution": {
+    "instagram": true,
+    "facebook": true,
+    "other": []
+  },
+  "metricool": {
+    "status": "draft",
+    "scheduled_at": "2026-10-23T10:00:00-07:00",
+    "external_id": "403366046"
+  },
+  "performance_pending": true
+}
