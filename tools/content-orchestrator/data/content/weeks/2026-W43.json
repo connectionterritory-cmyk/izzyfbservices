@@ -11,7 +11,7 @@
     "authority",
     "engagement"
   ],
-  "notes": "First operational Content Week for IZZY Content Orchestrator V1. Start with verified content only; add future items as they are planned and approved.",
+  "notes": "First operational Content Week for IZZY Content Orchestrator V1. IZZY-W43-001 is the verified draft. IZZY-W43-002 through 004 are strategic planning records only: no QA approval, Metricool schedule, external ID, source pattern, or performance is asserted until observed.",
   "items": [
     {
       "content_id": "IZZY-W43-001",
@@ -21,6 +21,33 @@
       "topic": "What happens after getting an insurance license and why new agents need a repeatable sales and development system",
       "status": "draft",
       "brief_path": "tools/content-orchestrator/data/content/weeks/IZZY-W43-001.json"
+    },
+    {
+      "content_id": "IZZY-W43-002",
+      "day": "Saturday",
+      "date": "2026-10-24",
+      "format": "reel",
+      "topic": "How a new insurance agent expands beyond family and friends by learning repeatable prospecting channels",
+      "status": "planned",
+      "brief_path": "tools/content-orchestrator/data/content/weeks/IZZY-W43-002.json"
+    },
+    {
+      "content_id": "IZZY-W43-003",
+      "day": "Sunday",
+      "date": "2026-10-25",
+      "format": "carousel",
+      "topic": "Why a new insurance agent needs a measurable daily activity system instead of relying only on motivation",
+      "status": "planned",
+      "brief_path": "tools/content-orchestrator/data/content/weeks/IZZY-W43-003.json"
+    },
+    {
+      "content_id": "IZZY-W43-004",
+      "day": null,
+      "date": null,
+      "format": "reel",
+      "topic": "Three conversation skills a new insurance agent should learn before focusing on product scripts",
+      "status": "planned",
+      "brief_path": "tools/content-orchestrator/data/content/weeks/IZZY-W43-004.json"
     }
   ]
 }
