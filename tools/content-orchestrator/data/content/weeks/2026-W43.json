@@ -1,0 +1,26 @@
+{
+  "week": "2026-W43",
+  "campaign": "new-agent-system",
+  "audience": [
+    "newly_licensed_insurance_agents",
+    "insurance_agents_struggling_after_natural_market",
+    "prospective_insurance_agents"
+  ],
+  "objectives": [
+    "education",
+    "authority",
+    "engagement"
+  ],
+  "notes": "First operational Content Week for IZZY Content Orchestrator V1. Start with verified content only; add future items as they are planned and approved.",
+  "items": [
+    {
+      "content_id": "IZZY-W43-001",
+      "day": "Friday",
+      "date": "2026-10-23",
+      "format": "carousel",
+      "topic": "What happens after getting an insurance license and why new agents need a repeatable sales and development system",
+      "status": "draft",
+      "brief_path": "tools/content-orchestrator/data/content/weeks/IZZY-W43-001.json"
+    }
+  ]
+}
