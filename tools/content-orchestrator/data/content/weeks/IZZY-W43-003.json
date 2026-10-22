@@ -1,0 +1,39 @@
+{
+  "content_id": "IZZY-W43-003",
+  "campaign": "new-agent-system",
+  "audience": [
+    "newly_licensed_insurance_agents",
+    "insurance_agents_struggling_after_natural_market"
+  ],
+  "objective": [
+    "education",
+    "authority",
+    "engagement"
+  ],
+  "format": "carousel",
+  "topic": "Why a new insurance agent needs a measurable daily activity system instead of relying only on motivation",
+  "hook": "Un agente nuevo no necesita vivir motivado. Necesita saber qué hacer cada día.",
+  "cta": "¿Qué actividad te cuesta más mantener: prospectar, dar seguimiento o pedir referidos? Te leo en los comentarios.",
+  "source_patterns": [],
+  "engine": "carousel-engine-v1",
+  "status": "planned",
+  "brief_ref": null,
+  "storyboard_ref": null,
+  "qa": {
+    "brand": "pending",
+    "copy": "pending",
+    "compliance": "pending",
+    "assets": "pending"
+  },
+  "distribution": {
+    "instagram": true,
+    "facebook": true,
+    "other": []
+  },
+  "metricool": {
+    "status": "not_sent",
+    "scheduled_at": null,
+    "external_id": null
+  },
+  "performance_pending": true
+}
