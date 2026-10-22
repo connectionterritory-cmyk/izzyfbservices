@@ -1,0 +1,30 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://izzyfbservices.com/schemas/performance.schema.json",
+  "title": "IZZY Content Performance",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["content_id", "observed_at", "platform", "metrics"],
+  "properties": {
+    "content_id": {"type": "string", "minLength": 1},
+    "observed_at": {"type": "string", "format": "date-time"},
+    "platform": {"enum": ["instagram", "facebook", "other"]},
+    "source": {"type": ["string", "null"]},
+    "metrics": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "views": {"type": ["integer", "null"], "minimum": 0},
+        "reach": {"type": ["integer", "null"], "minimum": 0},
+        "likes": {"type": ["integer", "null"], "minimum": 0},
+        "comments": {"type": ["integer", "null"], "minimum": 0},
+        "shares": {"type": ["integer", "null"], "minimum": 0},
+        "saves": {"type": ["integer", "null"], "minimum": 0},
+        "follows": {"type": ["integer", "null"], "minimum": 0},
+        "clicks": {"type": ["integer", "null"], "minimum": 0},
+        "conversions": {"type": ["integer", "null"], "minimum": 0}
+      }
+    },
+    "notes": {"type": ["string", "null"]}
+  }
+}
