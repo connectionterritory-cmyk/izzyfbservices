@@ -1,0 +1,39 @@
+{
+  "content_id": "IZZY-W43-004",
+  "campaign": "new-agent-system",
+  "audience": [
+    "newly_licensed_insurance_agents",
+    "prospective_insurance_agents"
+  ],
+  "objective": [
+    "education",
+    "authority",
+    "engagement"
+  ],
+  "format": "reel",
+  "topic": "Three conversation skills a new insurance agent should learn before focusing on product scripts",
+  "hook": "Antes de memorizar un producto, aprende estas 3 conversaciones.",
+  "cta": "Guarda este Reel y dime cuál de estas conversaciones quieres que convierta en un guion práctico.",
+  "source_patterns": [],
+  "engine": "izzy-video-engine-remotion",
+  "status": "planned",
+  "brief_ref": null,
+  "storyboard_ref": null,
+  "qa": {
+    "brand": "pending",
+    "copy": "pending",
+    "compliance": "pending",
+    "assets": "pending"
+  },
+  "distribution": {
+    "instagram": true,
+    "facebook": true,
+    "other": []
+  },
+  "metricool": {
+    "status": "not_sent",
+    "scheduled_at": null,
+    "external_id": null
+  },
+  "performance_pending": true
+}
