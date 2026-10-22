@@ -1,0 +1,52 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://izzyfbservices.com/schemas/content-brief.schema.json",
+  "title": "IZZY Content Brief",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["content_id", "campaign", "audience", "objective", "format", "topic", "hook", "engine", "status"],
+  "properties": {
+    "content_id": {"type": "string", "pattern": "^IZZY-W[0-9]{2}-[0-9]{3}$"},
+    "campaign": {"type": "string", "minLength": 1},
+    "audience": {"type": "array", "minItems": 1, "uniqueItems": true, "items": {"type": "string"}},
+    "objective": {"type": "array", "minItems": 1, "uniqueItems": true, "items": {"type": "string"}},
+    "format": {"enum": ["carousel", "reel", "story", "static", "video", "other"]},
+    "topic": {"type": "string", "minLength": 1},
+    "hook": {"type": "string", "minLength": 1},
+    "cta": {"type": ["string", "null"]},
+    "source_patterns": {"type": "array", "uniqueItems": true, "items": {"type": "string"}},
+    "engine": {"type": "string", "minLength": 1},
+    "status": {"enum": ["idea", "planned", "production", "qa", "approved", "draft", "scheduled", "published", "measured"]},
+    "brief_ref": {"type": ["string", "null"]},
+    "storyboard_ref": {"type": ["string", "null"]},
+    "qa": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "brand": {"enum": ["pending", "passed", "failed"]},
+        "copy": {"enum": ["pending", "passed", "failed"]},
+        "compliance": {"enum": ["pending", "passed", "failed", "not_applicable"]},
+        "assets": {"enum": ["pending", "passed", "failed"]}
+      }
+    },
+    "distribution": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "instagram": {"type": "boolean"},
+        "facebook": {"type": "boolean"},
+        "other": {"type": "array", "uniqueItems": true, "items": {"type": "string"}}
+      }
+    },
+    "metricool": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "status": {"enum": ["not_sent", "draft", "scheduled", "published", "unknown"]},
+        "scheduled_at": {"type": ["string", "null"], "format": "date-time"},
+        "external_id": {"type": ["string", "null"]}
+      }
+    },
+    "performance_pending": {"type": "boolean"}
+  }
+}
