@@ -1,0 +1,39 @@
+{
+  "content_id": "IZZY-W43-002",
+  "campaign": "new-agent-system",
+  "audience": [
+    "newly_licensed_insurance_agents",
+    "insurance_agents_struggling_after_natural_market"
+  ],
+  "objective": [
+    "education",
+    "authority",
+    "engagement"
+  ],
+  "format": "reel",
+  "topic": "How a new insurance agent expands beyond family and friends by learning repeatable prospecting channels",
+  "hook": "¿Ya hablaste con toda tu familia y tus amigos? Eso no significa que se acabó tu mercado.",
+  "cta": "Comenta MERCADO si quieres que desarrolle una guía con formas prácticas de abrir nuevos mercados.",
+  "source_patterns": [],
+  "engine": "izzy-video-engine-remotion",
+  "status": "planned",
+  "brief_ref": null,
+  "storyboard_ref": null,
+  "qa": {
+    "brand": "pending",
+    "copy": "pending",
+    "compliance": "pending",
+    "assets": "pending"
+  },
+  "distribution": {
+    "instagram": true,
+    "facebook": true,
+    "other": []
+  },
+  "metricool": {
+    "status": "not_sent",
+    "scheduled_at": null,
+    "external_id": null
+  },
+  "performance_pending": true
+}
